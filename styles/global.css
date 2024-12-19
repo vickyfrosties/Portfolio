@@ -7,6 +7,12 @@
 body {
   min-height: 100vh;
   width: 100vw;
+  background-color: var(--main-background-color);
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
 }
 
 ul {
@@ -21,4 +27,27 @@ a {
   outline: 2px solid #17cf61;
   /* Provide visible focus indication */
   outline-offset: 2px;
+}
+
+:root {
+  --yellow-shade-1: #F9F11C;
+  --title: "Montserrat", serif;
+  --main-background-color: #fcfee8;
+}
+
+::selection {
+  background-color: var(--yellow-shade-1);
+  color: #000;
+}
+
+/* For WebKit browsers (Safari, older versions of Chrome) */
+::-webkit-selection {
+  background-color: var(--yellow-shade-1);
+  color: #000;
+}
+
+main {
+  h1 {
+    font-family: var(--title);
+  }
 }
