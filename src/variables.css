@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --text-content: "Hind Madurai", serif;
     --title: "Montserrat", serif;
+    --main-color: #F9FAFC;
+    --secondary-color: #1C24F9;
+    --cursor: url("../Icon/blue-cursor.png");
+    --hover-cursor: url("../Icon/hover-cursor.png");
 }
