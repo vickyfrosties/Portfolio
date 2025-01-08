@@ -1,5 +1,7 @@
 import "../App.css";
 import "../variables.css";
+import { Link, Element } from "react-scroll";
+import Projects from "../Components/Projects";
 
 const Header = () => {
 
@@ -11,13 +13,14 @@ const Header = () => {
                         <li>Portfolio</li>
                         <div className="inheader-container">
                             <li>Home</li>
-                            <li>Projects</li>
-                            <li>About me</li>
-                            <li>Contact</li>
+                            <li><Link to="Projects">Projects</Link></li>
+                            <li><Link to="About me">About me</Link> </li>
+                            <li><Link to="Contact">Contact</Link></li>
                         </div>
                     </ul>
                 </nav>
             </header>
+
         </>
     );
 };

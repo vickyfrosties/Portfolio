@@ -1,13 +1,17 @@
 import "../App.css";
 import Home from "./Home";
+import Projects from "./Projects";
 
 const Main = () => {
 
   return (
     <>
       <main>
-        <section>
+        <section className="first-section">
           <Home />
+        </section>
+        <section>
+          <Projects />
         </section>
       </main>
     </>
