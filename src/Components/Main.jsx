@@ -1,4 +1,6 @@
 import "../App.css";
+import About from "./About";
+import Contact from "./Contact";
 import Home from "./Home";
 import Projects from "./Projects";
 
@@ -7,11 +9,17 @@ const Main = () => {
   return (
     <>
       <main>
-        <section className="first-section">
+        <section className="home-section">
           <Home />
         </section>
-        <section>
+        <section className="projects-section">
           <Projects />
+        </section>
+        <section className="about-section">
+          <About />
+        </section>
+        <section className="contact-section">
+          <Contact />
         </section>
       </main>
     </>

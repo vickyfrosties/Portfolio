@@ -3,15 +3,15 @@ import "../variables.css";
 import { Element } from "react-scroll";
 
 
-const Projects = () => {
+const About = () => {
 
   return (
     <>
-      <Element name="Projects">
-        <h2>Projects</h2>
+      <Element name="About me">
+        <h2>About me</h2>
       </Element>
     </>
   );
 };
 
-export default Projects;
+export default About;
