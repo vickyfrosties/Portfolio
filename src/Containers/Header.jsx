@@ -10,9 +10,10 @@ const Header = () => {
             <header>
                 <nav>
                     <ul className="header-container">
-                        <li>Portfolio</li>
+                        <li><Link to="Header">Portfolio
+                        </Link>
+                        </li>
                         <div className="inheader-container">
-                            <li>Home</li>
                             <li><Link to="Projects">Projects</Link></li>
                             <li><Link to="About me">About me</Link> </li>
                             <li><Link to="Contact">Contact</Link></li>

@@ -7,6 +7,6 @@
     --title: "Montserrat", serif;
     --main-color: #F9FAFC;
     --secondary-color: #1C24F9;
-    --cursor: url("../Icon/blue-cursor.png");
-    --hover-cursor: url("../Icon/hover-cursor.png");
+    --cursor: url("../Icons/blue-cursor.png");
+    --hover-cursor: url("../Icons/hover-cursor.png");
 }
