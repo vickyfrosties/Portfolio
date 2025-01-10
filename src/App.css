@@ -100,7 +100,7 @@ body {
         overflow-wrap: anywhere;
         font-family: var(--title);
         font-weight: 900;
-        font-size: 72px;
+        font-size: 62px;
         text-transform: uppercase;
         color: var(--secondary-color)
       }
@@ -111,6 +111,11 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      img {
+        width: 500px;
+        height: 500px;
+      }
 
       legend {
         font-family: var(--title);
