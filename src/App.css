@@ -104,6 +104,10 @@ body {
         text-transform: uppercase;
         color: var(--secondary-color)
       }
+
+      h1:hover {
+        cursor: var(--yellow-cursor), auto;
+      }
     }
 
     .gif-container {
@@ -126,8 +130,8 @@ body {
     }
 
     .projects-section {
-      border: 2px solid maroon;
-      height: auto;
+      /* border: 2px solid maroon; */
+      margin-bottom: 1rem;
 
       h2 {
         font-family: var(--text-content);
@@ -136,6 +140,51 @@ body {
         border-bottom: 1px solid black;
         width: 118px;
         text-align: end;
+        margin-bottom: 1.5rem;
+      }
+
+
+      .projects-div-containers {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        div {
+          width: 30%;
+          height: auto;
+
+          img {
+            width: 450px;
+            border: 1px solid black;
+          }
+
+          h3 {
+            font-family: var(--title);
+            font-weight: semibold;
+            padding-bottom: 10px;
+          }
+
+          p {
+            font-family: var(--text-content);
+            font-weight: light;
+            line-height: 2;
+            text-align: justify;
+          }
+        }
+
+        div:nth-child(2) {
+          img {
+            width: 450px;
+          }
+        }
+
+        div:nth-child(3) {
+          img {
+            width: 450px;
+          }
+        }
       }
     }
 
