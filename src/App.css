@@ -30,6 +30,10 @@ select {
   font: inherit;
 }
 
+button:hover {
+  cursor: var(--hover-cursor), auto;
+}
+
 p,
 h1,
 h2,
@@ -46,6 +50,14 @@ h2 {
 
 ::selection {
   background: var(--third-color);
+}
+
+::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
 }
 
 body {
@@ -102,10 +114,11 @@ body {
         font-weight: 900;
         font-size: 62px;
         text-transform: uppercase;
-        color: var(--secondary-color)
+        color: var(--secondary-color);
       }
 
       h1:hover {
+        /* box-shadow: 0.7em 1em 5px var(--third-color); */
         cursor: var(--yellow-cursor), auto;
       }
     }
@@ -130,12 +143,11 @@ body {
     }
 
     .projects-section {
-      /* border: 2px solid maroon; */
       margin-bottom: 1rem;
 
       h2 {
         font-family: var(--text-content);
-        font-weight: bold;
+        font-style: bold;
         font-size: 32px;
         border-bottom: 1px solid black;
         width: 118px;
@@ -143,57 +155,74 @@ body {
         margin-bottom: 1.5rem;
       }
 
-
       .projects-div-containers {
         width: 100%;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        gap: 8em;
 
-        div {
-          width: 30%;
+        .cards {
+          width: 18%;
           height: auto;
-
-          img {
-            width: 450px;
-            border: 1px solid black;
-          }
+          padding: 1em;
+          /* border: 2px solid black; */
+          /* box-shadow: 0.7em 1em 5px var(--third-color); */
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
 
           h3 {
             font-family: var(--title);
-            font-weight: semibold;
-            padding-bottom: 10px;
+            font-style: semibold;
+            padding-top: 0.7em;
           }
 
           p {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
             font-family: var(--text-content);
-            font-weight: light;
+            font-style: light;
             line-height: 2;
-            text-align: justify;
+          }
+
+          div {
+            width: 40%;
+            height: 18%;
+            padding-top: 1em;
+            border-top: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            a {
+              width: 28px;
+            }
+
+            button {
+              font-family: var(--text-content);
+              width: 80px;
+              border: none;
+              background-color: var(--third-color);
+            }
           }
         }
 
-        div:nth-child(2) {
-          img {
-            width: 450px;
-          }
+        .cards>.webscreen {
+          width: 100%;
         }
 
-        div:nth-child(3) {
-          img {
-            width: 450px;
-          }
+        .cards:hover {
+          transform: translate(-10px, -10px);
+          border: 2px solid black;
+          box-shadow: 0.7em 1em 5px var(--third-color);
         }
       }
     }
 
     .about-section,
     .contact-section {
-      border: 2px solid blue;
-
       h2 {
-        font-weight: bold;
+        font-style: bold;
         font-size: 32px;
         border-bottom: 1px solid black;
         width: 155px;
