@@ -25,15 +25,15 @@ const MenuList = () => {
     return (
         <>
             <section className="menu-list">
-                <section>
+                <div className="under-menu-list">
                     {details.map(item => (
                         <MenuItem
                             key={item.id}
-                            item={item.title}
+                            item={item}
                             onClick={() => setSelectedItem(item)}
                         />
                     ))}
-                </section>
+                </div>
                 <div className="detail">
                     {selectedItem && <MenuDetail message={selectedItem.content} />}
                 </div>
