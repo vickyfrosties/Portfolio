@@ -152,16 +152,18 @@ body {
 
       .projects-div-containers {
         width: 100%;
+        height: auto;
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        /* height: auto; */
+        justify-content: space-between;
+        /* border: 2px solid black; */
 
         .cards {
           width: calc(25% - 2em);
           height: auto;
           padding: 1em;
+          /* border: 2px solid green; */
           /* box-shadow: 0.7em 1em 5px var(--third-color); */
           transition: transform 0.3s ease, box-shadow 0.3s ease;
 
