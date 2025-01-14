@@ -17,13 +17,12 @@ const Footer = () => {
         </div>
         <div>
           <a href={LINKEDIN_LINK} target="_blank">
-            <img src="./Icons/linkedin.svg" alt="LinkedIn logo linked to my LinkedIn profile page." />
+            <img src="./Icons/linkedin.svg" alt="https://www.linkedin.com/in/sounia-mhalla-dit-aounallah/" />
           </a>
 
           <a href={GITHUB_LINK} target="_blank">
-            <img src="./Icons/github.svg" alt="Github logo linked to my Github profile page." />
+            <img src="./Icons/github.svg" alt="https://github.com/vickyfrosties" />
           </a>
-
         </div>
       </footer>
     </>

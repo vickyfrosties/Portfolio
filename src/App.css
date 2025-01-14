@@ -112,7 +112,7 @@ body {
         overflow-wrap: anywhere;
         font-family: var(--title);
         font-weight: 900;
-        font-size: 62px;
+        font-size: 4em;
         text-transform: uppercase;
         color: var(--secondary-color);
       }
@@ -128,11 +128,6 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
-      img {
-        width: 500px;
-        height: 500px;
-      }
 
       legend {
         font-family: var(--title);
@@ -161,13 +156,12 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: 8em;
+        /* height: auto; */
 
         .cards {
-          width: 18%;
+          width: calc(25% - 2em);
           height: auto;
           padding: 1em;
-          /* border: 2px solid black; */
           /* box-shadow: 0.7em 1em 5px var(--third-color); */
           transition: transform 0.3s ease, box-shadow 0.3s ease;
 

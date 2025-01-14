@@ -17,7 +17,7 @@ const Projects = () => {
             </p>
             <div>
               <a href="https://github.com/vickyfrosties/Project04-StatMind-WorkInProgress" target="blank">
-                <img src="/Icons/github.svg" alt="StatMind Github Link" />
+                <img src="/Icons/github.svg" alt="https://github.com/vickyfrosties/Project04-StatMind-WorkInProgress" />
               </a>
               <button>See more</button>
             </div>
@@ -33,7 +33,7 @@ const Projects = () => {
             </p>
             <div>
               <a href="https://github.com/vickyfrosties/I3-Greenier-please-Hackathon" target="blank">
-                <img src="/Icons/github.svg" alt="Greenier, please Github Link" />
+                <img src="/Icons/github.svg" alt="https://github.com/vickyfrosties/I3-Greenier-please-Hackathon" />
               </a>
               <button>See more</button>
             </div>
@@ -47,7 +47,7 @@ const Projects = () => {
             </p>
             <div>
               <a href="https://github.com/vickyfrosties/Project02-SolarSystem-WorkinProgress-" target="blank">
-                <img src="/Icons/github.svg" alt="Solar System Github Link" />
+                <img src="/Icons/github.svg" alt="https://github.com/vickyfrosties/Project02-SolarSystem-WorkinProgress-" />
               </a>
               <button>See more</button>
             </div>
@@ -60,7 +60,7 @@ const Projects = () => {
             </p>
             <div>
               <a href="https://github.com/vickyfrosties/Project04-StatMind-WorkInProgress" target="blank">
-                <img src="/Icons/github.svg" alt="StatMind Github Link" />
+                <img src="/Icons/github.svg" alt="Football Feedscore Github Link" />
               </a>
               <button>See more</button>
             </div>
@@ -73,7 +73,7 @@ const Projects = () => {
             </p>
             <div>
               <a href="https://github.com/vickyfrosties/Project01-Motivation-Project" target="blank">
-                <img src="/Icons/github.svg" alt="Motivation Project Github Link" />
+                <img src="/Icons/github.svg" alt="https://github.com/vickyfrosties/Project01-Motivation-Project" />
               </a>
               <button>See more</button>
             </div>
