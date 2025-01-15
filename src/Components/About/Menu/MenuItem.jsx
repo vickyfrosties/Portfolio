@@ -6,10 +6,8 @@ const MenuItem = ({ item, onClick }) => {
 
     return (
         <>
-            <div className="items-container">
-                <div className="item" onClick={onClick}>
-                    <p>{item.title}</p>
-                </div>
+            <div className="item" onClick={onClick}>
+                <p>{item.title}</p>
             </div>
         </>
     );

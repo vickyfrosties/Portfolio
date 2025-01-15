@@ -53,7 +53,7 @@ h2 {
 }
 
 ::-webkit-scrollbar {
-  width: 0.2em;
+  width: 0.5em;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -138,7 +138,11 @@ body {
     }
 
     .projects-section {
+      border: 2px solid lime;
+      margin-top: 1rem;
       margin-bottom: 1rem;
+      padding-top: 1em;
+      padding-bottom: 1em;
 
       h2 {
         font-family: var(--text-content);
@@ -157,14 +161,11 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        /* border: 2px solid black; */
 
         .cards {
           width: calc(25% - 2em);
           height: auto;
           padding: 1em;
-          /* border: 2px solid green; */
-          /* box-shadow: 0.7em 1em 5px var(--third-color); */
           transition: transform 0.3s ease, box-shadow 0.3s ease;
 
           h3 {
@@ -217,12 +218,22 @@ body {
 
     .about-section,
     .contact-section {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      padding-top: 1em;
+      padding-bottom: 1em;
+
       h2 {
         font-style: bold;
         font-size: 32px;
         border-bottom: 1px solid black;
         width: 155px;
         margin-bottom: 1.5rem;
+      }
+
+      & {
+        border: 2px solid lime;
+        height: 40vh;
       }
     }
 
@@ -238,31 +249,51 @@ body {
       justify-content: space-between;
 
       .under-menu-list {
-        border: 2px solid magenta;
+        border-right: 2px solid black;
         width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        /* height: 100%; */
 
-        .items-container {
+        .item {
           width: 100%;
+          font-size: 1.2em;
+          font-family: var(--text-content);
+          font-weight: 600;
+          padding-left: 1em;
 
-          .item {
-            width: 100%;
-            border: 2px solid red;
-            font-size: 1em;
-            font-family: var(--text-content);
-            font-weight: 600;
+          &:hover {
+            color: var(--secondary-color);
           }
         }
+      }
 
-        .detail {
-          width: 50%;
+      .detail {
+        width: 50%;
+        height: 100%;
+        margin: auto;
+
+        p {
+          font-family: var(--text-content);
+          font-size: 1em;
+          font-weight: 500;
+          line-height: 2;
+        }
+
+        .portrait {
+          padding: 2em;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            object-position: 10% 25%;
+          }
         }
       }
     }
-
   }
 
   .footer {

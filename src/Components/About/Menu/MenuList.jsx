@@ -10,7 +10,7 @@ const MenuList = () => {
 
     const details = [
         {
-            id: 1, title: "Who am I?", content: "I am a young front-end developer currently in a training to make my passion my work."
+            id: 1, title: "Who am I?", content: "I am a young front-end developer currently in a training to make my passion my work.", source: "../../../../public/Pictures/portrait.png"
         },
         {
             id: 2, title: "Where am I coming from?", content: "I live in Belgium in Brussels."
@@ -35,7 +35,12 @@ const MenuList = () => {
                     ))}
                 </div>
                 <div className="detail">
-                    {selectedItem && <MenuDetail message={selectedItem.content} />}
+                    {selectedItem &&
+                        <MenuDetail
+                            message={selectedItem.content}
+                            showImage={selectedItem.id === 1}
+                            imageUrl="../../../../public/Pictures/portrait_bis.png"
+                        />}
                 </div>
             </section>
         </>

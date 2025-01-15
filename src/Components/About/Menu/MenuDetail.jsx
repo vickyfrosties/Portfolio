@@ -1,8 +1,13 @@
-const MenuDetail = ({ message }) => {
+const MenuDetail = ({ message, showImage, imageUrl }) => {
 
     return (
         <>
-            {message}
+            <div className="portrait">
+                {showImage && <img src={imageUrl} alt="Self portrait" />}
+                <p>
+                    {message}
+                </p>
+            </div>
         </>
     );
 };
