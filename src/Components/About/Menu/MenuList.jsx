@@ -39,7 +39,7 @@ const MenuList = () => {
                         <MenuDetail
                             message={selectedItem.content}
                             showImage={selectedItem.id === 1}
-                            imageUrl="../../../../public/Pictures/portrait_bis.png"
+                            imageUrl="/Pictures/portrait_bis.png"
                         />}
                 </div>
             </section>
