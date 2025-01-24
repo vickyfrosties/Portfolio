@@ -235,6 +235,51 @@ body {
       }
     }
 
+    .contact-section {
+      margin-top: 5rem;
+
+      .container-bip {
+        display: flex;
+        justify-content: space-evenly;
+
+        .socials {
+          border: 2px solid black;
+          border-radius: 30px;
+          padding: 2em;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          font-family: var(--text-content);
+          font-weight: 600;
+          font-size: 1.2em;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        .form {
+          border: 2px solid var(--third-color);
+          padding: 2em;
+          width: 50%;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .socials-section {
+      border: 2px solid red;
+      width: 25%;
+      height: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+
     .menu-list {
       border: 1px solid black;
       border-radius: 1em;
