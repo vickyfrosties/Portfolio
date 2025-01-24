@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 
 const Contact = () => {
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data) => console.log(data);
 
   return (
@@ -38,21 +38,25 @@ const Contact = () => {
               <label htmlFor="">
                 Name
               </label>
-              <input {...register("name")} type="text" placeholder="Name" />
+              <input {...register("name", { pattern: /^[A-Za-z]+$/i }, { required: true })} aria-invalid={errors.name ? "true" : "false"}
+                type="text" placeholder="Name" />
+              {errors.name?.type === "required" && (
+                <p role="alert">Name is required</p>
+              )}
             </div>
 
             <div>
               <label htmlFor="">
                 Last name
               </label>
-              <input {...register("lastname")} type="text" placeholder="Last name" />
+              <input {...register("lastname", { pattern: /^[A-Za-z]+$/i })} type="text" placeholder="Last name" />
             </div>
 
             <div>
               <label htmlFor="">
                 Email
               </label>
-              <input {...register("email")} type="email" placeholder="Email" />
+              <input {...register("email", { required: "Email Address is required" })} aria-invalid={errors.email ? "true" : "false"} type="email" placeholder="Email" />
             </div>
 
             <div>
