@@ -386,6 +386,18 @@ body {
         }
       }
     }
+
+    .top {
+      position: fixed;
+      right: 20px;
+      bottom: 10px;
+      width: 85px;
+      height: 85px;
+      background-color: #F9FAFC;
+      border: 2.5 px solid black;
+      border-radius: 50px;
+      box-shadow: 0.4em 0.3em var(--third-color);
+    }
   }
 
   .footer {

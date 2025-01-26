@@ -3,6 +3,7 @@ import About from "./About/About";
 import Contact from "./Contact";
 import Home from "./Home";
 import Projects from "./Projects";
+import ToTop from "./ToTop/ToTop";
 
 const Main = () => {
 
@@ -21,6 +22,7 @@ const Main = () => {
         <section className="contact-section">
           <Contact />
         </section>
+        <ToTop />
       </main>
     </>
   );
