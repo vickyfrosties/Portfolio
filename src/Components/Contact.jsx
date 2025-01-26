@@ -3,11 +3,27 @@ import "../variables.css";
 import { Element } from "react-scroll";
 import Footer from "../Containers/Footer";
 import { useForm } from "react-hook-form";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [successMessage, setSuccessMessage] = useState("");
 
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const { register, handleSubmit, formState, formState: { errors, isSubmitSuccessful }, reset } = useForm();
+  const onSubmit = (data) => {
+    console.log("data form:", data);
+    setSuccessMessage("Your message has been sent with success !");
+
+    setInterval(() => {
+      setSuccessMessage("");
+    }, 3000);
+  };
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset();
+    }
+  }, [formState, reset, isSubmitSuccessful]);
 
   return (
     <>
@@ -38,36 +54,71 @@ const Contact = () => {
               <label htmlFor="">
                 Name
               </label>
-              <input {...register("name", { pattern: /^[A-Za-z]+$/i }, { required: true })} aria-invalid={errors.name ? "true" : "false"}
+              <input
+                {...register("name", {
+                  required: "Name is required",
+                  pattern: {
+                    value: /^[A-Za-z]+$/i,
+                    message: "Name must only contains letters."
+                  },
+                })}
                 type="text" placeholder="Name" />
-              {errors.name?.type === "required" && (
-                <p role="alert">Name is required</p>
+              {errors.name && (
+                <p className="errors">{errors.name.message}</p>
               )}
             </div>
-
             <div>
               <label htmlFor="">
                 Last name
               </label>
-              <input {...register("lastname", { pattern: /^[A-Za-z]+$/i })} type="text" placeholder="Last name" />
+              <input {...register("lastname",
+                {
+                  required: "Lastname is required",
+                  pattern: {
+                    value: /^[A-Za-z]+$/i,
+                    message: "Name must only contains letters."
+                  },
+                })}
+                type="text" placeholder="Last name" />
+
+              {errors.lastname && (
+                <p className="errors">{errors.lastname.message} </p>
+              )}
             </div>
 
             <div>
               <label htmlFor="">
                 Email
               </label>
-              <input {...register("email", { required: "Email Address is required" })} aria-invalid={errors.email ? "true" : "false"} type="email" placeholder="Email" />
+              <input {...register("email",
+                {
+                  required: "Email address is required",
+                  pattern: {
+                    value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                    message: "Email address must only contains those symbols . _ % + -."
+                  },
+                })} type="email" placeholder="Email" />
+              {errors.email && (
+                <p className="errors">{errors.email.message} </p>
+              )}
             </div>
 
             <div>
               <label htmlFor="">
                 Message
               </label>
-              <textarea {...register("message")} name="message" id="" placeholder="Feel free to reach out" maxLength={500} />
+              <textarea {...register("message",
+                {
+                  required: "Message is required",
+                }
+              )} name="message" id="" placeholder="Feel free to reach out" maxLength={500} />
             </div>
 
-            <input type="submit" id="submit" />
+            <input type="submit" id="submit" value="Send" />
 
+            {successMessage && (
+              <p className="success">{successMessage}</p>
+            )}
           </form>
         </section>
       </Element >
