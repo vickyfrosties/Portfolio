@@ -4,19 +4,47 @@ import { Element } from "react-scroll";
 import Footer from "../Containers/Footer";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
+  const form = useRef();
+  const [isError, setIsError] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
 
   const { register, handleSubmit, formState, formState: { errors, isSubmitSuccessful }, reset } = useForm();
-  const onSubmit = (data) => {
-    console.log("data form:", data);
-    setSuccessMessage("Your message has been sent with success !");
 
-    setInterval(() => {
-      setSuccessMessage("");
-    }, 3000);
+  const onSubmit = (data) => {
+
+    emailjs.sendForm(
+      import.meta.env.EMAIL_SERVICE_ID,
+      import.meta.env.EMAIL_TEMPLATE_KEY_ID,
+      form.current,
+      import.meta.env.EMAIL_PUBLIC_KEY_ID,
+    )
+      .then(
+        () => {
+
+          setIsError(false);
+          setSuccessMessage("Your message has been sent with success !");
+
+          setInterval(() => {
+            setSuccessMessage("");
+          }, 3000);
+        },
+        (error) => {
+          setIsError(true);
+          setSuccessMessage("Something went wrong. Please try again.");
+        }
+      )
+      ;
+
+    // setSuccessMessage("Your message has been sent with success !");
+
+    // setInterval(() => {
+    //   setSuccessMessage("");
+    // }, 3000);
   };
 
   useEffect(() => {
@@ -49,7 +77,7 @@ const Contact = () => {
             </div>
           </section>
 
-          <form className="form" action="" onSubmit={handleSubmit(onSubmit)}>
+          <form ref={form} className="form" action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="input-div">
               <label htmlFor="name">
                 Name
@@ -115,9 +143,10 @@ const Contact = () => {
             </div>
 
             <input type="submit" id="submit" value="Send" />
-
             {successMessage && (
-              <p className="success">{successMessage}</p>
+              <p className={isError ? "errors" : "success"}>
+                {successMessage}
+              </p>
             )}
           </form>
         </section>

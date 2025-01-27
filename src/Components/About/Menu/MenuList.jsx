@@ -10,7 +10,7 @@ const MenuList = () => {
 
     const details = [
         {
-            id: 1, title: "Who am I?", content: "I am a young front-end developer currently in a training to make my passion my work.", source: "../../../../public/Pictures/portrait.png"
+            id: 1, title: "Who am I?", content: "I'm a young front-end developer currently in a training to make my passion my work.", source: "../../../../public/Pictures/portrait.png"
         },
         {
             id: 2, title: "Where am I coming from?", content: "I live in Belgium in Brussels."
