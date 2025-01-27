@@ -33,28 +33,28 @@ const Contact = () => {
 
           <section className="socials-section">
             <div className="socials">
-              <img src="/Icons/linkedin.svg" alt="www.linkedin.com/in/sounia-mhalla-dit-aounallah" />
+              <img src="/Icons/linkedin.svg" alt="" />
               <p>LinkedIn</p>
               <a href="https://www.linkedin.com/in/sounia-mhalla-dit-aounallah/" target="blank">
-                <img id="arrow" src="/Icons/arrow-link.svg" alt="" />
+                <img id="arrow" src="/Icons/arrow-link.svg" alt="https://www.linkedin.com/in/sounia-mhalla-dit-aounallah/" />
               </a>
             </div>
 
             <div className="socials">
-              <img src="/Icons/github.svg" alt="https://github.com/vickyfrosties" />
+              <img src="/Icons/github.svg" alt="" />
               <p>GitHub</p>
               <a href="https://github.com/vickyfrosties" target="blank">
-                <img id="arrow" src="/Icons/arrow-link.svg" alt="" />
+                <img id="arrow" src="/Icons/arrow-link.svg" alt="https://github.com/vickyfrosties" />
               </a>
             </div>
           </section>
 
           <form className="form" action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="input-div">
-              <label htmlFor="">
+              <label htmlFor="name">
                 Name
               </label>
-              <input
+              <input id="name"
                 {...register("name", {
                   required: "Name is required",
                   pattern: {
@@ -68,10 +68,10 @@ const Contact = () => {
               )}
             </div>
             <div>
-              <label htmlFor="">
+              <label htmlFor="lastname">
                 Last name
               </label>
-              <input {...register("lastname",
+              <input id="lastname" {...register("lastname",
                 {
                   required: "Lastname is required",
                   pattern: {
@@ -87,10 +87,10 @@ const Contact = () => {
             </div>
 
             <div>
-              <label htmlFor="">
+              <label htmlFor="email">
                 Email
               </label>
-              <input {...register("email",
+              <input id="email" {...register("email",
                 {
                   required: "Email address is required",
                   pattern: {
@@ -104,14 +104,14 @@ const Contact = () => {
             </div>
 
             <div>
-              <label htmlFor="">
+              <label htmlFor="message">
                 Message
               </label>
               <textarea {...register("message",
                 {
                   required: "Message is required",
                 }
-              )} name="message" id="" placeholder="Feel free to reach out" maxLength={500} />
+              )} name="message" id="message" placeholder="Feel free to reach out" maxLength={500} />
             </div>
 
             <input type="submit" id="submit" value="Send" />

@@ -231,12 +231,11 @@ body {
       }
 
       & {
-        height: 40vh;
+        height: 50vh;
       }
     }
 
     .contact-section {
-      margin-top: 5rem;
 
       .formsocial-container {
         height: 60vh;
@@ -334,7 +333,7 @@ body {
       border-radius: 1em;
       background-color: #F9FAFC;
       width: 55%;
-      height: 350px;
+      height: 40vh;
       margin: auto;
       padding: 1em;
       display: flex;

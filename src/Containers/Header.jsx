@@ -11,7 +11,7 @@ const Header = () => {
                     <nav>
                         <ul className="header-container">
                             <li>
-                                <Link to="Header">Portfolio</Link>
+                                Portfolio
                             </li>
                             <div className="inheader-container">
                                 <li><Link smooth={true} duration={500} to="Projects">Projects</Link></li>
