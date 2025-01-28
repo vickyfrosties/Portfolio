@@ -31,7 +31,6 @@ const Contact = () => {
         }, 3000);
       })
       .catch((error) => {
-        console.error("Erreur:", error);
         setIsError(true);
         setSuccessMessage("Something went wrong. Please try again.");
       });
