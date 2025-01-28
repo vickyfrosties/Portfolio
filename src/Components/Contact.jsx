@@ -16,9 +16,7 @@ const Contact = () => {
   const { register, handleSubmit, formState, formState: { errors, isSubmitSuccessful }, reset } = useForm();
 
   const onSubmit = (data) => {
-    const SERVICE_KEY = import.meta.env.VITE_EMAIL_SERVICE_ID;
-    const TEMPLATE_KEY = import.meta.env.VITE_EMAIL_TEMPLATE_KEY_ID;
-    const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY_ID;
+
     emailjs.sendForm(
       import.meta.env.VITE_EMAIL_SERVICE_ID,
       import.meta.env.VITE_EMAIL_TEMPLATE_KEY_ID,
