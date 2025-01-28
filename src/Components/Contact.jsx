@@ -16,35 +16,27 @@ const Contact = () => {
   const { register, handleSubmit, formState, formState: { errors, isSubmitSuccessful }, reset } = useForm();
 
   const onSubmit = (data) => {
-
+    const SERVICE_KEY = import.meta.env.VITE_EMAIL_SERVICE_ID;
+    const TEMPLATE_KEY = import.meta.env.VITE_EMAIL_TEMPLATE_KEY_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAIL_PUBLIC_KEY_ID;
     emailjs.sendForm(
-      import.meta.env.EMAIL_SERVICE_ID,
-      import.meta.env.EMAIL_TEMPLATE_KEY_ID,
+      import.meta.env.VITE_EMAIL_SERVICE_ID,
+      import.meta.env.VITE_EMAIL_TEMPLATE_KEY_ID,
       form.current,
-      import.meta.env.EMAIL_PUBLIC_KEY_ID,
+      import.meta.env.VITE_EMAIL_PUBLIC_KEY_ID
     )
-      .then(
-        () => {
-
-          setIsError(false);
-          setSuccessMessage("Your message has been sent with success !");
-
-          setInterval(() => {
-            setSuccessMessage("");
-          }, 3000);
-        },
-        (error) => {
-          setIsError(true);
-          setSuccessMessage("Something went wrong. Please try again.");
-        }
-      )
-      ;
-
-    // setSuccessMessage("Your message has been sent with success !");
-
-    // setInterval(() => {
-    //   setSuccessMessage("");
-    // }, 3000);
+      .then(() => {
+        setIsError(false);
+        setSuccessMessage("Your message has been sent with success!");
+        setInterval(() => {
+          setSuccessMessage("");
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error("Erreur:", error);
+        setIsError(true);
+        setSuccessMessage("Something went wrong. Please try again.");
+      });
   };
 
   useEffect(() => {
@@ -90,7 +82,7 @@ const Contact = () => {
                     message: "Name must only contains letters."
                   },
                 })}
-                type="text" placeholder="Name" />
+                type="text" placeholder="Name" name="name" />
               {errors.name && (
                 <p className="errors">{errors.name.message}</p>
               )}
@@ -107,7 +99,7 @@ const Contact = () => {
                     message: "Name must only contains letters."
                   },
                 })}
-                type="text" placeholder="Last name" />
+                type="text" placeholder="Last name" name="lastname" />
 
               {errors.lastname && (
                 <p className="errors">{errors.lastname.message} </p>
@@ -125,7 +117,7 @@ const Contact = () => {
                     value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
                     message: "Email address must only contains those symbols . _ % + -."
                   },
-                })} type="email" placeholder="Email" />
+                })} type="email" placeholder="Email" name="email" />
               {errors.email && (
                 <p className="errors">{errors.email.message} </p>
               )}
