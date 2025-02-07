@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <Element name="About me">
+      <Element className="container-about" name="About me">
         <h2>About me</h2>
         <MenuList />
       </Element>
