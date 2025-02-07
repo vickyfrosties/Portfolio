@@ -12,7 +12,7 @@ const Projects = () => {
         <section className="projects-div-containers">
           <div className="cards">
             <img className="webscreen" src="../Pictures/Home-Desktop.jpg" alt="A visual representation of StatMind's home page." />
-            <h3>Project StatMind</h3>
+            <h3>StatMind</h3>
             <p>Developed in mobile-first with React, Node.js and MongoDB. Web application that records data, tracks and vizualise statistics weekly using an account.
             </p>
             <section className="git-langages">
@@ -52,7 +52,7 @@ const Projects = () => {
                   <p>Vite</p>
                   <p>Phaser.js</p>
                   <p>CSS Modules</p>
-                  <p>JavaScript (ES6)</p>
+                  <p>JavaScript</p>
                 </div>
                 <div className="link">
                   <img src="/Icons/github.svg" alt="" />
@@ -70,14 +70,14 @@ const Projects = () => {
           <div className="cards">
             <img className="webscreen" src="../Pictures/Solar-system-hp.png" alt="Solar system's home page." />
             <h3>Solar System</h3>
-            <p>This project focuses on logic and algorithmic thinking by creating and manipulating variables. It also emphasizes dynamic interaction with the DOM, including retrieving, creating, and modifying HTML elements. The project covers form handling by learning how to retrieve and validate user input. It introduces API consumption with a public API to fetch and display data with filters, allowing for retrieving, displaying, deleting, and adding data through a custom interface.
+            <p>This project focuses on logic and algorithmic thinking by creating and manipulating variables. The project covers form handling by learning how to retrieve and validate user input. It introduces API consumption with a public API to fetch and display data allowing for retrieving, displaying, deleting, and adding data through a custom interface.
             </p>
             <section className="git-langages">
               <div>
                 <div className="langages">
-                  <p>HTML 5</p>
-                  <p>CSS 3</p>
-                  <p>JavaScript (ES6)</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JavaScript</p>
                   <p>REST APIs requests</p>
                   <p>Responsive</p>
                 </div>
@@ -101,9 +101,9 @@ const Projects = () => {
             <section className="git-langages">
               <div>
                 <div className="langages">
-                  <p>HTML 5</p>
-                  <p>CSS 3</p>
-                  <p>JavaScript (ES6)</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JavaScript</p>
                   <p>Express</p>
                   <p>EJS</p>
                   <p>XML</p>
@@ -127,9 +127,9 @@ const Projects = () => {
             <section className="git-langages">
               <div>
                 <div className="langages">
-                  <p>HTML 5</p>
-                  <p>CSS 3</p>
-                  <p>JavaScript (ES6)</p>
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JavaScript</p>
                 </div>
                 <div className="link">
                   <img src="/Icons/github.svg" alt="" />
