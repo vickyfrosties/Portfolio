@@ -603,15 +603,23 @@ body {
           .cards {
             margin: auto;
             width: 90%;
+            border: 2px solid black;
             min-height: 50vh;
             transition: none;
           }
 
           .cards:hover {
             transform: none;
+            box-shadow: none;
           }
         }
       }
+
+      .socials:hover {
+        transform: none;
+        transition: none;
+      }
+
     }
   }
 }
@@ -686,6 +694,7 @@ body {
           gap: 10px 40px;
 
           .cards {
+            transition: none;
             border: 2px solid black;
 
             .git-langages {
@@ -722,6 +731,11 @@ body {
                 }
               }
             }
+          }
+
+          .cards:hover {
+            transform: none;
+            box-shadow: none;
           }
         }
       }
@@ -792,8 +806,6 @@ body {
         h2 {
           width: 50%;
         }
-
-        .socials-section {}
 
         .formsocial-container {
           height: 85vh;
@@ -870,6 +882,11 @@ body {
             }
           }
 
+          .socials:hover {
+            transform: none;
+            transition: none;
+          }
+
           .socials-section {
             width: 100%;
             height: 25rem;
@@ -877,6 +894,8 @@ body {
             flex-direction: column;
             justify-content: space-evenly;
           }
+
+
         }
       }
 
