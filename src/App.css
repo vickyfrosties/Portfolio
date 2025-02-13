@@ -615,3 +615,65 @@ body {
     }
   }
 }
+
+@media (max-width: 500px) {
+  body {
+    header {
+      .header-container {
+        border-bottom: 1px solid black;
+        width: 100%;
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .inheader-container {
+          width: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        li {
+          font-family: var(--text-content);
+          font-size: 20px;
+        }
+      }
+    }
+
+    main {
+      height: 100vh;
+
+      .home-section {
+        height: 30vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .title-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: none;
+
+        h1 {
+          font-size: 2.5em;
+          padding: 0;
+          margin: 0;
+        }
+
+        h1::after {
+          content: "\A Junior Front End Developper";
+          white-space: pre;
+          font-size: 15px;
+          color: black;
+        }
+      }
+
+      .gif-container {
+        display: none;
+      }
+    }
+  }
+}
