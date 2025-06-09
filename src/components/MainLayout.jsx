@@ -1,12 +1,12 @@
 const MainLayout = () => {
   return (
     <>
-      <section className="min-h-lvh border-4 border-indigo-500 grid grid-cols-3 grid-rows-2">
-        <div className="border-2 border-red-300 grid">box 1</div>
-        <div className="border-2 border-red-300 grid">box 2</div>
-        <div className="border-2 border-red-300 grid">box 3</div>
-        <div className="border-2 border-red-300 grid">box 4</div>
-        <div className="border-2 border-red-300 grid">box 5</div>
+      <section className="min-h-lvh grid grid-cols-3 grid-rows-3 p-5 gap-2 bg-blue-950">
+        <div className="bg-blue-100 grid row-span-2 rounded-lg">box 1</div>
+        <div className="bg-blue-100 grid col-span-2 rounded-lg">box 2</div>
+        <div className="bg-blue-100 grid rounded-lg">box 3</div>
+        <div className="bg-blue-100 grid row-span-2 rounded-lg">box 4</div>
+        <div className="bg-blue-100 grid col-span-2 rounded-lg">box 5</div>
       </section>
     </>
   );

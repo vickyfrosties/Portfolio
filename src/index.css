@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.5;
-  text-decoration: none;
-  list-style: none;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style: none;
+  }
 
-body,
-#root {
-  width: 100%;
-  height: 100vh;
+  body,
+  #root {
+    width: 100%;
+    height: 100vh;
+  }
 }
