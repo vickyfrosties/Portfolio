@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useEffect, useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({ setMode }) => {
   const [visible, setVisible] = useState(true);
   const prevPositionScroll = useRef(window.scrollY);
 
@@ -23,6 +23,12 @@ const NavBar = () => {
     return () => removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    const selected = e.target.textContent;
+    setMode(selected);
+  };
+
   return (
     <>
       <nav
@@ -32,10 +38,35 @@ const NavBar = () => {
             : "opacity-100 -translate-y-30 transition-discrete  duration-700 ease-in-out"
         }`}
       >
-        <ul className="w-80 flex justify-between items-center pt-2 pb-2">
-          <li className="pl-5 pr-5">Accueil</li>
-          <li className="pl-5 pr-5">Projets</li>
-          <li className="pl-5 pr-5">À propos</li>
+        <ul className="min-w-40 flex justify-between items-center pt-2 pb-2">
+          <li
+            className="pl-5 pr-5 cursor-pointer text-xl font-medium
+"
+            onClick={handleClick}
+          >
+            Home
+          </li>
+          <li
+            className="pl-5 pr-5 cursor-pointer text-xl font-medium
+"
+            onClick={handleClick}
+          >
+            Projects
+          </li>
+          <li
+            className="pl-5 pr-5 cursor-pointer text-xl font-medium
+"
+            onClick={handleClick}
+          >
+            About
+          </li>
+          <li
+            className="pl-5 pr-5 cursor-pointer text-xl font-medium
+"
+            onClick={handleClick}
+          >
+            Contact
+          </li>
         </ul>
       </nav>
     </>
