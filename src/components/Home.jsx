@@ -1,7 +1,9 @@
+import Slider from "./Slider";
+
 const Home = ({ setMode }) => {
   return (
     <>
-      <section className="min-h-lvh grid grid-cols-3 grid-rows-3 p-5 gap-5 w-full">
+      <section className="min-h-lvh grid grid-cols-3 grid-rows-3 p-5 gap-10 w-full">
         <div className="bg-blue-100 row-span-2 rounded-lg">
           <div className="rounded-lg h-full relative">
             <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20">
@@ -53,8 +55,8 @@ const Home = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="bg-blue-100 grid rounded-lg p-12">
-          <h3 className="text-2xl font-bold">CAROUSEL</h3>
+        <div className="bg-blue-100 grid rounded-lg p-12 flex flex-row">
+          <Slider />
         </div>
         <div className="bg-blue-100 grid rounded-lg p-12">
           <h3 className="text-2xl font-bold">PROJET 1</h3>
