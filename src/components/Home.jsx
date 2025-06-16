@@ -18,7 +18,7 @@ const Home = () => {
               </h2>
             </div>
 
-            <div className="h-185 w-full z-0">
+            <div className="h-185 w-full z-0 absolute bottom-0">
               <img
                 className="w-full h-full object-cover"
                 src="/assets/Portrait.png"
@@ -31,13 +31,15 @@ const Home = () => {
         <div className="bg-blue-100 rounded-lg p-12">
           <div>
             <h3 className="text-2xl font-bold">ABOUT</h3>
-            <p className="text-lg mt-5 font-semibold">
-              Je me suis réorientée dans le développement front-end car ce qui
-              m'encourage c'est de voir une idée de base se construire de bout
-              en bout. J'approfondis mes connaissances en React et SCSS/SASS
-              pour réaliser des interfaces web fonctionnelles et responsive. Je
-              mêle la technique et mon attrait pour la conception visuelle, le
-              but c'est de m'amuser.
+            <p className="text-xl mt-5">
+              Hi! I'm Sounia, a junior front-end developer with a passion for
+              creating web interfaces. I discovered front-end development about
+              a year ago - and I instantly loved it.
+            </p>
+            <p className="text-xl mt-5">
+              Today, I design and build web interfaces that feeds my learning,
+              spark my creativity, and challenge me to grow. My world? A mix of
+              creativity, curiosity and a constant desire to improve.
             </p>
           </div>
         </div>
