@@ -1,4 +1,4 @@
-const Home = () => {
+const Home = ({ setMode }) => {
   return (
     <>
       <section className="min-h-lvh grid grid-cols-3 grid-rows-3 p-5 gap-5 w-full">
@@ -28,7 +28,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-blue-100 rounded-lg p-12">
+        <div className="bg-blue-100 rounded-lg p-12 flex flex-col justify-between">
           <div>
             <h3 className="text-2xl font-bold">ABOUT</h3>
             <p className="text-xl mt-5">
@@ -42,19 +42,44 @@ const Home = () => {
               creativity, curiosity and a constant desire to improve.
             </p>
           </div>
+
+          <div className="flex w-full justify-end">
+            <button
+              onClick={() => setMode("About")}
+              className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
+            >
+              See more
+            </button>
+          </div>
         </div>
 
-        <div className="bg-blue-100 grid rounded-lg text-2xl font-bold p-12">
-          CAROUSEL
+        <div className="bg-blue-100 grid rounded-lg p-12">
+          <h3 className="text-2xl font-bold">CAROUSEL</h3>
         </div>
-        <div className="bg-blue-100 grid rounded-lg text-2xl font-bold p-12">
-          PROJET 1
+        <div className="bg-blue-100 grid rounded-lg p-12">
+          <h3 className="text-2xl font-bold">PROJET 1</h3>
+          <div>
+            <button
+              onClick={() => setMode("Projects")}
+              className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
+            >
+              See more
+            </button>
+          </div>
         </div>
-        <div className="bg-blue-100 grid row-span-2 rounded-lg text-2xl font-bold p-12">
-          PROJET 2
+        <div className="bg-blue-100 grid row-span-2 rounded-lg p-12">
+          <h3 className="text-2xl font-bold">PROJET 2</h3>
         </div>
-        <div className="bg-blue-100 grid col-span-2 rounded-lg text-2xl font-bold p-12">
-          CONTACT
+        <div className="bg-blue-100 grid col-span-2 rounded-lg p-12">
+          <h3 className="text-2xl font-bold">CONTACT</h3>
+          <div>
+            <button
+              onClick={() => setMode("Contact")}
+              className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
+            >
+              See more
+            </button>
+          </div>
         </div>
       </section>
     </>
