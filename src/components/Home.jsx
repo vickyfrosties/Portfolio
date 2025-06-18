@@ -3,7 +3,7 @@ import Slider from "./Slider";
 const Home = ({ setMode }) => {
   return (
     <>
-      <section className="min-h-lvh grid grid-cols-3 grid-rows-3 p-5 gap-10 w-full">
+      <section className="min-h-lvh grid grid-cols-3 grid-rows-3 p-5 gap-10 w-full sm:bg-green-200 lg:bg-red-500  xl:bg-purple-500 mac:bg-amber-500">
         <div className="bg-blue-100 row-span-2 rounded-lg">
           <div className="rounded-lg h-full relative">
             <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20">
