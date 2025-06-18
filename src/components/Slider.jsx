@@ -1,20 +1,34 @@
+import { useEffect, useState } from "react";
+
 const Slider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const stack = [
-    { name: "React", src: "/public/assets/react.svg" },
+    { name: "React", src: "/assets/react.svg" },
     { name: "JavaScript", src: "/assets/javascript.svg" },
   ];
 
-  // ! TO DO : setInterval + animation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (currentIndex < stack.length - 1) {
+        setCurrentIndex((prev) => (prev < stack.length - 1 ? prev + 1 : 0));
+      } else {
+        setCurrentIndex(0);
+      }
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
-      {stack.length > 0 ? (
-        stack.map((s) => (
-          <img className="size-50" key={s.name} src={s.src} alt={s.name} />
-        ))
-      ) : (
-        <p>Aucune image</p>
-      )}
+      <div className="flex flex-col">
+        <img
+          className="size-50 "
+          src={stack[currentIndex].src}
+          alt={stack[currentIndex].name}
+        />
+        <h3 className="text-center">{stack[currentIndex].name} </h3>
+      </div>
     </>
   );
 };
