@@ -4,8 +4,11 @@ const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const stack = [
-    { name: "React", src: "/assets/react.svg" },
-    { name: "JavaScript", src: "/assets/javascript.svg" },
+    { name: "React", src: "/assets/svg/react.svg" },
+    { name: "JavaScript", src: "/assets/svg/javascript.svg" },
+    { name: "TypeScript", src: "/assets/svg/typescript.svg" },
+    { name: "Tailwindcss", src: "/assets/svg/tailwindcss.svg" },
+    { name: "SASS", src: "/assets/svg/sass.svg" },
   ];
 
   useEffect(() => {
@@ -15,7 +18,7 @@ const Slider = () => {
       } else {
         setCurrentIndex(0);
       }
-    }, 2000);
+    }, 1300);
     return () => clearInterval(interval);
   }, []);
 
