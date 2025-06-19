@@ -32,11 +32,12 @@ const NavBar = ({ setMode }) => {
   return (
     <>
       <nav
-        className={`bg-blue-50 rounded-full w-2/5 m-auto flex justify-center mt-4 ${
-          visible
-            ? "opacity-100 transition-discrete  duration-700 ease-in-out"
-            : "opacity-100 -translate-y-30 transition-discrete  duration-700 ease-in-out"
-        }`}
+        className={`bg-blue-50 rounded-full w-2/5 m-auto flex justify-center mt-4 max-md:w-full max-md:mt-0 max-md:rounded-none max-md:h-20 max-md:transition-none
+${
+  visible
+    ? "opacity-100 transition-discrete duration-700 ease-in-out"
+    : "opacity-100 -translate-y-30 transition-discrete duration-700 ease-in-out"
+}`}
       >
         <ul className="min-w-40 flex justify-between items-center pt-2 pb-2">
           <li

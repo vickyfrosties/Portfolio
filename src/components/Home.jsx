@@ -3,26 +3,26 @@ import Slider from "./Slider";
 const Home = ({ setMode }) => {
   return (
     <>
-      <section className="min-h-lvh grid grid-cols-3 grid-rows-3 p-5 gap-10 w-full sm:bg-green-200 lg:bg-red-500  xl:bg-purple-500 mac:bg-amber-500">
-        <div className="bg-blue-100 row-span-2 rounded-lg">
+      <section className="grid grid-cols-3 max-2xl:grid-cols-2 max-md:flex flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full">
+        <div className="bg-blue-100 row-span-2 rounded-lg max-md:h-80">
           <div className="rounded-lg h-full relative">
             <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20">
               Hey!
             </h2>
 
-            <div className="absolute z-1 bottom-25 bg-emerald-500 ml-5 mr-5">
-              <h1 className="text-5xl font-black text-gray-50">
+            <div className="absolute z-1 bottom-25 bg-emerald-500 ml-5 mr-5 max-md:-bottom-5 max-md:p-3 max-md:m-auto ">
+              <h1 className="text-5xl font-black text-gray-50 max-md:text-2xl">
                 I'm Mhalla Sounia
               </h1>
 
-              <h2 className="text-2xl font-semibold text-gray-50">
+              <h2 className="text-2xl font-semibold text-gray-50 max-md:text-xl">
                 Front End Developer nice to meet you!
               </h2>
             </div>
 
-            <div className="h-185 w-full z-0 absolute bottom-0">
+            <div className="h-185 w-full z-0 absolute bottom-0 max-md:relative max-md:h-80">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover max-md:object-left"
                 src="/assets/Portrait.png"
                 alt="Portrait of myself"
               />

@@ -21,9 +21,9 @@ const Slider = () => {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col border-2">
         <img
-          className="size-50 "
+          className="size-50"
           src={stack[currentIndex].src}
           alt={stack[currentIndex].name}
         />

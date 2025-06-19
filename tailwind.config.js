@@ -7,11 +7,7 @@ export default {
       },
     },
   },
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
+  darkMode: false,
   variants: {
     extend: {},
   },
