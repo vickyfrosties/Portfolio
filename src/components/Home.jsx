@@ -55,7 +55,7 @@ const Home = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="bg-blue-100 grid rounded-lg p-12 flex flex-row">
+        <div className="bg-blue-100 rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden">
           <Slider />
         </div>
         <div className="bg-blue-100 grid rounded-lg p-12">

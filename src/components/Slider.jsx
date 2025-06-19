@@ -8,7 +8,7 @@ const Slider = () => {
     { name: "JavaScript", src: "/assets/svg/javascript.svg" },
     { name: "TypeScript", src: "/assets/svg/typescript.svg" },
     { name: "Tailwindcss", src: "/assets/svg/tailwindcss.svg" },
-    { name: "SASS", src: "/assets/svg/sass.svg" },
+    { name: "Sass", src: "/assets/svg/sass.svg" },
   ];
 
   useEffect(() => {
@@ -18,19 +18,31 @@ const Slider = () => {
       } else {
         setCurrentIndex(0);
       }
-    }, 1300);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <>
-      <div className="flex flex-col border-2">
-        <img
-          className="size-50"
-          src={stack[currentIndex].src}
-          alt={stack[currentIndex].name}
-        />
-        <h3 className="text-center">{stack[currentIndex].name} </h3>
+      <div
+        className="flex transition-transform duration-800 ease-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {stack.map((s, i) => (
+          <div
+            key={i}
+            className="flex-none w-full flex items-center justify-center"
+          >
+            <img
+              src={s.src}
+              alt={`icon-${i}`}
+              className="size-40 drop-shadow-xl/25"
+            />
+            <h3 className="font-bold text-2xl ml-3 text-shadow-lg/15">
+              {s.name}
+            </h3>
+          </div>
+        ))}
       </div>
     </>
   );
