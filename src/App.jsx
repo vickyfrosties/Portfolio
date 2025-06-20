@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <NavBar setMode={setMode} />
+      <NavBar mode={mode} setMode={setMode} />
       {mode === "Home" && <Home setMode={setMode} />}
       {mode === "Projects" && <Projects />}
       {mode === "About" && <About />}

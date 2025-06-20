@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useEffect, useState } from "react";
 
-const NavBar = ({ setMode }) => {
+const NavBar = ({ mode, setMode }) => {
   const [visible, setVisible] = useState(true);
   const prevPositionScroll = useRef(window.scrollY);
 
@@ -32,7 +32,7 @@ const NavBar = ({ setMode }) => {
   return (
     <>
       <nav
-        className={`bg-blue-50 rounded-full w-2/5 m-auto flex justify-center mt-4 max-md:w-full max-md:mt-0 max-md:rounded-none max-md:h-20 max-md:transition-none
+        className={`text-slate-50 w-2/5 m-auto flex justify-center mt-4 max-md:w-full max-md:mt-0 max-md:rounded-none max-md:h-20 max-md:transition-none max-md:bg-blue-50 max-md:text-black
 ${
   visible
     ? "opacity-100 transition-discrete duration-700 ease-in-out"
@@ -40,34 +40,19 @@ ${
 }`}
       >
         <ul className="min-w-40 flex justify-between items-center pt-2 pb-2">
-          <li
-            className="pl-5 pr-5 cursor-pointer text-xl font-medium
-"
-            onClick={handleClick}
-          >
-            Home
-          </li>
-          <li
-            className="pl-5 pr-5 cursor-pointer text-xl font-medium
-"
-            onClick={handleClick}
-          >
-            Projects
-          </li>
-          <li
-            className="pl-5 pr-5 cursor-pointer text-xl font-medium
-"
-            onClick={handleClick}
-          >
-            About
-          </li>
-          <li
-            className="pl-5 pr-5 cursor-pointer text-xl font-medium
-"
-            onClick={handleClick}
-          >
-            Contact
-          </li>
+          {["Home", "Projects", "About", "Contact"].map((section, i) => (
+            <li
+              key={i}
+              onClick={handleClick}
+              className={`pl-5 pr-5 cursor-pointer text-xl font-medium ${
+                mode === section
+                  ? "border-b-2 border-indigo-600 max-md:bg-green-400 max-md:border-b-0"
+                  : "border-b-0"
+              }`}
+            >
+              {section}
+            </li>
+          ))}
         </ul>
       </nav>
     </>
