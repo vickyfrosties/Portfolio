@@ -5,7 +5,7 @@ const Slider = () => {
 
   const stack = [
     { name: "React", src: "/assets/svg/react.svg" },
-    { name: "JavaScript", src: "/assets/svg/javascript.svg" },
+    { name: "JavaScript", src: "/public/assets/svg/javascript.svg" },
     { name: "TypeScript", src: "/assets/svg/typescript.svg" },
     { name: "Tailwindcss", src: "/assets/svg/tailwindcss.svg" },
     { name: "Sass", src: "/assets/svg/sass.svg" },
@@ -36,7 +36,7 @@ const Slider = () => {
             <img
               src={s.src}
               alt={`icon-${i}`}
-              className="size-40 drop-shadow-xl/25"
+              className="size-40 drop-shadow-xl/25 max-2xl:size-20 "
             />
             <h3 className="font-bold text-2xl ml-3 text-shadow-lg/15">
               {s.name}
