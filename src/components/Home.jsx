@@ -99,7 +99,7 @@ const Home = ({ setMode }) => {
           <p>Let's connect!</p>
           <section className="flex w-full justify-around">
             <div className="flex justify-center items-center">
-              <a href="linkedin.com/in/mhalla-sounia" target="_blank">
+              <a href="https://linkedin.com/in/mhalla-sounia" target="_blank">
                 <img
                   className="size-30"
                   src="/assets/png/text.png"
