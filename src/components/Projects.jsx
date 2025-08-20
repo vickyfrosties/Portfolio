@@ -30,37 +30,72 @@ const Projects = () => {
 
   return (
     <>
-      <section className="w-full h-full p-10 grid grid-cols-4 grid-rows-4 gap-x-4 gap-y-8">
+      <section className="w-full h-full p-10 grid grid-cols-4 grid-rows-4 gap-x-8 gap-y-10">
         {memocode && (
-          <div className="border-2 rounded-lg bg-blue-100 col-span-3 row-span-2 flex flex-col p-5">
-            <h3 className="text-xl">{memocode.name}</h3>
+          <div className="rounded-lg bg-blue-100 col-span-2 row-span-2 flex flex-col p-5">
+            <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#031a6b]">
+              {memocode.name}
+            </h3>
+            <p className="text-lg pt-3">{memocode.description} </p>
           </div>
         )}
 
+        <div className="rounded-lg col-span-2 row-span-2">
+          <p>screenshot</p>
+        </div>
+
         {memocode && (
-          <div className="bg-blue-100 rounded-lg row-span-2 p-5 flex flex-wrap">
-            <p>{memocode.technologies[0]}</p>
-            <p>{memocode.technologies[1]}</p>
-            <p>{memocode.technologies[2]}</p>
-            <p>{memocode.technologies[3]}</p>
-            <p>{memocode.technologies[4]}</p>
-            <p>{memocode.technologies[5]}</p>
-          </div>
-        )}
-        {statmind && (
-          <div className="border-2 rounded-lg bg-blue-100 col-span-3 col-end-5 row-start-3 row-span-3 p-5">
-            <h3 className="text-xl">{statmind.name} </h3>
+          <div className="bg-blue-100 rounded-lg p-5 col-span-2 flex justify-evenly items-center">
+            <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center">
+              {memocode.technologies[0]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {memocode.technologies[1]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {memocode.technologies[2]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {memocode.technologies[3]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {memocode.technologies[4]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {memocode.technologies[5]}
+            </p>
           </div>
         )}
 
         {statmind && (
-          <div className="bg-blue-100 rounded-lg row-start-3 row-span-3 p-5 flex flex-wrap">
-            <p>{statmind.technologies[1]}</p>
-            <p>{statmind.technologies[2]}</p>
-            <p>{statmind.technologies[3]}</p>
-            <p>{statmind.technologies[0]}</p>
-            <p>{statmind.technologies[4]}</p>
-            <p>{statmind.technologies[5]}</p>
+          <div className="rounded-lg bg-blue-100 p-5 col-span-2  row-start-4 row-span-3">
+            <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-linear-65 from-purple-500 to-pink-500">
+              {statmind.name}
+            </h3>
+            <p className="text-lg pt-3">{statmind.description} </p>
+          </div>
+        )}
+
+        {statmind && (
+          <div className="bg-blue-100 rounded-lg p-5 col-span-2 flex justify-evenly items-center row-start-4">
+            <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center">
+              {statmind.technologies[0]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {statmind.technologies[1]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {statmind.technologies[2]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {statmind.technologies[3]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {statmind.technologies[4]}
+            </p>
+            <p className="bg-linear-65 from-purple-500 to-pink-500 border-red-500 rounded-full pl-3 pr-3">
+              {statmind.technologies[5]}
+            </p>
           </div>
         )}
       </section>

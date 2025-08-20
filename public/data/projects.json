@@ -3,7 +3,7 @@
     "id": 1,
     "name": "MemoCode",
     "resume": "A note-taking web application to store all your information in a unique and centralized space.",
-    "description": "MemoCode is a full-stack web application built with React, Express, Node and MongoDB. It allows you to create notes, read, edit and delete them as long as you like. It uses a clean and responsive interface.",
+    "description": "MemoCode is a full-stack web application built with React, Express, Node and MongoDB. It allows you to create notes, read, edit and delete them as long as you like all in a unique centralized place. It uses a clean and responsive interface.",
     "technologies": [
       "React",
       "JavaScript",
