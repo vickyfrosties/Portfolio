@@ -38,7 +38,7 @@ const Home = ({ setMode }) => {
           <div>
             <h3 className="text-2xl font-bold">ABOUT</h3>
             <p className="text-xl mt-5">
-              Hi! I'm Sounia, a junior front-end developer with a passion for
+              I'm Sounia, a junior front-end developer with a passion for
               creating web interfaces. I discovered front-end development about
               a year ago - and I instantly loved it.
             </p>

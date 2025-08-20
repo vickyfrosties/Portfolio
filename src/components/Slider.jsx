@@ -5,7 +5,7 @@ const Slider = () => {
 
   const stack = [
     { name: "React", src: "/assets/svg/react.svg" },
-    { name: "JavaScript", src: "/public/assets/svg/javascript.svg" },
+    { name: "JavaScript", src: "/assets/svg/javascript.svg" },
     { name: "TypeScript", src: "/assets/svg/typescript.svg" },
     { name: "Tailwindcss", src: "/assets/svg/tailwindcss.svg" },
     { name: "Sass", src: "/assets/svg/sass.svg" },
@@ -18,7 +18,7 @@ const Slider = () => {
       } else {
         setCurrentIndex(0);
       }
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 

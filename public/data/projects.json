@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name": "MemoCode",
+    "resume": "A note-taking web application to store all your information in a unique and centralized space.",
+    "description": "MemoCode is a full-stack web application built with React, Express, Node and MongoDB. It allows you to create notes, read, edit and delete them as long as you like. It uses a clean and responsive interface.",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "SASS/SCSS",
+      "MongoDB",
+      "Express",
+      "Node"
+    ],
+    "date": "26th june - now"
+  },
+  {
+    "id": 2,
+    "name": "StatMind",
+    "resume": "A web application designed to track daily emotions and visualize personal trends through clear statistics and charts.",
+    "description": "StatMind is a full-stack web application built with React, Express, Node, and MongoDB. It allows users to log their daily emotions and monitor their well-being over time. Thanks to statistics tables, users can easily identify patterns, better understand their emotional health, and keep track of their emotions daily life.",
+    "technologies": [
+      "React",
+      "JavaScript",
+      "CSS",
+      "MongoDB",
+      "Mongoose",
+      "Express",
+      "Node"
+    ],
+    "date": "2024 - 2024"
+  }
+]
