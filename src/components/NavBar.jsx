@@ -46,7 +46,7 @@ ${
               onClick={handleClick}
               className={`pl-5 pr-5 cursor-pointer text-xl font-medium ${
                 mode === section
-                  ? "border-b-2 border-indigo-600 max-md:bg-green-400 max-md:border-b-0"
+                  ? "border-b-1 border-[#193B2C] max-md:bg-green-400 max-md:border-b-0"
                   : "border-b-0"
               }`}
             >

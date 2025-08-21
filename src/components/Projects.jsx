@@ -33,25 +33,25 @@ const Projects = () => {
     <>
       <section className="w-full p-10 grid grid-cols-3 auto-rows-auto gap-x-8 gap-y-10">
         {memocode && (
-          <div className="rounded-lg bg-blue-100  flex flex-col p-5">
-            <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#031a6b]">
+          <div className="rounded-lg bg-[#c1d1fd] flex flex-col p-5">
+            <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#8E97F2]">
               {memocode.name}
             </h3>
-            <p className=" pt-3">{memocode.date}</p>
+            <p className="pt-3 font-semibold">{memocode.date}</p>
             <p className="text-base pt-3">{memocode.description}</p>
           </div>
         )}
 
-        <div className="rounded-lg ">
+        <div className="rounded-lg flex justify-center items-center ">
           <img
             src="/assets/screenshots/memocode-home.jpg"
             alt=""
-            className="rounded-lg border-1 border-solid border-[#031a6b]"
+            className="rounded-lg"
           />
         </div>
 
         {memocode && (
-          <div className="bg-blue-100 rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center">
+          <div className="rounded-lg border-1 border-solid p-5 flex flex-col h-70 justify-between items-center self-center">
             <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center">
               <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%]">
                 {memocode.technologies[0]}
@@ -95,25 +95,25 @@ const Projects = () => {
         )}
 
         {statmind && (
-          <div className="rounded-lg bg-blue-100 p-5  ">
-            <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-linear-65 from-purple-500 to-pink-500">
+          <div className="rounded-lg border-1 border-solid p-5">
+            <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#1d2c32]">
               {statmind.name}
             </h3>
-            <p className="pt-3">{statmind.date}</p>
+            <p className="pt-3 font-semibold">{statmind.date}</p>
             <p className="text-base pt-3">{statmind.description} </p>
           </div>
         )}
 
-        <div className="rounded-lg  ">
+        <div className="rounded-lg flex justify-center items-center ">
           <img
-            src="/assets/screenshots/memocode-home.jpg"
+            src="/assets/screenshots/statmind-home.jpeg"
             alt=""
-            className="rounded-lg border-1 border-solid border-[#031a6b]"
+            className="rounded-lg"
           />
         </div>
 
         {statmind && (
-          <div className="bg-blue-100 rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center">
+          <div className=" bg-linear-[45deg,#C1D1FD_55%,#d7f6fe_100%]  rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center">
             <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center">
               <p className="rounded-full bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] from-purple-500 to-pink-500 pl-3 pr-3 text-center">
                 {statmind.technologies[0]}
@@ -157,25 +157,25 @@ const Projects = () => {
         )}
 
         {greenier && (
-          <div className="rounded-lg bg-blue-100 p-5">
-            <h3 className="text-2xl text-white font-bold rounded-xl w-50 text-center bg-linear-65 from-purple-500 to-pink-500">
+          <div className="rounded-lg bg-[#f9fcd7] p-5">
+            <h3 className="text-2xl text-white font-bold rounded-xl w-50 text-center bg-[#193b2c]">
               {greenier.name}
             </h3>
-            <p className="pt-3">{greenier.date}</p>
+            <p className="pt-3 font-semibold">{greenier.date}</p>
             <p className="text-base pt-3">{greenier.description} </p>
           </div>
         )}
 
-        <div className="rounded-lg">
+        <div className="rounded-lg flex justify-center items-center ">
           <img
-            src="/assets/screenshots/memocode-home.jpg"
+            src="/assets/screenshots/greenier-home.jpg"
             alt=""
-            className="rounded-lg  border-1 border-solid border-[#031a6b]"
+            className="rounded-lg"
           />
         </div>
 
         {greenier && (
-          <div className="bg-blue-100 rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center">
+          <div className="border-1 border-solid rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center">
             <div className="rounded-lg p-5 w-full flex justify-between">
               <p className="rounded-full bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] from-purple-500 to-pink-500 pl-3 pr-3 text-center">
                 {greenier.technologies[0]}

@@ -8,12 +8,17 @@
     line-height: 1.5;
     text-decoration: none;
     list-style: none;
+    color: #1d2c32;
   }
 
   body,
   #root {
     width: 100%;
     height: 100vh;
-    background-color: #7a8fd6;
+    background-color: #edf3f5;
+    /* background-color: #7a8fd6; */
   }
 }
+
+/* variables */
+/* ["edf3f5","1d2c32","8e97f2","c1d1fd","f9fcd7","193b2c"]) */
