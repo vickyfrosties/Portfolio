@@ -12,7 +12,8 @@
       "Express",
       "Node"
     ],
-    "date": "26th june - now"
+    "date": "26th june - now",
+    "link": "https://github.com/vickyfrosties/MemoCode"
   },
   {
     "id": 2,
@@ -28,7 +29,8 @@
       "Express",
       "Node"
     ],
-    "date": "october 2024 - december 2024"
+    "date": "october 2024 - december 2024",
+    "link": "https://github.com/vickyfrosties/StatMind"
   },
   {
     "id": 3,
@@ -36,6 +38,7 @@
     "resume": "A web application designed to track daily emotions and visualize personal trends through clear statistics and charts.",
     "description": "StatMind is a full-stack web application built with React, Express, Node, and MongoDB. It allows users to log their daily emotions and monitor their well-being over time. Thanks to statistics tables, users can easily identify patterns, better understand their emotional health, and keep track of their emotions daily life.",
     "technologies": ["React", "JavaScript", "CSS", "Phaser"],
-    "date": "23th october - 25th october"
+    "date": "23th october - 25th october",
+    "link": "https://github.com/vickyfrosties/Greenier-please"
   }
 ]
