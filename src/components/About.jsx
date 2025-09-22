@@ -13,8 +13,7 @@ const About = () => {
             <p className="items-center font-semibold text-xl">
               I recently transitioned into web development with a focus on
               front-end, after deciding to take a new direction in my career. I
-              finally discovered what drives me the most:
-              <span className="bg-pink-500"> creating</span>.
+              finally discovered what drives me the most: creating.
             </p>
           </div>
         </div>
@@ -29,44 +28,36 @@ const About = () => {
             <img
               className="w-full h-40 object-contain"
               src="/assets/png/coding.png"
-              alt="A Slackline Walker is an athlete who balances and walks on a narrow, flexible piece of webbing tensioned between two anchors, often performing tricks or stunts."
+              alt=""
             />
           </div>
         </div>
 
-        <div className="bg-rose-400 p-5 rounded-lg flex flex-col justify-evenly h-70">
-          <div class="flex items-center gap-3">
-            <img src="/assets/svg/react.svg" alt="React" class="w-8 h-8" />
-            <p className="font-semibold text-xl">
-              <strong>React</strong> – building modern interfaces with Hooks and
-              Router
+        <div className="bg-rose-400 p-5 rounded-lg flex flex-col justify-evenly row-span-2">
+          <div class="flex justify-items-start gap-3">
+            <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center self-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] w-20 h-6">
+              React
             </p>
+            <p>Building modern interfaces with Hooks and Router</p>
+          </div>
+
+          <div class="flex justify-items-start gap-3">
+            <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] w-30">
+              Tailwind CSS
+            </p>
+            <p>Creating fast, responsive layouts</p>
           </div>
           <div class="flex items-center gap-3">
-            <img
-              src="/assets/svg/tailwindcss.svg"
-              alt="Tailwind"
-              class="w-8 h-8"
-            />
-            <p>
-              <strong>Tailwind CSS</strong> – creating fast, responsive layouts
+            <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] w-30">
+              JavaScript
             </p>
+            <p>Creating fast, responsive layouts</p>
           </div>
           <div class="flex items-center gap-3">
-            <img
-              src="/assets/svg/javascript.svg"
-              alt="JavaScript"
-              class="w-8 h-8"
-            />
-            <p>
-              <strong>JavaScript</strong> – creating fast, responsive layouts
+            <p className="bg-linear-[45deg,#CC6699_55%,#B83D7A_100%] border-red-500 rounded-full pl-3 pr-3">
+              SASS/SCSS
             </p>
-          </div>
-          <div class="flex items-center gap-3">
-            <img src="/assets/svg/sass.svg" alt="SASS" class="w-8 h-8" />
-            <p>
-              <strong>SCSS/SASS</strong> – creating fast, responsive layouts
-            </p>
+            <p>Creating fast, responsive layouts</p>
           </div>
         </div>
       </section>
