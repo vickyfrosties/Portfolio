@@ -4,7 +4,7 @@ const Home = ({ setMode }) => {
   return (
     <>
       <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 max-md:flex max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full">
-        <div className="bg-blue-100 row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3">
+        <div className="bg-[#C1D1FD] row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3">
           <div className="rounded-lg h-full relative">
             <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20 max-2xl:hidden">
               Hey!
@@ -34,7 +34,7 @@ const Home = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="bg-blue-100 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 ">
+        <div className="bg-[#F9FCD7] rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 ">
           <div>
             <h3 className="text-2xl font-bold">ABOUT</h3>
             <p className="text-xl mt-5">
@@ -59,7 +59,7 @@ const Home = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="bg-blue-100 rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden">
+        <div className="bg-[#C1D1FD] rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden">
           <Slider />
         </div>
         <div className="bg-blue-100 grid rounded-lg p-12 max-2xl:hidden">
@@ -73,7 +73,7 @@ const Home = ({ setMode }) => {
             </button>
           </div>
         </div>
-        <div className="bg-blue-100 grid row-span-2 rounded-lg p-12  max-2xl:col-start-3 max-2xl:p-7">
+        <div className="bg-[#F9FCD7] grid row-span-2 rounded-lg p-12  max-2xl:col-start-3 max-2xl:p-7">
           <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
 
           <div className="flex flex-col justify-between h-90">
@@ -94,7 +94,7 @@ const Home = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="bg-blue-100 grid col-span-2 rounded-lg p-12 max-2xl:p-7">
+        <div className="bg-[#C1D1FD] grid col-span-2 rounded-lg p-12 max-2xl:p-7">
           <h3 className="text-2xl font-bold">CONTACT</h3>
           <p>Let's connect!</p>
           <section className="flex w-full justify-around">
@@ -127,15 +127,6 @@ const Home = ({ setMode }) => {
                 />
               </a>
             </div>
-
-            {/* <div className="border-2 ">
-              <button
-                onClick={() => setMode("Contact")}
-                className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
-              >
-                See more
-              </button>
-            </div> */}
           </section>
         </div>
       </section>
