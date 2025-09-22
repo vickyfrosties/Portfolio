@@ -13,7 +13,7 @@
       "Node"
     ],
     "date": "26th june - now",
-    "link": "https://github.com/vickyfrosties/MemoCode"
+    "link": "https://memo-code.vercel.app/notes"
   },
   {
     "id": 2,
@@ -36,7 +36,7 @@
     "id": 3,
     "name": "Greenier, please",
     "resume": "A web application designed to track daily emotions and visualize personal trends through clear statistics and charts.",
-    "description": "Greenier is the result of an intensive hackathon challenge. Our goal was to raise awareness about the importance of sustainable development through an engaging and playful experience. Working in a multidisciplinary team of 9 people — including UX/UI designers, a game developer, and both front-end and back-end developers — we collaborated intensively to design and build a serious game around sustainability. The result is a project that not only highlights key aspects of sustainable development, but also shows how teamwork and diverse skills can come together to create an impactful and educational digital experience.",
+    "description": "Greenier is the result of an intensive hackathon challenge. Our goal was to raise awareness about the importance of sustainable development through an engaging and playful experience. Working in a team of 9 people (UX/UI designers, game developer, and both front-end and back-end developers) we collaborated intensively to design and build a serious game around sustainability. The result is a project that not only highlights key aspects of sustainable development, but also shows how teamwork and diverse skills can come together to create an impactful and educational digital experience.",
     "technologies": ["React", "JavaScript", "CSS", "Phaser"],
     "date": "23th october - 25th october",
     "link": "https://github.com/vickyfrosties/Greenier-please"
