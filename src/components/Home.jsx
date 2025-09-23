@@ -62,11 +62,16 @@ const Home = ({ setMode }) => {
         <div className="bg-[#C1D1FD] rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden">
           <Slider />
         </div>
-        <div className="bg-blue-100 grid rounded-lg p-12 max-2xl:hidden">
-          <h3 className="text-2xl font-bold">PROJET 1</h3>
+
+        <div className="flex bg-blue-100 grid rounded-lg p-12 max-2xl:hidden">
+          <div className="flex">
+            <h3 className="text-2xl font-bold mb-2">Current status</h3>
+            <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
+          </div>
+
           <div>
             <button
-              onClick={() => setMode("Projects")}
+              onClick={() => setMode("Contact")}
               className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
             >
               See more
