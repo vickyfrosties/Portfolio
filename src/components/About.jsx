@@ -10,28 +10,29 @@ const About = () => {
                 alt="A Slackline Walker is an athlete who balances and walks on a narrow, flexible piece of webbing tensioned between two anchors, often performing tricks or stunts."
               />
             </div>
-            <p className="items-center font-medium text-xl">
-              I recently transitioned into web development with a focus on
-              front-end, after deciding to take a new direction in my career. I
-              finally discovered what drives me the most: creating.
+            <p className="flex flex-col items-center font-medium text-slate-700 text-lg">
+              <span className="text-2xl font-bold w-full">Path</span>I
+              transitioned into front-end development after choosing a new
+              career path and finally found what drives me most: creating
             </p>
           </div>
         </div>
 
         <div className="bg-amber-200 p-5 rounded-lg row-span-2 flex flex-col justify-between">
-          <p className="font-medium text-xl">
+          <div className="flex self-end">
+            <img
+              className="w-full h-30 object-contain"
+              src="/assets/png/coding.png"
+              alt=""
+            />
+          </div>
+          <p className="font-medium text-slate-800 text-lg flex flex-col">
+            <span className="text-2xl font-bold">Motivation</span>
             What excites me is being part of the entire process — from the
             initial idea to the final product. Seeing a project come to life
             step by step is what keeps me motivated and I truly believe that it
             is the perfect way to learn.
           </p>
-          <div className="flex self-start">
-            <img
-              className="w-full h-40 object-contain"
-              src="/assets/png/coding.png"
-              alt=""
-            />
-          </div>
         </div>
 
         <div className="p-5 rounded-lg flex flex-col justify-evenly row-span-2">
@@ -43,10 +44,7 @@ const About = () => {
               </p>
             </div>
 
-            <p>
-              Build modern interfaces with Hooks and Router. Manage states and
-              use props.
-            </p>
+            <p>Build modern interfaces with Hooks and Router.</p>
           </div>
 
           <div className="flex justify-between gap-3">
@@ -56,7 +54,7 @@ const About = () => {
               </p>
             </div>
 
-            <p>Creating accessible and responsive layouts</p>
+            <p>Design responsive layouts with utility-first CSS.</p>
           </div>
           <div className="flex items-center justify-between gap-3">
             <div className="w-65">
@@ -64,7 +62,7 @@ const About = () => {
                 JavaScript
               </p>
             </div>
-            <p>Implement logical functions and interactive interface.</p>
+            <p>Implement interactive features and logic.</p>
           </div>
           <div className="flex items-center justify-between gap-3">
             <div className="w-55">
@@ -73,7 +71,7 @@ const About = () => {
               </p>
             </div>
 
-            <p>Creating accessible and responsive layouts.</p>
+            <p>Write clean, reusable styles with nesting and variables.</p>
           </div>
           <div className="flex items-center gap-3">
             <div className="w-55">
@@ -82,7 +80,7 @@ const About = () => {
               </p>
             </div>
 
-            <p>Creating accessible and responsive layouts.</p>
+            <p>Prioritize tasks, structure projects, and manage deadlines.</p>
           </div>
           <div className="flex items-center gap-3">
             <div className="w-55">
@@ -91,18 +89,18 @@ const About = () => {
               </p>
             </div>
 
-            <p>Creating accessible and responsive layouts.</p>
+            <p>Contribute actively within a team environment.</p>
           </div>
         </div>
 
         <div className="bg-blue-300 row-start-3 row-span-2 p-5 rounded-lg ">
-          <h3 className="text-2xl font-bold mb-2">My goal</h3>
-          <p className="font-medium text-lg">
+          <h3 className="text-2xl font-bold mb-2">Goal</h3>
+          <p className="font-medium text-slate-800 text-lg">
             The most important part for me, is to actively contribute to
             professional projects — making them ready, functional, and useful
             for real users. I’m fully aware of my current junior level, but I’m
-            committed to giving my best every day. My goal is to keep growing
-            until this becomes not just a job, but a true career.
+            committed to giving my best every day. My long-term goal is to keep
+            growing until this becomes not just a job, but a true career.
           </p>
         </div>
         <div className="bg-blue-300 col-start-2 row-span-2 p-5 rounded-lg">
@@ -126,7 +124,20 @@ const About = () => {
           </section>
         </div>
 
-        <div></div>
+        <div className="bg-fuchsia-950 rounded-lg p-5">
+          <div className="flex">
+            <h3 className="text-2xl font-bold mb-2 text-slate-200">
+              Current status
+            </h3>
+            <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
+          </div>
+
+          <p className="text-slate-200">
+            I’m currently looking for a junior front-end developer role where I
+            can grow, contribute to real projects, and build user-friendly
+            solutions with a team.
+          </p>
+        </div>
       </section>
     </>
   );
