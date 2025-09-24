@@ -193,7 +193,9 @@ text-transparent text-lg"
               <line x1="18" x2="18.01" y1="10" y2="10" />
               <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
             </svg>
-            <p>Play a game.</p>
+            <p className="text-center text-sm">
+              Playing video games keeps me challenged and entertained.
+            </p>
           </div>
           <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center">
             <svg
@@ -213,7 +215,9 @@ text-transparent text-lg"
               <path d="M16 17h4" />
               <path d="M4 13h4" />
             </svg>
-            <p className="text-center">Going for a walk helps me disconnect.</p>
+            <p className="text-center text-sm">
+              Going for a walk helps me disconnect and recharge.
+            </p>
           </div>
           <div className="bg-slate-100 rounded-lg col-start-1 flex flex-col justify-center items-center">
             <svg
@@ -232,8 +236,8 @@ text-transparent text-lg"
               <path d="M7 3v18" />
               <path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
             </svg>
-            <p className="text-center">
-              I really love discover new topics or try a new skill.
+            <p className="text-center text-sm">
+              I love discovering new topics or trying new skills.
             </p>
           </div>
           <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center">
@@ -252,8 +256,8 @@ text-transparent text-lg"
               <path d="M13 21h8" />
               <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
             </svg>
-            <p className="text-center">
-              Write helps me sharpen my expression and creativity.
+            <p className="text-center text-sm">
+              Writing helps me sharpen my expression and creativity.
             </p>
           </div>
         </div>
