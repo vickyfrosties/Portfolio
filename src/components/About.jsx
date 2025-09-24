@@ -5,7 +5,7 @@ const About = ({ setMode }) => {
   };
   return (
     <>
-      <section className="h-full grid grid-cols-3 grid-rows-4 p-5 gap-5">
+      <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5">
         <div className=" grid gap-y-4">
           <div className="bg-emerald-200 p-5 rounded-lg flex">
             <div className="flex items-center">
@@ -36,7 +36,7 @@ const About = ({ setMode }) => {
         </div>
 
         <div className="bg-amber-200 p-5 rounded-lg h-full flex">
-          <p className="font-medium text-slate-800 text-lg flex flex-col pr-4">
+          <p className="font-medium text-slate-800 text-lg flex flex-col pr-4 justify-between">
             <span className="text-2xl font-bold">Motivation</span>
             What excites me is being part of the entire process — from the
             initial idea to the final product. Seeing a project come to life
@@ -66,73 +66,89 @@ const About = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="p-5 rounded-lg flex flex-col justify-evenly row-span-2">
-          <h3 className="text-2xl font-bold mb-4">Technologies stack</h3>
-          <div className="flex justify-between gap-3">
-            <div className="w-55">
-              <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 text-center self-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%]">
+        <div className="border-1 p-5 rounded-lg flex flex-col row-span-2">
+          <h3 className="text-2xl font-bold">Technologies stack</h3>
+
+          <section className="h-full flex flex-col justify-evenly">
+            <div className="flex justify-between gap-3">
+              <p
+                className="pl-3 pr-3 rounded-full text-center font-semibold text-lg self-center bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600
+ bg-clip-text text-transparent"
+              >
                 React
               </p>
+
+              <p className=" w-70">
+                Build modern interfaces with Hooks and Router.
+              </p>
             </div>
 
-            <p>Build modern interfaces with Hooks and Router.</p>
-          </div>
-
-          <div className="flex justify-between gap-3">
-            <div className="w-55">
-              <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%]">
+            <div className="flex justify-between gap-3">
+              <p className="h-6 pl-3 pr-3 rounded-full font-semibold text-lg bg-linear-65 from-purple-500 to-pink-500 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] bg-clip-text text-transparent">
                 Tailwind
               </p>
+              <p className="w-70">
+                Design responsive layouts with utility-first CSS.
+              </p>
             </div>
-
-            <p>Design responsive layouts with utility-first CSS.</p>
-          </div>
-          <div className="flex items-center justify-between gap-3">
-            <div className="w-65">
-              <p className="bg-linear-[45deg,#F7DF1E_55%,#FEF9D8_100%] border-red-500 rounded-full text-center">
+            <div className="flex items-center justify-between gap-3">
+              <p
+                className="pl-3 pr-3 bg-gradient-to-r from-yellow-400 via-orange-400 to-amber-600
+border-red-500 rounded-full text-center bg-clip-text text-transparent font-semibold text-lg"
+              >
                 JavaScript
               </p>
+              <p className=" w-70">Implement interactive features and logic.</p>
             </div>
-            <p>Implement interactive features and logic.</p>
-          </div>
-          <div className="flex items-center justify-between gap-3">
-            <div className="w-55">
-              <p className="bg-linear-[45deg,#CC6699_55%,#B83D7A_100%] border-red-500 rounded-full text-center">
+            <div className="flex items-center justify-between gap-3">
+              <p
+                className="pl-3 pr-3 bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600
+ border-red-500 rounded-full text-center bg-clip-text text-transparent font-semibold"
+              >
                 SASS/SCSS
               </p>
-            </div>
 
-            <p>Write clean, reusable styles with nesting and variables.</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="w-55">
-              <p className="bg-blue-400 border-red-500 rounded-full text-center">
+              <p className=" w-70">
+                Write clean, reusable styles with nesting and variables.
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
+              <p
+                className="pl-3 pr-3 rounded-full text-center font-semibold bg-gradient-to-tl
+from-blue-800
+via-lime-300
+to-slate-300
+bg-clip-text
+text-transparent text-lg"
+              >
                 Work Organization
               </p>
-            </div>
 
-            <p>Prioritize tasks, structure projects, and manage deadlines.</p>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="w-55">
-              <p className="bg-pink-300 border-red-500 rounded-full text-center">
-                Collaborative spirit
+              <p className=" w-70">
+                Prioritize tasks, structure projects, and manage deadlines.
               </p>
             </div>
+            <div className="flex items-center gap-3">
+              <p className="pl-3 pr-3 rounded-full text-center font-semibold bg-gradient-to-tl from-rose-500 via-amber-500 to-yellow-800 bg-clip-text text-transparent text-lg">
+                Collaborative spirit
+              </p>
 
-            <p>Contribute actively within a team environment.</p>
-          </div>
+              <p className=" w-70">
+                Contribute actively within a team environment.
+              </p>
+            </div>
+          </section>
         </div>
 
         <div className="bg-blue-300 p-5 rounded-lg flex">
-          <p className="font-medium text-slate-800 text-lg  flex flex-col">
+          <p className="font-medium text-slate-800 text-lg flex flex-col justify-between">
             <span className="text-2xl font-bold">Goal</span>
             My goal is to contribute to meaningful projects that are functional
             and useful for real users. I know I’m still at a junior level, but
             I’m committed to giving my best and growing until this becomes a
             true career.
           </p>
-          <div className="flex items-center self-end">
+          <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="60"
@@ -217,8 +233,7 @@ const About = ({ setMode }) => {
               <path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
             </svg>
             <p className="text-center">
-              Learn new things. I really love discover new topics or try a new
-              skill.
+              I really love discover new topics or try a new skill.
             </p>
           </div>
           <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center">
@@ -242,7 +257,8 @@ const About = ({ setMode }) => {
             </p>
           </div>
         </div>
-        <div className="bg-fuchsia-950 rounded-lg p-5">
+
+        <div className="bg-amber-950 rounded-lg p-5 flex flex-col justify-between">
           <div className="flex">
             <h3 className="text-2xl font-bold mb-2 text-slate-200">
               Current status
@@ -250,7 +266,7 @@ const About = ({ setMode }) => {
             <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
           </div>
 
-          <p className="text-slate-200">
+          <p className="text-slate-200 text-lg">
             I’m currently looking for a junior front-end developer role where I
             can grow, contribute to real projects, and build user-friendly
             solutions with a team.

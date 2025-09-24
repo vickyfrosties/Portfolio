@@ -17,7 +17,7 @@ const Home = ({ setMode }) => {
 
               <h2 className="text-2xl font-bold max-md:text-xl">
                 a
-                <span className="bg-pink-500 ml-2 mr-2">
+                <span className="bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600 ml-2 bg-clip-text text-transparent mr-2">
                   Junior Front End Developer
                 </span>
                 nice to meet you!

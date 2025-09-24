@@ -62,13 +62,19 @@ const Projects = () => {
               <p className="bg-linear-[45deg,#CC6699_55%,#B83D7A_100%] border-red-500 rounded-full pl-3 pr-3">
                 {memocode.technologies[2]}
               </p>
-              <p className="bg-linear-[45deg,#47A248_45%,#9CD39D_100%] border-red-500 rounded-full pl-3 pr-3">
+              <p
+                className="bg-gradient-to-r from-green-500 via-emerald-600 to-slate-700
+ border-red-500 rounded-full pl-3 pr-3"
+              >
                 {memocode.technologies[3]}
               </p>
               <p className="bg-linear-[45deg,#000000_25%,#666666_100%] text-white border-red-500 rounded-full pl-3 pr-3">
                 {memocode.technologies[4]}
               </p>
-              <p className="bg-linear-[45deg,#416D36_55%,#5FA04E_100%] border-red-500 rounded-full pl-3 pr-3">
+              <p
+                className="bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600
+border-red-500 rounded-full pl-3 pr-3"
+              >
                 {memocode.technologies[5]}
               </p>
             </div>
@@ -124,7 +130,10 @@ const Projects = () => {
               <p className="bg-linear-[45deg,#8547C2_35%,#C2A3E0_100%] border-red-500 rounded-full pl-3 pr-3">
                 {statmind.technologies[2]}
               </p>
-              <p className="bg-linear-[45deg,#47A248_45%,#9CD39D_100%] border-red-500 rounded-full pl-3 pr-3">
+              <p
+                className="bg-gradient-to-r from-green-500 via-emerald-600 to-slate-700
+ border-red-500 rounded-full pl-3 pr-3"
+              >
                 {statmind.technologies[3]}
               </p>
               <p className="bg-linear-[45deg,#B80000_25%,#FF5C5C_100%] text-white border-red-500 rounded-full pl-3 pr-3">
