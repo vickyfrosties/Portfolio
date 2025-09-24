@@ -13,7 +13,7 @@ function App() {
       <NavBar mode={mode} setMode={setMode} />
       {mode === "Home" && <Home setMode={setMode} />}
       {mode === "Projects" && <Projects />}
-      {mode === "About" && <About />}
+      {mode === "About" && <About setMode={setMode} />}
       {mode === "Contact" && <Contact />}
     </>
   );

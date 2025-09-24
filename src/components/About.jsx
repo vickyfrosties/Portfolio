@@ -1,4 +1,8 @@
-const About = () => {
+const About = ({ setMode }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    setMode("Contact");
+  };
   return (
     <>
       <section className="h-full grid grid-cols-3 grid-rows-4 p-5 gap-5">
@@ -251,6 +255,15 @@ const About = () => {
             can grow, contribute to real projects, and build user-friendly
             solutions with a team.
           </p>
+
+          <div className="flex self-end">
+            <button
+              className="bg-slate-300 p-2 cursor-pointer rounded-lg"
+              onClick={handleClick}
+            >
+              Let's connect !
+            </button>
+          </div>
         </div>
       </section>
     </>
