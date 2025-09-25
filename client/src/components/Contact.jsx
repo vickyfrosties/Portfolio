@@ -4,21 +4,19 @@ const Contact = () => {
   const [quote, setQuote] = useState([]);
 
   const getQuote = async () => {
+    const apiKey = import.meta.env.API_KEY;
+    const serverPort = import.meta.env.SERVER_PORT;
+
     try {
-      const response = await fetch(
-        "https://api.dailyquotes.dev/api/quotes/dev",
-        {
-          method: "GET",
-          mode: "cors",
-          headers: {
-            Authorization: `Bearer ${process.env("API_KEY")}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch(`https://localhost:8000${serverPort}`, {
+        method: "GET",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       const data = await response.json();
       setQuote(data);
-      console.log(data);
     } catch (error) {
       console.error("An error occurred while get request.", error.message);
     }
