@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <>
       <section className="w-full h-full flex justify-center">
-        <section className="w-3/4 h-3/4 m-auto bg-slate-700 rounded-lg rounded-l-2xl flex">
+        <section className="w-3/4 h-3/4 m-auto bg-slate-700  rounded-l-2xl rounded-r-3xl flex">
           <section className="w-90 h-full bg-slate-200 rounded-r-3xl rounded-l-xl">
             <img
               src="/assets/png/Portrait.png"
@@ -100,7 +100,7 @@ const Contact = () => {
               </h3>
             </div>
 
-            <div className="w-full">
+            <div className="w-full border-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -116,7 +116,7 @@ const Contact = () => {
                 <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
                 <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
               </svg>
-              <h3 className="text-white">today's quote</h3>
+              <h3 className="text-white border-1">today's quote</h3>
             </div>
           </section>
         </section>

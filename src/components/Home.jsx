@@ -18,7 +18,7 @@ const Home = ({ setMode }) => {
               <h2 className="text-2xl font-bold max-md:text-xl">
                 a
                 <span className="bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600 ml-2 bg-clip-text text-transparent mr-2">
-                  Junior Front End Developer
+                  Junior Front-End Developer
                 </span>
                 nice to meet you!
               </h2>
@@ -28,7 +28,7 @@ const Home = ({ setMode }) => {
               <img
                 className="w-full h-full object-cover max-md:object-left"
                 src="/assets/png/Portrait.png"
-                alt="Portrait of myself"
+                alt="Self portrait"
               />
             </div>
           </div>
@@ -38,9 +38,8 @@ const Home = ({ setMode }) => {
           <div>
             <h3 className="text-2xl font-bold">ABOUT</h3>
             <p className="text-xl mt-5">
-              I'm Sounia, a junior front-end developer with a passion for
-              creating web interfaces. I discovered front-end development about
-              a year ago - and I instantly loved it.
+              I'm passionate about creating web interfaces. I discovered
+              front-end development about a year ago - and I instantly loved it.
             </p>
             <p className="text-xl mt-5">
               Today, I design and build web interfaces that feeds my learning,
