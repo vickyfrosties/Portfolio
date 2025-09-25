@@ -1,4 +1,30 @@
+import { useState } from "react";
+
 const Contact = () => {
+  const [quote, setQuote] = useState([]);
+
+  const getQuote = async () => {
+    try {
+      const response = await fetch(
+        "https://api.dailyquotes.dev/api/quotes/dev",
+        {
+          method: "GET",
+          mode: "cors",
+          headers: {
+            Authorization: `Bearer ${process.env("API_KEY")}`,
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      setQuote(data);
+      console.log(data);
+    } catch (error) {
+      console.error("An error occurred while get request.", error.message);
+    }
+  };
+  getQuote();
+
   return (
     <>
       <section className="w-full h-full flex justify-center">

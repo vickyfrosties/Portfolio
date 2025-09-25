@@ -38,9 +38,7 @@ const Slider = () => {
               alt={`icon-${i}`}
               className="size-40 drop-shadow-xl/25 max-2xl:size-20 "
             />
-            <h3 className="font-bold text-2xl ml-3 text-shadow-lg/15">
-              {s.name}
-            </h3>
+            <h3 className="font-medium text-2xl text-white ml-3">{s.name}</h3>
           </div>
         ))}
       </div>

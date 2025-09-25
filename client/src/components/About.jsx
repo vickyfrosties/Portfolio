@@ -27,7 +27,7 @@ const About = ({ setMode }) => {
                 <path d="M8 22h8" />
               </svg>
             </div>
-            <p className="flex flex-col items-center font-medium text-slate-700 text-lg pl-4">
+            <p className="flex flex-col items-center font-medium text-lg pl-4">
               <span className="text-2xl font-bold w-full">Path</span>I
               transitioned into front-end development after choosing a new
               career path and finally found what drives me most: creating
@@ -36,7 +36,7 @@ const About = ({ setMode }) => {
         </div>
 
         <div className="bg-amber-200 p-5 rounded-lg h-full flex">
-          <p className="font-medium text-slate-800 text-lg flex flex-col pr-4 justify-between">
+          <p className="font-medium text-lg flex flex-col pr-4 justify-between">
             <span className="text-2xl font-bold">Motivation</span>
             What excites me is being part of the entire process — from the
             initial idea to the final product. Seeing a project come to life
@@ -66,41 +66,44 @@ const About = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="border-1 p-5 rounded-lg flex flex-col row-span-2">
+        <div className="bg-emerald-200 p-5 rounded-lg flex flex-col row-span-2 bg-">
           <h3 className="text-2xl font-bold">Technologies stack</h3>
 
-          <section className="h-full flex flex-col justify-evenly">
-            <div className="flex justify-between gap-3">
+          <section className="h-full flex flex-col justify-evenly bg-teal-50 rounded-lg">
+            <div className="flex justify-between gap-3 rounded-lg">
               <p
-                className="pl-3 pr-3 rounded-full text-center font-semibold text-lg self-center bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600
+                className="pl-3 pr-3 text-center font-semibold text-lg self-center bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600
  bg-clip-text text-transparent"
               >
                 React
               </p>
 
-              <p className=" w-70">
+              <p className="w-70">
                 Build modern interfaces with Hooks and Router.
               </p>
             </div>
 
-            <div className="flex justify-between gap-3">
-              <p className="h-6 pl-3 pr-3 rounded-full font-semibold text-lg bg-linear-65 from-purple-500 to-pink-500 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] bg-clip-text text-transparent">
+            <div className="flex justify-between items-center gap-3 rounded-lg">
+              <p
+                className="h-6 pl-3 pr-3 font-semibold text-lg 0 text-center bg-gradient-to-r from-sky-700 via-cyan-400 to-blue-600
+border-red-500 bg-clip-text text-transparent"
+              >
                 Tailwind
               </p>
               <p className="w-70">
                 Design responsive layouts with utility-first CSS.
               </p>
             </div>
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-3 rounded-lg">
               <p
                 className="pl-3 pr-3 bg-gradient-to-r from-yellow-400 via-orange-400 to-amber-600
-border-red-500 rounded-full text-center bg-clip-text text-transparent font-semibold text-lg"
+border-red-500 text-center bg-clip-text text-transparent font-semibold text-lg"
               >
                 JavaScript
               </p>
               <p className=" w-70">Implement interactive features and logic.</p>
             </div>
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-3 rounded-lg">
               <p
                 className="pl-3 pr-3 bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600
  border-red-500 rounded-full text-center bg-clip-text text-transparent font-semibold"
@@ -112,35 +115,31 @@ border-red-500 rounded-full text-center bg-clip-text text-transparent font-semib
                 Write clean, reusable styles with nesting and variables.
               </p>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 rounded-lg">
               <p
-                className="pl-3 pr-3 rounded-full text-center font-semibold bg-gradient-to-tl
+                className="pl-3 pr-3 font-semibold bg-gradient-to-r
 from-blue-800
-via-lime-300
-to-slate-300
+via-purple-500
+to-slate-800
 bg-clip-text
 text-transparent text-lg"
               >
                 Work Organization
               </p>
 
-              <p className=" w-70">
-                Prioritize tasks, structure projects, and manage deadlines.
-              </p>
+              <p>Prioritize tasks, structure projects, and manage deadlines.</p>
             </div>
-            <div className="flex items-center gap-3">
-              <p className="pl-3 pr-3 rounded-full text-center font-semibold bg-gradient-to-tl from-rose-500 via-amber-500 to-yellow-800 bg-clip-text text-transparent text-lg">
+            <div className="flex items-center gap-3 rounded-lg">
+              <p className="pl-3 font-semibold bg-gradient-to-r from-green-700 via-teal-700 to-emerald-400 bg-clip-text text-transparent text-lg">
                 Collaborative spirit
               </p>
 
-              <p className=" w-70">
-                Contribute actively within a team environment.
-              </p>
+              <p>Contribute actively within a team environment.</p>
             </div>
           </section>
         </div>
 
-        <div className="bg-blue-300 p-5 rounded-lg flex">
+        <div className="bg-amber-200 p-5 rounded-lg flex">
           <p className="font-medium text-slate-800 text-lg flex flex-col justify-between">
             <span className="text-2xl font-bold">Goal</span>
             My goal is to contribute to meaningful projects that are functional
@@ -168,8 +167,8 @@ text-transparent text-lg"
           </div>
         </div>
 
-        <div className="bg-blue-300 col-start-2 row-span-2 p-5 rounded-lg grid grid-rows-3 grid-cols-2 gap-3">
-          <p className="font-medium text-lg col-span-3">
+        <div className="bg-slate-700 col-start-2 row-span-2 p-5 rounded-lg grid grid-rows-3 grid-cols-2 gap-3">
+          <p className="font-medium text-lg col-span-3 text-white">
             Here's a glimpse of what I do when I'm not glued to the screen.
             Stepping away from coding helps me recharge, stay creative, and keep
             a balanced mindset.
@@ -262,15 +261,15 @@ text-transparent text-lg"
           </div>
         </div>
 
-        <div className="bg-amber-950 rounded-lg p-5 flex flex-col justify-between">
+        <div className="bg-teal-50 border-1 border-black rounded-lg p-5 flex flex-col justify-between">
           <div className="flex">
-            <h3 className="text-2xl font-bold mb-2 text-slate-200">
+            <h3 className="text-2xl text-black font-bold mb-2">
               Current status
             </h3>
             <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
           </div>
 
-          <p className="text-slate-200 text-lg">
+          <p className="text-black text-lg">
             I’m currently looking for a junior front-end developer role where I
             can grow, contribute to real projects, and build user-friendly
             solutions with a team.
@@ -278,7 +277,7 @@ text-transparent text-lg"
 
           <div className="flex self-end">
             <button
-              className="bg-slate-300 p-2 cursor-pointer rounded-lg"
+              className="bg-emerald-500 p-2 cursor-pointer rounded-lg text-white"
               onClick={handleClick}
             >
               Let's connect !

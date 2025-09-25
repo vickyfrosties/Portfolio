@@ -1,10 +1,17 @@
 import Slider from "./Slider";
 
 const Home = ({ setMode }) => {
+  const mailto = "mailto:sounia.mhalla@hotmail.com";
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.location.href = mailto;
+    console.log("clic");
+  };
   return (
     <>
       <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 max-md:flex max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full">
-        <div className="bg-[#C1D1FD] row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3">
+        <div className="bg-amber-200 row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3">
           <div className="rounded-lg h-full relative">
             <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20 max-2xl:hidden">
               Hey!
@@ -34,7 +41,7 @@ const Home = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="bg-[#F9FCD7] rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 ">
+        <div className="bg-emerald-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 ">
           <div>
             <h3 className="text-2xl font-bold">ABOUT</h3>
             <p className="text-xl mt-5">
@@ -51,14 +58,14 @@ const Home = ({ setMode }) => {
           <div className="flex w-full justify-end">
             <button
               onClick={() => setMode("About")}
-              className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 mt-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
+              className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
             >
               See more
             </button>
           </div>
         </div>
 
-        <div className="bg-[#C1D1FD] rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden">
+        <div className="bg-slate-700 rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden">
           <Slider />
         </div>
 
@@ -71,26 +78,25 @@ const Home = ({ setMode }) => {
           <div>
             <button
               onClick={() => setMode("Contact")}
-              className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
+              className="rounded-lg border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-slate-500 font-semibold"
             >
               See more
             </button>
           </div>
         </div>
-        <div className="bg-[#F9FCD7] grid row-span-2 rounded-lg p-12  max-2xl:col-start-3 max-2xl:p-7">
+        <div className="bg-amber-200 grid row-span-2 rounded-lg p-12  max-2xl:col-start-3 max-2xl:p-7">
           <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
 
           <div className="flex flex-col justify-between h-90">
             <p className="text-xl">
-              As of right now, I design and build web interfaces that feeds my
-              learning, spark my creativity, and challenge me to grow. My world?
-              A mix of creativity, curiosity and a constant desire to improve.
+              As of right now, I continue to practice to stay disciplined, with
+              the goal of always learning and improving my code.
             </p>
 
             <div className="flex justify-end">
               <button
                 onClick={() => setMode("Projects")}
-                className="rounded-3xl border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-green-200 font-semibold"
+                className="rounded-lg w-30 pt-2 pb-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
               >
                 See more
               </button>
@@ -98,8 +104,8 @@ const Home = ({ setMode }) => {
           </div>
         </div>
 
-        <div className="bg-[#C1D1FD] grid col-span-2 rounded-lg p-12 max-2xl:p-7">
-          <h3 className="text-2xl font-bold">CONTACT</h3>
+        <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7">
+          <h3 className="text-2xl text-white font-bold">CONTACT</h3>
           <section className="flex w-full justify-between">
             <div
               className="flex flex-col justify-center items-center w-40"
