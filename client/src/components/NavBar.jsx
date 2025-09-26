@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router";
 
-const NavBar = ({ mode, setMode }) => {
+const NavBar = () => {
   const [visible, setVisible] = useState(true);
   const prevPositionScroll = useRef(window.scrollY);
 
@@ -23,12 +24,6 @@ const NavBar = ({ mode, setMode }) => {
     return () => removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    const selected = e.target.textContent;
-    setMode(selected);
-  };
-
   return (
     <>
       <nav
@@ -40,19 +35,33 @@ ${
 }`}
       >
         <ul className="w-3/4 flex justify-between items-center pt-2 pb-2">
-          {["Home", "Projects", "About", "Contact"].map((section, i) => (
-            <li
-              key={i}
-              onClick={handleClick}
-              className={`cursor-pointer text-xl font-medium text-white ${
-                mode === section
-                  ? "border-b-1 border-slate-200 max-md:bg-green-400 max-md:border-b-0"
-                  : "border-b-0"
-              }`}
-            >
-              {section}
-            </li>
-          ))}
+          <NavLink
+            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            to="/"
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            to="/about"
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            to="/projects"
+          >
+            Projects
+          </NavLink>
+
+          <NavLink
+            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            to="/contact"
+          >
+            Contact
+          </NavLink>
         </ul>
       </nav>
     </>
