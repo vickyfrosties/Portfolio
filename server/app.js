@@ -17,7 +17,7 @@ app.use(
   })
 );
 app.use(express.json());
-app.use("/", quoteRouter);
+app.use("/api/quotes", quoteRouter);
 
 app.listen(originServerPort, () => {
   console.log(`Server is running on PORT ${originServerPort}`);

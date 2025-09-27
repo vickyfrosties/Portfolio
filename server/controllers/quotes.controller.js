@@ -1,24 +1,39 @@
-async function getQuote(request, response) {
+export async function getQuote(request, response) {
+  const apiKey = process.env.API_KEY;
   try {
-    await fetch("https://api.dailyquotes.dev/api/quotes/dev", {
-      method: "GET",
-      mode: "cors",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-    });
-    const data = await response.json();
+    const apiResponse = await fetch(
+      "https://api.dailyquotes.dev/api/quotes/motivational",
+      {
+        method: "GET",
+        mode: "cors",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    if (apiResponse.length === 0) {
+      return response.status(204).json({
+        status: 204,
+        message: "No quote are existing.",
+        data: [],
+        error: "No Content.",
+        success: true,
+      });
+    }
+
+    const quoteData = await apiResponse.json();
 
     return response.status(200).json({
       status: 200,
       message: "Quote has been successfully retrieved.",
-      data: data,
+      data: quoteData,
       error: null,
       success: true,
     });
   } catch (error) {
-    return response.json({
+    return response.status(500).json({
       status: 500,
       message: "An unexpected error occured while retrieving quote.",
       data: null,
