@@ -1,27 +1,37 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
-  const [quote, setQuote] = useState([]);
+  const [quotation, setQuotation] = useState({});
+  useEffect(() => {
+    const getQuote = async () => {
+      const apiKey = import.meta.env.API_KEY;
+      const serverPort = import.meta.env.SERVER_PORT || 8000;
 
-  const getQuote = async () => {
-    const apiKey = import.meta.env.API_KEY;
-    const serverPort = import.meta.env.SERVER_PORT;
+      try {
+        const response = await fetch(
+          `http://localhost:${serverPort}/api/quotes`,
+          {
+            method: "GET",
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
-    try {
-      const response = await fetch(`https://localhost:8000${serverPort}`, {
-        method: "GET",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const data = await response.json();
-      setQuote(data);
-    } catch (error) {
-      console.error("An error occurred while get request.", error.message);
-    }
-  };
-  getQuote();
+        const data = await response.json();
+
+        setQuotation(data.data);
+        console.log(data);
+      } catch (error) {
+        console.error("An error occurred while get request.", error.message);
+      }
+    };
+
+    getQuote();
+  }, []);
+
+  console.log(quotation);
 
   return (
     <>
@@ -140,7 +150,14 @@ const Contact = () => {
                 <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
                 <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
               </svg>
-              <h3 className="text-white border-1">today's quote</h3>
+              {quotation && quotation.quote ? (
+                <div className="text-white border-1">
+                  <h3>{quotation.quote}</h3>
+                  <p>{quotation.author ? quotation.author : "Unknown"}</p>
+                </div>
+              ) : (
+                <p>Loading...</p>
+              )}
             </div>
           </section>
         </section>
