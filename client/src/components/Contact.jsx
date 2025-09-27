@@ -22,7 +22,6 @@ const Contact = () => {
         const data = await response.json();
 
         setQuotation(data.data);
-        console.log(data);
       } catch (error) {
         console.error("An error occurred while get request.", error.message);
       }
@@ -30,8 +29,6 @@ const Contact = () => {
 
     getQuote();
   }, []);
-
-  console.log(quotation);
 
   return (
     <>
@@ -126,7 +123,7 @@ const Contact = () => {
             </section>
           </section>
 
-          <section className="w-2/4 h-full flex flex-col justify-center items-center m-auto">
+          <section className="w-2/4 h-90 flex flex-col justify-around items-center m-auto">
             <div>
               <h3 className="text-2xl font-semibold bg-linear-65 from-purple-500 to-pink-500 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] bg-clip-text text-transparent">
                 Feel free to reach out - I’d be happy to chat about web
@@ -134,11 +131,11 @@ const Contact = () => {
               </h3>
             </div>
 
-            <div className="w-full border-2">
+            <div className="w-full h-50 flex justify-between flex flex-col bg-slate-200 p-3 rounded-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                width="35"
+                height="35"
                 viewBox="0 0 24 24"
                 fill="white"
                 stroke="currentColor"
@@ -151,13 +148,37 @@ const Contact = () => {
                 <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
               </svg>
               {quotation && quotation.quote ? (
-                <div className="text-white border-1">
-                  <h3>{quotation.quote}</h3>
-                  <p>{quotation.author ? quotation.author : "Unknown"}</p>
+                <div>
+                  <h3 className="text-xl font-semibold">
+                    {quotation.quote}
+                    <span className="text-lg font-md italic">
+                      - {quotation.author ? quotation.author : "Unknown"}
+                    </span>
+                  </h3>
                 </div>
               ) : (
-                <p>Loading...</p>
+                <div className="w-full text-center text-xl font-semibold">
+                  <p>Loading...</p>
+                </div>
               )}
+
+              <div className="w-full flex justify-end">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-quote-icon lucide-quote"
+                >
+                  <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+                  <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
+                </svg>
+              </div>
             </div>
           </section>
         </section>

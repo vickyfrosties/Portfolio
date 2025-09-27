@@ -2,7 +2,7 @@ export async function getQuote(request, response) {
   const apiKey = process.env.API_KEY;
   try {
     const apiResponse = await fetch(
-      "https://api.dailyquotes.dev/api/quotes/motivational",
+      "https://api.dailyquotes.dev/api/quotes/quotes",
       {
         method: "GET",
         mode: "cors",
