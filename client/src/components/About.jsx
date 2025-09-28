@@ -19,7 +19,7 @@ const About = ({ setMode }) => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                class="lucide lucide-signpost-big-icon lucide-signpost-big"
+                className="lucide lucide-signpost-big-icon lucide-signpost-big"
               >
                 <path d="M10 9H4L2 7l2-2h6" />
                 <path d="M14 5h6l2 2-2 2h-6" />
@@ -51,10 +51,10 @@ const About = ({ setMode }) => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-medal-icon lucide-medal"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-medal-icon lucide-medal"
             >
               <path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" />
               <path d="M11 12 5.12 2.2" />
@@ -155,10 +155,10 @@ text-transparent text-lg"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-target-icon lucide-target"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-target-icon lucide-target"
             >
               <circle cx="12" cy="12" r="10" />
               <circle cx="12" cy="12" r="6" />
@@ -181,10 +181,10 @@ text-transparent text-lg"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-gamepad2-icon lucide-gamepad-2"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-gamepad2-icon lucide-gamepad-2"
             >
               <line x1="6" x2="10" y1="11" y2="11" />
               <line x1="8" x2="8" y1="9" y2="13" />
@@ -204,10 +204,10 @@ text-transparent text-lg"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-footprints-icon lucide-footprints"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-footprints-icon lucide-footprints"
             >
               <path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" />
               <path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" />
@@ -226,10 +226,10 @@ text-transparent text-lg"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-library-big-icon lucide-library-big"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-library-big-icon lucide-library-big"
             >
               <rect width="8" height="18" x="3" y="3" rx="1" />
               <path d="M7 3v18" />
@@ -247,10 +247,10 @@ text-transparent text-lg"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-pen-line-icon lucide-pen-line"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-pen-line-icon lucide-pen-line"
             >
               <path d="M13 21h8" />
               <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />

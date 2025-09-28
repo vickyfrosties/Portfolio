@@ -36,28 +36,28 @@ ${
       >
         <ul className="w-3/4 flex justify-between items-center pt-2 pb-2">
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            className="cursor-pointer text-xl font-medium text-white"
             to="/"
           >
             Home
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            className="cursor-pointer text-xl font-medium text-white"
             to="/about"
           >
             About
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            className="cursor-pointer text-xl font-medium text-white"
             to="/projects"
           >
             Projects
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white hover:border-b-white-600 hover:border-b-1"
+            className="cursor-pointer text-xl font-medium text-white"
             to="/contact"
           >
             Contact
