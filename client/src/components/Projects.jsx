@@ -45,7 +45,7 @@ const Projects = () => {
         <div className="rounded-lg flex justify-center items-center ">
           <img
             src="/assets/screenshots/memocode-home.jpg"
-            alt=""
+            alt="MemoCode Homepage"
             className="rounded-lg"
           />
         </div>
@@ -113,7 +113,7 @@ border-red-500 rounded-full pl-3 pr-3"
         <div className="rounded-lg flex justify-center items-center ">
           <img
             src="/assets/screenshots/statmind-home.jpeg"
-            alt=""
+            alt="StatMind Homepage"
             className="rounded-lg"
           />
         </div>
@@ -178,7 +178,7 @@ border-red-500 rounded-full pl-3 pr-3"
         <div className="rounded-lg flex justify-center items-center ">
           <img
             src="/assets/screenshots/greenier-home.jpg"
-            alt=""
+            alt="Greenier please Homepage"
             className="rounded-lg"
           />
         </div>

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 
-const About = ({ setMode }) => {
+const About = () => {
   const navigate = useNavigate();
 
   return (
@@ -8,7 +8,7 @@ const About = ({ setMode }) => {
       <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5">
         <div className=" grid gap-y-4">
           <div className="bg-emerald-200 p-5 rounded-lg flex">
-            <div className="flex items-center">
+            <div className="flex items-start">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -27,17 +27,19 @@ const About = ({ setMode }) => {
                 <path d="M8 22h8" />
               </svg>
             </div>
-            <p className="flex flex-col items-center font-medium text-lg pl-4">
-              <span className="text-2xl font-bold w-full">Path</span>I
-              transitioned into front-end development after choosing a new
-              career path and finally found what drives me most: creating
-            </p>
+            <div className="h-full flex flex-col justify-between">
+              <p className="flex flex-col items-center font-medium text-lg pl-4 h-full">
+                <span className="text-2xl font-bold w-full">Path</span>I
+                transitioned into front-end development after choosing a new
+                career path and finally found what drives me most: creating.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="bg-amber-200 p-5 rounded-lg h-full flex">
-          <p className="font-medium text-lg flex flex-col pr-4 justify-between">
-            <span className="text-2xl font-bold">Motivation</span>
+        <div className="bg-amber-200 p-5 rounded-lg flex">
+          <p className="flex flex-col justify-between items-center font-medium text-lg h-full">
+            <span className="text-2xl font-bold w-full">Motivation</span>
             What excites me is being part of the entire process — from the
             initial idea to the final product. Seeing a project come to life
             step by step is what keeps me motivated and I truly believe that it
@@ -140,8 +142,8 @@ text-transparent text-lg"
         </div>
 
         <div className="bg-amber-200 p-5 rounded-lg flex">
-          <p className="font-medium text-slate-800 text-lg flex flex-col justify-between">
-            <span className="text-2xl font-bold">Goal</span>
+          <p className="font-medium text-lg flex flex-col justify-evenly">
+            <span className="text-2xl font-bold w-full">Goal</span>
             My goal is to contribute to meaningful projects that are functional
             and useful for real users. I know I’m still at a junior level, but
             I’m committed to giving my best and growing until this becomes a
@@ -261,15 +263,13 @@ text-transparent text-lg"
           </div>
         </div>
 
-        <div className="bg-teal-50 border-1 border-black rounded-lg p-5 flex flex-col justify-between">
+        <div className="bg-teal-50 border-1 border-black rounded-lg p-5 flex flex-col">
           <div className="flex">
-            <h3 className="text-2xl text-black font-bold mb-2">
-              Current status
-            </h3>
+            <h3 className="text-2xl text-black font-bold">Current status</h3>
             <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
           </div>
 
-          <p className="text-black text-lg">
+          <p className="text-black text-lg font-medium">
             I’m currently looking for a junior front-end developer role where I
             can grow, contribute to real projects, and build user-friendly
             solutions with a team.
@@ -277,10 +277,27 @@ text-transparent text-lg"
 
           <div className="flex self-end">
             <button
-              className="bg-emerald-500 p-2 cursor-pointer rounded-lg text-white"
+              className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
               onClick={() => navigate("/contact")}
             >
-              Let's connect !
+              Let's connect
+            </button>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-between bg-red-100 rounded-lg p-5">
+          <p className="flex flex-col font-medium text-lg font-medium">
+            <span className="text-2xl font-bold w-full">Projects</span>I strive
+            to stay consistent by updating and improving my personal projects.
+            My latest work: MemoCode - a web application to store personal
+            notes.
+          </p>
+          <div className="flex justify-end">
+            <button
+              onClick={() => navigate("/projects")}
+              className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
+            >
+              See projects
             </button>
           </div>
         </div>
