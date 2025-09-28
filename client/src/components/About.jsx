@@ -1,8 +1,8 @@
+import { useNavigate } from "react-router";
+
 const About = ({ setMode }) => {
-  const handleClick = (e) => {
-    e.preventDefault();
-    setMode("Contact");
-  };
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5">
@@ -278,7 +278,7 @@ text-transparent text-lg"
           <div className="flex self-end">
             <button
               className="bg-emerald-500 p-2 cursor-pointer rounded-lg text-white"
-              onClick={handleClick}
+              onClick={() => navigate("/contact")}
             >
               Let's connect !
             </button>

@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router";
 import Slider from "./Slider";
 
-const Home = ({ setMode }) => {
+const Home = () => {
+const navigate = useNavigate();
   const mailto = "mailto:sounia.mhalla@hotmail.com";
 
   const handleClick = (e) => {
@@ -57,7 +59,7 @@ const Home = ({ setMode }) => {
 
           <div className="flex w-full justify-end">
             <button
-              onClick={() => setMode("About")}
+              onClick={() => navigate("/about")}
               className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
             >
               See more
@@ -77,7 +79,7 @@ const Home = ({ setMode }) => {
 
           <div>
             <button
-              onClick={() => setMode("Contact")}
+              onClick={() => navigate("/contact")}
               className="rounded-lg border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-slate-500 font-semibold"
             >
               See more
@@ -95,7 +97,7 @@ const Home = ({ setMode }) => {
 
             <div className="flex justify-end">
               <button
-                onClick={() => setMode("Projects")}
+                onClick={() => navigate("/projects")}
                 className="rounded-lg w-30 pt-2 pb-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
               >
                 See more
