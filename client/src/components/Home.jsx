@@ -3,14 +3,8 @@ import Slider from "./Slider";
 
 const Home = () => {
 const navigate = useNavigate();
-  const mailto = "mailto:sounia.mhalla@hotmail.com";
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    window.location.href = mailto;
-    console.log("clic");
-  };
-  return (
+  
+    return (
     <>
       <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 max-md:flex max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full">
         <div className="bg-amber-200 row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3">

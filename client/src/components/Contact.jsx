@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const Contact = () => {
   const [quotation, setQuotation] = useState({});
+
   useEffect(() => {
     const getQuote = async () => {
       const serverPort = import.meta.env.SERVER_PORT || 8000;
@@ -96,7 +97,7 @@ const Contact = () => {
 
               <div className="col-span-2">
                 <a
-                  href=""
+                  href="mailto:sounia.mhalla@hotmail.com"
                   className="cursor-pointer bg-zinc-100 flex flex-col justify-center items-center p-3 rounded-lg h-30 "
                 >
                   <svg
