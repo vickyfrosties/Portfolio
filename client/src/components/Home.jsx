@@ -7,8 +7,8 @@ const Home = ({ className }) => {
 
   return (
     <>
-      <section className="border-b-1 border-b-slate-500">
-        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 2xl:bg-red-500 2xl:grid-rows-2 max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full max-lg:gap-5 max-md:border-1 max-md:grid-cols-2 ">
+      <section>
+        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 2xl:bg-red-500 2xl:grid-rows-2 max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full max-lg:gap-5 border-b-1 max-md:grid-cols-2 ">
           <div className="bg-amber-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:bg-blue-500 2xl:row-span-2 max-lg:row-span-1 min-h-[250px]">
             <div className="rounded-lg h-full relative">
               <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20 max-2xl:hidden">
