@@ -33,14 +33,14 @@ const Contact = () => {
 
   return (
     <>
-      <section className="border-b-1 border-b-slate-500 h-full">
-        <section className="w-full h-full flex justify-center">
-          <section className="w-3/4 h-3/4 m-auto bg-slate-700  rounded-l-2xl rounded-r-3xl flex">
-            <section className="w-90 h-full bg-slate-200 rounded-r-3xl rounded-l-xl">
+      <section className="max-md:border-b-0 border-b-1 border-b-slate-500 h-full">
+        <section className="w-full h-full flex justify-center max-md:justify-normal">
+          <section className="w-3/4 h-3/4 m-auto bg-slate-700 rounded-l-2xl rounded-r-3xl flex max-md:flex-col">
+            <section className="w-90 h-full bg-slate-200 rounded-r-3xl rounded-l-xl max-md:h-auto max-md:w-full max-md:flex">
               <img
                 src="/assets/png/Portrait.png"
                 alt=""
-                className="w-full h-60 object-cover object-center"
+                className="w-full h-60 object-cover object-center "
               />
 
               <section className="p-3 grid grid-col-3 grid-row-2 gap-x-3 gap-y-7 h-auto">
@@ -125,15 +125,15 @@ const Contact = () => {
               </section>
             </section>
 
-            <section className="w-2/4 h-90 flex flex-col justify-around items-center m-auto">
-              <div>
-                <h3 className="text-2xl font-semibold bg-linear-65 from-purple-500 to-pink-500 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] bg-clip-text text-transparent">
+            <section className="w-2/4 h-90 flex flex-col justify-around items-center m-auto max-md:w-full max-md:flex-row max-md:h-auto">
+              <div className="max-lg:w-60 max-md:w-60">
+                <h3 className="text-2xl font-semibold bg-linear-65 from-purple-500 to-pink-500 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] bg-clip-text text-transparent max-lg:text-lg max-lg:w-full">
                   Feel free to reach out - I’d be happy to chat about web
                   development, an opportunity, or simply to connect.
                 </h3>
               </div>
 
-              <div className="w-full h-50 flex justify-between flex flex-col bg-slate-200 p-3 rounded-lg">
+              <div className="w-full h-50 flex justify-between flex flex-col bg-slate-200 p-3 rounded-lg max-lg:w-70">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="35"
@@ -150,16 +150,16 @@ const Contact = () => {
                   <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
                 </svg>
                 {quotation && quotation.quote ? (
-                  <div>
-                    <h3 className="text-xl font-semibold">
+                  <div className="max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center">
+                    <h3 className="text-xl font-semibold max-lg:text-base">
                       {quotation.quote}
-                      <span className="text-lg font-md italic">
+                      <span className="text-lg font-md italic max-lg:text-base">
                         - {quotation.author ? quotation.author : "Unknown"}
                       </span>
                     </h3>
                   </div>
                 ) : (
-                  <div className="w-full text-center text-xl font-semibold">
+                  <div className="w-full text-center text-xl font-semibold max-lg:text-lg">
                     <p>Loading...</p>
                   </div>
                 )}
@@ -186,7 +186,7 @@ const Contact = () => {
           </section>
         </section>
       </section>
-      <Footer />
+      <Footer className="max-md:hidden" />
     </>
   );
 };
