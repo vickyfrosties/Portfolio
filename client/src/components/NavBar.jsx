@@ -34,9 +34,9 @@ ${
     : "opacity-100 -translate-y-30 transition-discrete duration-700 ease-in-out"
 }`}
       >
-        <ul className="w-3/4 flex justify-between items-center pt-2 pb-2 max-sm:border-1 max-sm:w-full">
+        <ul className="w-3/4 flex justify-between items-center pt-2 pb-2 max-sm:w-full">
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-sm:border-1"
+            className="cursor-pointer text-xl font-medium text-white max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
             to="/"
           >
             <svg

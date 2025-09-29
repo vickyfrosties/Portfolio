@@ -8,7 +8,7 @@ const Home = ({ className }) => {
   return (
     <>
       <section>
-        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 2xl:bg-red-500 2xl:grid-rows-2 max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full max-lg:gap-5 border-b-1 max-md:grid-cols-2 max-sm:flex max-sm:border-0">
+        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 2xl:bg-red-500 2xl:grid-rows-2 max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full max-lg:gap-5 border-b-1 max-md:grid-cols-2 max-sm:flex max-sm:border-0 max-md:border-0 ">
           <div className="bg-amber-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:bg-blue-500 2xl:row-span-2 max-lg:row-span-1 min-h-[250px]">
             <div className="rounded-lg h-full relative">
               <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20 max-2xl:hidden">
@@ -47,7 +47,7 @@ const Home = ({ className }) => {
                 front-end development about a year ago - and I instantly loved
                 it.
               </p>
-              <p className="text-xl mt-5 max-lg:hidden max-sm:block">
+              <p className="text-xl mt-5 max-lg:hidden max-sm:block max-md:block">
                 Today, I design and build web interfaces that feeds my learning,
                 spark my creativity, and challenge me to grow. My world? A mix
                 of creativity, curiosity and a constant desire to improve.
@@ -78,7 +78,7 @@ const Home = ({ className }) => {
                 features, refine the code, and apply what I learn along the way.
               </p>
 
-              <p className="text-xl h-30 max-lg:hidden max-sm:block">
+              <p className="text-xl h-30 max-lg:hidden max-md:block max-sm:block">
                 This helps me build more complete and long-lasting projects
                 while I keep strengthening my skills.
               </p>
@@ -96,7 +96,7 @@ const Home = ({ className }) => {
 
           <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-md:justify-between">
             <h3 className="text-2xl text-white font-bold">CONTACT</h3>
-            <section className="flex w-full justify-between max-md:justify-between">
+            <section className="flex w-full justify-between max-md:justify-between max-sm:justify-around">
               <div
                 className="flex flex-col justify-center items-center w-50 max-sm:w-20"
                 role="link"
@@ -191,7 +191,7 @@ const Home = ({ className }) => {
           </div>
         </section>
       </section>
-      <Footer className="max-lg:-bottom-37 max-md:-bottom-117 max-md:left-2/3 max-sm:fixed max-sm:w-full max-sm:left-1/2 " />
+      <Footer className="max-lg:-bottom-37 max-md:left-2/3 max-md:hidden max-sm:fixed max-sm:w-full max-sm:left-1/2 " />
     </>
   );
 };
