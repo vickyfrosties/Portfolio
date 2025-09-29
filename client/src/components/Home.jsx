@@ -2,34 +2,34 @@ import { useNavigate } from "react-router";
 import Slider from "./Slider";
 import Footer from "./Footer";
 
-const Home = () => {
+const Home = ({ className }) => {
   const navigate = useNavigate();
 
   return (
     <>
       <section className="border-b-1 border-b-slate-500">
-        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 max-md:flex max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full">
-          <div className="bg-amber-200 row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3">
+        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 2xl:bg-red-500 2xl:grid-rows-2 max-md:flex max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full max-lg:gap-5">
+          <div className="bg-amber-200 row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3 2xl:bg-blue-500 2xl:row-span-2 max-lg:row-span-1">
             <div className="rounded-lg h-full relative">
               <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20 max-2xl:hidden">
                 Hey!
               </h2>
 
               <div className="absolute z-1 bottom-25 ml-5 mr-5 max-md:-bottom-5 max-md:p-3 max-md:m-auto max-2xl:left-80 max-2xl:static max-2xl:pt-5">
-                <h1 className="text-4xl font-bold max-md:text-2xl">
+                <h1 className="text-4xl font-bold max-md:text-2xl max-lg:text-2xl">
                   I'm Mhalla Sounia,
                 </h1>
 
-                <h2 className="text-2xl font-bold max-md:text-xl">
+                <h2 className="text-2xl font-bold max-md:text-xl max-lg:text-xl">
                   a
-                  <span className="bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600 ml-2 bg-clip-text text-transparent mr-2">
+                  <span className="bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600 ml-2 bg-clip-text text-transparent mr-2 max-lg:text-xl">
                     Junior Front-End Developer
                   </span>
                   nice to meet you!
                 </h2>
               </div>
 
-              <div className="h-185 w-full z-0 absolute bottom-0 max-md:relative max-md:h-80 max-2xl:h-full">
+              <div className="h-185 w-full z-0 absolute bottom-0 max-md:relative max-md:h-80 max-2xl:h-full max-lg:h-80">
                 <img
                   className="w-full h-full object-cover max-md:object-left"
                   src="/assets/png/Portrait.png"
@@ -39,7 +39,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-emerald-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 ">
+          <div className="bg-emerald-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1">
             <div>
               <h3 className="text-2xl font-bold">ABOUT</h3>
               <p className="text-xl mt-5">
@@ -47,7 +47,7 @@ const Home = () => {
                 front-end development about a year ago - and I instantly loved
                 it.
               </p>
-              <p className="text-xl mt-5">
+              <p className="text-xl mt-5 max-lg:hidden">
                 Today, I design and build web interfaces that feeds my learning,
                 spark my creativity, and challenge me to grow. My world? A mix
                 of creativity, curiosity and a constant desire to improve.
@@ -68,22 +68,7 @@ const Home = () => {
             <Slider />
           </div>
 
-          <div className="flex bg-blue-100 grid rounded-lg p-12 max-2xl:hidden">
-            <div className="flex">
-              <h3 className="text-2xl font-bold mb-2">Current status</h3>
-              <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
-            </div>
-
-            <div>
-              <button
-                onClick={() => navigate("/contact")}
-                className="rounded-lg border-1 border-teal-950 w-30 pt-2 pb-2 bg-emerald-500 cursor-pointer hover:bg-slate-500 font-semibold"
-              >
-                See more
-              </button>
-            </div>
-          </div>
-          <div className="bg-amber-200 grid row-span-2 rounded-lg p-12  max-2xl:col-start-3 max-2xl:p-7">
+          <div className="bg-amber-200 grid row-span-2 rounded-lg p-12 max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1">
             <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
 
             <div className="flex flex-col justify-between h-90">
@@ -93,7 +78,7 @@ const Home = () => {
                 features, refine the code, and apply what I learn along the way.
               </p>
 
-              <p className="text-xl h-30">
+              <p className="text-xl h-30 max-lg:hidden">
                 This helps me build more complete and long-lasting projects
                 while I keep strengthening my skills.
               </p>
@@ -109,7 +94,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7">
+          <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between">
             <h3 className="text-2xl text-white font-bold">CONTACT</h3>
             <section className="flex w-full justify-between">
               <div
@@ -206,7 +191,7 @@ const Home = () => {
           </div>
         </section>
       </section>
-      <Footer />
+      <Footer className="max-lg:-bottom-37" />
     </>
   );
 };
