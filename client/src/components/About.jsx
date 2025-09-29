@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <>
-      <section className="border-b-1 border-b-slate-500 h-full">
+      <section className="max-md:h-auto border-b-1 border-b-slate-500 h-full">
         <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5 max-md:flex max-md:flex-col max-md:h-auto">
           <div className="grid gap-y-4 max-lg:flex">
             <div className="bg-emerald-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
@@ -206,9 +206,6 @@ text-transparent text-lg"
               Here's a glimpse of what I do when I'm not glued to the screen.
               Stepping away from coding helps me recharge, stay creative, and
               keep a balanced mindset.
-            </p>
-            <p className="font-medium text-lg col-span-3 text-white max-lg:hidden">
-              My freetime
             </p>
 
             <div className="bg-slate-100 rounded-lg col-start-1 flex flex-col justify-center items-center max-md:h-40">

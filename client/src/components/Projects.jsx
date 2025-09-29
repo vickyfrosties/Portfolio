@@ -32,8 +32,8 @@ const Projects = ({ className }) => {
 
   return (
     <>
-      <section className="border-b-1 border-b-slate-500">
-        <section className="w-full p-10 grid grid-cols-3 auto-rows-auto gap-x-8 gap-y-10">
+      <section className="max-md:border-b-0 border-b-1 border-b-slate-500">
+        <section className="w-full p-10 grid grid-cols-3 auto-rows-auto gap-x-8 gap-y-10 max-lg:grid-cols-2 max-sm:bg-teal-50 max-sm:flex max-sm:flex-col">
           {memocode && (
             <div className="rounded-lg bg-[#c1d1fd] flex flex-col p-5">
               <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#8E97F2]">
@@ -44,7 +44,7 @@ const Projects = ({ className }) => {
             </div>
           )}
 
-          <div className="rounded-lg flex justify-center items-center ">
+          <div className="rounded-lg flex justify-center items-center max-lg:hidden">
             <img
               src="/assets/screenshots/memocode-home.jpg"
               alt="MemoCode Homepage"
@@ -112,7 +112,7 @@ border-red-500 rounded-full pl-3 pr-3"
             </div>
           )}
 
-          <div className="rounded-lg flex justify-center items-center ">
+          <div className="rounded-lg flex justify-center items-center max-lg:hidden">
             <img
               src="/assets/screenshots/statmind-home.jpeg"
               alt="StatMind Homepage"
@@ -177,7 +177,7 @@ border-red-500 rounded-full pl-3 pr-3"
             </div>
           )}
 
-          <div className="rounded-lg flex justify-center items-center ">
+          <div className="rounded-lg flex justify-center items-center max-lg:hidden">
             <img
               src="/assets/screenshots/greenier-home.jpg"
               alt="Greenier please Homepage"
@@ -186,8 +186,8 @@ border-red-500 rounded-full pl-3 pr-3"
           </div>
 
           {greenier && (
-            <div className="border-1 border-solid rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center">
-              <div className="rounded-lg p-5 w-full flex justify-between">
+            <div className="border-1 border-solid rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center max-sm:w-full">
+              <div className="rounded-lg p-5 w-full flex flex-wrap justify-between">
                 <p className="rounded-full bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] from-purple-500 to-pink-500 pl-3 pr-3 text-center">
                   {greenier.technologies[0]}
                 </p>
@@ -224,7 +224,7 @@ border-red-500 rounded-full pl-3 pr-3"
           )}
         </section>
       </section>
-      <Footer className="-bottom-107" />
+      <Footer className="-bottom-107 max-lg:-bottom-82 max-md:hidden" />
     </>
   );
 };
