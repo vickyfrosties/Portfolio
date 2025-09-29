@@ -27,7 +27,7 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={`text-white border-1 border-slate-300 bg-slate-800 rounded-2xl w-2/4 m-auto flex justify-center mt-4 max-md:w-full max-md:mt-0 max-md:rounded-none max-md:border-0 max-md:h-20 max-md:transition-none max-md:translate-none
+        className={`text-white border-1 border-slate-300 bg-slate-800 rounded-2xl w-2/4 m-auto flex justify-center mt-4  max-md:w-full max-md:mt-0 max-md:rounded-none max-md:border-0 max-md:h-20 max-md:transition-none max-md:translate-none 
 ${
   visible
     ? "opacity-100 transition-discrete duration-700 ease-in-out"
@@ -36,7 +36,7 @@ ${
       >
         <ul className="w-3/4 flex justify-between items-center pt-2 pb-2 max-sm:w-full">
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
             to="/"
           >
             <svg
@@ -58,7 +58,7 @@ ${
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
             to="/about"
           >
             <svg
@@ -81,7 +81,7 @@ ${
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
             to="/projects"
           >
             <svg
@@ -104,7 +104,7 @@ ${
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
             to="/contact"
           >
             <svg

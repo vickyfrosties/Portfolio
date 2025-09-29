@@ -7,10 +7,10 @@ const About = () => {
   return (
     <>
       <section className="border-b-1 border-b-slate-500 h-full">
-        <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5">
-          <div className=" grid gap-y-4">
-            <div className="bg-emerald-200 p-5 rounded-lg flex">
-              <div className="flex items-start">
+        <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5 max-md:flex max-md:flex-col max-md:h-auto">
+          <div className="grid gap-y-4 max-lg:flex">
+            <div className="bg-emerald-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
+              <div className="flex items-start max-md:items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -21,7 +21,7 @@ const About = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-signpost-big-icon lucide-signpost-big"
+                  className="lucide lucide-signpost-big-icon lucide-signpost-big max-lg:hidden max-md:block"
                 >
                   <path d="M10 9H4L2 7l2-2h6" />
                   <path d="M14 5h6l2 2-2 2h-6" />
@@ -29,8 +29,8 @@ const About = () => {
                   <path d="M8 22h8" />
                 </svg>
               </div>
-              <div className="h-full flex flex-col justify-between">
-                <p className="flex flex-col items-center font-medium text-lg pl-4 h-full">
+              <div className="h-full flex flex-col justify-between max-md:w-3/4">
+                <p className="flex flex-col items-center font-medium text-lg pl-4 h-full max-lg:pl-0 max-lg:text-base">
                   <span className="text-2xl font-bold w-full">Path</span>I
                   transitioned into front-end development after choosing a new
                   career path and finally found what drives me most: creating.
@@ -39,8 +39,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-amber-200 p-5 rounded-lg flex">
-            <p className="flex flex-col justify-between items-center font-medium text-lg h-full">
+          <div className="bg-amber-200 p-5 rounded-lg flex max-lg:justify-between max-md:justify-around">
+            <p className="flex flex-col justify-between items-center font-medium text-lg h-full max-lg:text-base max-lg:h-auto max-lg:justify-start max-md:w-3/4">
               <span className="text-2xl font-bold w-full">Motivation</span>
               What excites me is being part of the entire process — from the
               initial idea to the final product. Seeing a project come to life
@@ -58,7 +58,7 @@ const About = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-medal-icon lucide-medal"
+                className="lucide lucide-medal-icon lucide-medal max-lg:hidden max-md:block"
               >
                 <path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" />
                 <path d="M11 12 5.12 2.2" />
@@ -70,24 +70,50 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-emerald-200 p-5 rounded-lg flex flex-col row-span-2 bg-">
+          <div className="bg-emerald-200 p-5 rounded-lg flex flex-col row-span-2 max-lg:row-span-1">
             <h3 className="text-2xl font-bold">Technologies stack</h3>
 
-            <section className="h-full flex flex-col justify-evenly bg-teal-50 rounded-lg">
+            <section
+              className="h-full flex flex-col justify-evenly bg-white rounded-lg max-lg:justify-center max-md:h-25 
+"
+            >
+              <div className="lg:hidden max-lg:flex max-lg:flex-wrap max-lg:justify-evenly">
+                <img
+                  src="/assets/svg/react.svg"
+                  alt="React logo"
+                  className="lg:hidden w-15 h-15"
+                />
+                <img
+                  src="/assets/svg/javascript.svg"
+                  alt="Javascript logo"
+                  className="lg:hidden w-15 h-15"
+                />
+                <img
+                  src="/assets/svg/sass.svg"
+                  alt="SASS/SCSS logo"
+                  className="lg:hidden w-15 h-15"
+                />
+                <img
+                  src="/assets/svg/tailwindcss.svg"
+                  alt="Tailwind CSS logo"
+                  className="lg:hidden w-15 h-15"
+                />
+              </div>
+
               <div className="flex justify-between gap-3 rounded-lg">
                 <p
                   className="pl-3 pr-3 text-center font-semibold text-lg self-center bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600
- bg-clip-text text-transparent"
+ bg-clip-text text-transparent max-lg:hidden"
                 >
                   React
                 </p>
 
-                <p className="w-70">
+                <p className="w-70 max-lg:hidden">
                   Build modern interfaces with Hooks and Router.
                 </p>
               </div>
 
-              <div className="flex justify-between items-center gap-3 rounded-lg">
+              <div className="flex justify-between items-center gap-3 rounded-lg max-lg:hidden">
                 <p
                   className="h-6 pl-3 pr-3 font-semibold text-lg 0 text-center bg-gradient-to-r from-sky-700 via-cyan-400 to-blue-600
 border-red-500 bg-clip-text text-transparent"
@@ -98,7 +124,7 @@ border-red-500 bg-clip-text text-transparent"
                   Design responsive layouts with utility-first CSS.
                 </p>
               </div>
-              <div className="flex items-center justify-between gap-3 rounded-lg">
+              <div className="flex items-center justify-between gap-3 rounded-lg max-lg:hidden">
                 <p
                   className="pl-3 pr-3 bg-gradient-to-r from-yellow-400 via-orange-400 to-amber-600
 border-red-500 text-center bg-clip-text text-transparent font-semibold text-lg"
@@ -109,7 +135,7 @@ border-red-500 text-center bg-clip-text text-transparent font-semibold text-lg"
                   Implement interactive features and logic.
                 </p>
               </div>
-              <div className="flex items-center justify-between gap-3 rounded-lg">
+              <div className="flex items-center justify-between gap-3 rounded-lg max-lg:hidden">
                 <p
                   className="pl-3 pr-3 bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600
  border-red-500 rounded-full text-center bg-clip-text text-transparent font-semibold"
@@ -117,11 +143,11 @@ border-red-500 text-center bg-clip-text text-transparent font-semibold text-lg"
                   SASS/SCSS
                 </p>
 
-                <p className=" w-70">
+                <p className=" w-70 max-lg:hidden">
                   Write clean, reusable styles with nesting and variables.
                 </p>
               </div>
-              <div className="flex items-center gap-3 rounded-lg">
+              <div className="flex items-center gap-3 rounded-lg max-lg:hidden">
                 <p
                   className="pl-3 pr-3 font-semibold bg-gradient-to-r
 from-blue-800
@@ -137,7 +163,7 @@ text-transparent text-lg"
                   Prioritize tasks, structure projects, and manage deadlines.
                 </p>
               </div>
-              <div className="flex items-center gap-3 rounded-lg">
+              <div className="flex items-center gap-3 rounded-lg max-lg:hidden">
                 <p className="pl-3 font-semibold bg-gradient-to-r from-green-700 via-teal-700 to-emerald-400 bg-clip-text text-transparent text-lg">
                   Collaborative spirit
                 </p>
@@ -147,8 +173,8 @@ text-transparent text-lg"
             </section>
           </div>
 
-          <div className="bg-amber-200 p-5 rounded-lg flex">
-            <p className="font-medium text-lg flex flex-col justify-evenly">
+          <div className="bg-amber-200 p-5 rounded-lg flex max-md:justify-around">
+            <p className="font-medium text-lg flex flex-col justify-evenly max-lg:text-base max-lg:w-3/4">
               <span className="text-2xl font-bold w-full">Goal</span>
               My goal is to contribute to meaningful projects that are
               functional and useful for real users. I know I’m still at a junior
@@ -166,7 +192,7 @@ text-transparent text-lg"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-target-icon lucide-target"
+                className="lucide lucide-target-icon lucide-target max-lg:hidden max-md:block"
               >
                 <circle cx="12" cy="12" r="10" />
                 <circle cx="12" cy="12" r="6" />
@@ -175,13 +201,17 @@ text-transparent text-lg"
             </div>
           </div>
 
-          <div className="bg-slate-700 col-start-2 row-span-2 p-5 rounded-lg grid grid-rows-3 grid-cols-2 gap-3">
-            <p className="font-medium text-lg col-span-3 text-white">
+          <div className="bg-slate-700 col-start-2 row-span-2 p-5 rounded-lg grid grid-rows-3 grid-cols-2 gap-3 max-lg:row-start-3 max-lg:col-span-3 max-lg:flex max-md:flex max-md:flex-col">
+            <p className="font-medium text-lg col-span-3 text-white max-lg:hidden max-md:block">
               Here's a glimpse of what I do when I'm not glued to the screen.
               Stepping away from coding helps me recharge, stay creative, and
               keep a balanced mindset.
             </p>
-            <div className="bg-slate-100 rounded-lg col-start-1 flex flex-col justify-center items-center">
+            <p className="font-medium text-lg col-span-3 text-white max-lg:hidden">
+              My freetime
+            </p>
+
+            <div className="bg-slate-100 rounded-lg col-start-1 flex flex-col justify-center items-center max-md:h-40">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -204,7 +234,7 @@ text-transparent text-lg"
                 Playing video games keeps me challenged and entertained.
               </p>
             </div>
-            <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center">
+            <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center max-md:h-40">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -226,7 +256,7 @@ text-transparent text-lg"
                 Going for a walk helps me disconnect and recharge.
               </p>
             </div>
-            <div className="bg-slate-100 rounded-lg col-start-1 flex flex-col justify-center items-center">
+            <div className="bg-slate-100 rounded-lg col-start-1 flex flex-col justify-center items-center max-md:h-40">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -247,7 +277,7 @@ text-transparent text-lg"
                 I love discovering new topics or trying new skills.
               </p>
             </div>
-            <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center">
+            <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center max-md:h-40">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -269,13 +299,13 @@ text-transparent text-lg"
             </div>
           </div>
 
-          <div className="bg-teal-50 border-1 border-black rounded-lg p-5 flex flex-col">
+          <div className="bg-teal-50 rounded-lg p-5 flex flex-col max-lg:justify-between">
             <div className="flex">
               <h3 className="text-2xl text-black font-bold">Current status</h3>
               <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
             </div>
 
-            <p className="text-black text-lg font-medium">
+            <p className="text-black text-lg font-medium max-lg:text-base">
               I’m currently looking for a junior front-end developer role where
               I can grow, contribute to real projects, and build user-friendly
               solutions with a team.
@@ -292,7 +322,7 @@ text-transparent text-lg"
           </div>
 
           <div className="flex flex-col justify-between bg-red-100 rounded-lg p-5">
-            <p className="flex flex-col font-medium text-lg font-medium">
+            <p className="flex flex-col font-medium text-lg font-medium max-lg:text-base">
               <span className="text-2xl font-bold w-full">Projects</span>I
               strive to stay consistent by updating and improving my personal
               projects. My latest work: MemoCode - a web application to store
@@ -309,7 +339,7 @@ text-transparent text-lg"
           </div>
         </section>
       </section>
-      <Footer />
+      <Footer className="max-md:hidden" />
     </>
   );
 };
