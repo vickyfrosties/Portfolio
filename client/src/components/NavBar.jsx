@@ -27,7 +27,7 @@ const NavBar = () => {
   return (
     <>
       <nav
-        className={`text-white border-1 border-slate-300 bg-slate-800 rounded-2xl w-1/3 m-auto flex justify-center mt-4 max-md:w-full max-md:mt-0 max-md:rounded-none max-md:h-20 max-md:transition-none max-md:bg-blue-50 max-md:text-black
+        className={`text-white border-1 border-slate-300 bg-slate-800 rounded-2xl w-2/4 m-auto flex justify-center mt-4 max-md:w-full max-md:mt-0 max-md:rounded-none max-md:h-20 max-md:transition-none max-md:bg-blue-50 max-md:text-black
 ${
   visible
     ? "opacity-100 transition-discrete duration-700 ease-in-out"
