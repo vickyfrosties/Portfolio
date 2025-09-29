@@ -8,8 +8,8 @@ const Home = ({ className }) => {
   return (
     <>
       <section className="border-b-1 border-b-slate-500">
-        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 2xl:bg-red-500 2xl:grid-rows-2 max-md:flex max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full max-lg:gap-5">
-          <div className="bg-amber-200 row-span-2 rounded-lg max-md:h-80 max-2xl:row-start-1 max-2xl:row-end-3 2xl:bg-blue-500 2xl:row-span-2 max-lg:row-span-1">
+        <section className="grid grid-cols-3 max-2xl:grid-cols-3 max-2xl:grid-rows-2 2xl:bg-red-500 2xl:grid-rows-2 max-2xl:h-full flex-col min-h-lvh grid-rows-3 p-5 gap-10 w-full max-lg:gap-5 max-md:border-1 max-md:grid-cols-2 ">
+          <div className="bg-amber-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:bg-blue-500 2xl:row-span-2 max-lg:row-span-1 min-h-[250px]">
             <div className="rounded-lg h-full relative">
               <h2 className="text-4xl font-black text-stone-900 absolute ml-5 z-2 top-20 max-2xl:hidden">
                 Hey!
@@ -29,9 +29,9 @@ const Home = ({ className }) => {
                 </h2>
               </div>
 
-              <div className="h-185 w-full z-0 absolute bottom-0 max-md:relative max-md:h-80 max-2xl:h-full max-lg:h-80">
+              <div className="h-185 w-full z-0 absolute bottom-0 max-md:relative max-md:h-80 max-2xl:h-full max-lg:h-80 max-md:flex max-md:justify-center">
                 <img
-                  className="w-full h-full object-cover max-md:object-left"
+                  className="w-full h-full object-cover"
                   src="/assets/png/Portrait.png"
                   alt=""
                 />
@@ -39,7 +39,7 @@ const Home = ({ className }) => {
             </div>
           </div>
 
-          <div className="bg-emerald-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1">
+          <div className="bg-emerald-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1 max-md:min-h-64">
             <div>
               <h3 className="text-2xl font-bold">ABOUT</h3>
               <p className="text-xl mt-5">
@@ -64,11 +64,11 @@ const Home = ({ className }) => {
             </div>
           </div>
 
-          <div className="bg-slate-700 rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden">
+          <div className="bg-slate-700 rounded-lg p-12 flex flex-col justify-center items-center overflow-hidden max-md:min-h-64">
             <Slider />
           </div>
 
-          <div className="bg-amber-200 grid row-span-2 rounded-lg p-12 max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1">
+          <div className="bg-amber-200 grid row-span-2 rounded-lg p-12 max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64">
             <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
 
             <div className="flex flex-col justify-between h-90">
@@ -94,17 +94,17 @@ const Home = ({ className }) => {
             </div>
           </div>
 
-          <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between">
+          <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-md:justify-between">
             <h3 className="text-2xl text-white font-bold">CONTACT</h3>
-            <section className="flex w-full justify-between">
+            <section className="flex w-full justify-between max-md:justify-between">
               <div
-                className="flex flex-col justify-center items-center w-50"
+                className="flex flex-col justify-center items-center w-50 "
                 role="link"
               >
                 <a
                   href="https://linkedin.com/in/mhalla-sounia"
                   target="_blank"
-                  className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center"
+                  className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30 max-md:w-full"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -130,12 +130,12 @@ const Home = ({ className }) => {
               </div>
 
               <div
-                className="flex flex-col justify-center items-center w-50"
+                className="flex flex-col justify-center items-center w-50 "
                 role="link"
               >
                 <a
                   href="mailto:sounia.mhalla@hotmail.com"
-                  className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center"
+                  className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -159,11 +159,11 @@ const Home = ({ className }) => {
                 </a>
               </div>
 
-              <div className="flex flex-col justify-center items-center w-50">
+              <div className="flex flex-col justify-center items-center w-50 ">
                 <a
                   href="https://github.com/vickyfrosties?tab=repositories"
                   target="_blank"
-                  className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center"
+                  className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30"
                   role="link"
                 >
                   <svg
@@ -191,7 +191,7 @@ const Home = ({ className }) => {
           </div>
         </section>
       </section>
-      <Footer className="max-lg:-bottom-37" />
+      <Footer className="max-lg:-bottom-37 max-md:-bottom-117 max-md:left-2/3" />
     </>
   );
 };
