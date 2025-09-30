@@ -33,7 +33,7 @@ const Projects = ({ className }) => {
   return (
     <>
       <section className="max-md:border-b-0 border-b-1 border-b-slate-500">
-        <section className="w-full p-10 grid grid-cols-3 auto-rows-auto gap-x-8 gap-y-10 max-lg:grid-cols-2 max-sm:bg-teal-50 max-sm:flex max-sm:flex-col">
+        <section className="w-full p-10 grid grid-cols-3 auto-rows-auto gap-x-8 gap-y-10 max-lg:grid-cols-2 max-sm:flex max-sm:flex-col">
           {memocode && (
             <div className="rounded-lg bg-[#c1d1fd] flex flex-col p-5">
               <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#8E97F2]">
@@ -48,13 +48,13 @@ const Projects = ({ className }) => {
             <img
               src="/assets/screenshots/memocode-home.jpg"
               alt="MemoCode Homepage"
-              className="rounded-lg"
+              className="rounded-lg size-full object-cover"
             />
           </div>
 
           {memocode && (
-            <div className="rounded-lg border-1 border-solid p-5 flex flex-col h-70 justify-between items-center self-center">
-              <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center">
+            <div className="rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center max-xs:w-full bg-[#c1d1fd] max-xs:h-auto">
+              <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center max-xs:h-auto max-xs:gap-2">
                 <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%]">
                   {memocode.technologies[0]}
                 </p>
@@ -81,11 +81,11 @@ border-red-500 rounded-full pl-3 pr-3"
                 </p>
               </div>
 
-              <div className="rounded-lg p-5 w-full text-white font-medium">
+              <div className="rounded-lg p-5 w-full text-white font-medium max-xs:p-0">
                 <a
                   href={memocode.link}
                   target="_blank"
-                  className="rounded-lg p-5 w-full border-1 border-solid border-[#031a6b] flex justify-between items-center cursor-pointer bg-slate-800"
+                  className="rounded-lg p-5 w-full border-1 border-solid border-[#031a6b] flex justify-between items-center cursor-pointer bg-slate-800 max-xs:p-2"
                 >
                   Check demo
                   <svg
@@ -103,7 +103,7 @@ border-red-500 rounded-full pl-3 pr-3"
           )}
 
           {statmind && (
-            <div className="rounded-lg border-1 border-solid p-5">
+            <div className="rounded-lg border-1 border-solid p-5 bg-teal-50">
               <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#1d2c32]">
                 {statmind.name}
               </h3>
@@ -116,13 +116,13 @@ border-red-500 rounded-full pl-3 pr-3"
             <img
               src="/assets/screenshots/statmind-home.jpeg"
               alt="StatMind Homepage"
-              className="rounded-lg"
+              className="rounded-lg size-full object-cover"
             />
           </div>
 
           {statmind && (
-            <div className=" bg-linear-[45deg,#C1D1FD_55%,#d7f6fe_100%]  rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center">
-              <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center">
+            <div className="bg-teal-50 border-1 border-solid rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center max-xs:w-full max-xs:h-auto">
+              <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center max-xs:h-auto max-xs:gap-2">
                 <p className="rounded-full bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] from-purple-500 to-pink-500 pl-3 pr-3 text-center">
                   {statmind.technologies[0]}
                 </p>
@@ -146,13 +146,13 @@ border-red-500 rounded-full pl-3 pr-3"
                 </p>
               </div>
 
-              <div className="rounded-lg p-5 w-full text-white font-medium">
+              <div className="rounded-lg p-5 w-full text-white font-medium max-xs:h-auto">
                 <a
                   href={statmind.link}
                   target="_blank"
-                  className="rounded-lg p-5 w-full border-1 border-solid border-[#031a6b] flex justify-between items-center cursor-pointer bg-slate-800"
+                  className="rounded-lg p-5 w-full border-1 border-solid border-[#031a6b] flex justify-between items-center cursor-pointer bg-slate-800 max-xs:p-2"
                 >
-                  Check demo
+                  Check GitHub repository
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="42"
@@ -181,17 +181,17 @@ border-red-500 rounded-full pl-3 pr-3"
             <img
               src="/assets/screenshots/greenier-home.jpg"
               alt="Greenier please Homepage"
-              className="rounded-lg"
+              className="rounded-lg size-full object-cover"
             />
           </div>
 
           {greenier && (
-            <div className="border-1 border-solid rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center max-sm:w-full">
-              <div className="rounded-lg p-5 w-full flex flex-wrap justify-between">
+            <div className="rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center max-sm:w-full max-xs:w-full bg-[#f9fcd7] max-xs:h-auto">
+              <div className="rounded-lg p-5 w-full flex flex-wrap justify-between max-xs:h-auto max-xs:gap-2">
                 <p className="rounded-full bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] from-purple-500 to-pink-500 pl-3 pr-3 text-center">
                   {greenier.technologies[0]}
                 </p>
-                <p className=" bg-linear-[45deg,#F7DF1E_55%,#FEF9D8_100%] border-red-500 rounded-full pl-3 pr-3">
+                <p className="bg-linear-[45deg,#F7DF1E_55%,#FEF9D8_100%] border-red-500 rounded-full pl-3 pr-3">
                   {greenier.technologies[1]}
                 </p>
                 <p className="bg-linear-[45deg,#8547C2_35%,#C2A3E0_100%] border-red-500 rounded-full pl-3 pr-3">
@@ -202,13 +202,13 @@ border-red-500 rounded-full pl-3 pr-3"
                 </p>
               </div>
 
-              <div className="rounded-lg p-5 w-full text-white font-medium">
+              <div className="rounded-lg p-5 w-full text-white font-medium max-xs:h-auto">
                 <a
                   href={greenier.link}
                   target="_blank"
-                  className="rounded-lg p-5 w-full border-1 border-solid border-[#031a6b] flex justify-between items-center cursor-pointer bg-slate-800"
+                  className="rounded-lg p-5 w-full flex justify-between items-center cursor-pointer bg-slate-800 max-xs:p-2"
                 >
-                  Check demo
+                  Check GitHub repository
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="42"
@@ -224,7 +224,7 @@ border-red-500 rounded-full pl-3 pr-3"
           )}
         </section>
       </section>
-      <Footer className="-bottom-107 max-lg:-bottom-82 max-md:hidden" />
+      <Footer className="max-lg:-bottom-82 max-md:hidden" />
     </>
   );
 };
