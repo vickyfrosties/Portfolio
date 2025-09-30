@@ -29,7 +29,7 @@ const Home = ({ className }) => {
                 </h2>
               </div>
 
-              <div className="h-185 w-full z-0 absolute bottom-0 max-md:relative max-md:h-80 max-2xl:h-full max-lg:h-80 max-md:flex max-md:justify-center">
+              <div className="h-185 w-full z-0 absolute bottom-0 max-md:relative max-md:h-80 max-2xl:h-full max-lg:h-80 max-md:flex max-md:justify-center max-xs:h-50">
                 <img
                   className="w-full h-full object-cover"
                   src="/assets/png/Portrait.png"
@@ -41,13 +41,13 @@ const Home = ({ className }) => {
 
           <div className="bg-emerald-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1 max-md:min-h-64">
             <div>
-              <h3 className="text-2xl font-bold">ABOUT</h3>
-              <p className="text-xl mt-5 max-xs:hidden">
+              <h3 className="text-2xl font-bold h-10">ABOUT</h3>
+              <p className="text-xl max-xs:hidden">
                 I'm passionate about creating web interfaces. I discovered
                 front-end development about a year ago - and I instantly loved
                 it.
               </p>
-              <p className="text-xl mt-5 max-lg:hidden max-sm:block max-md:block">
+              <p className="text-xl mt-5 max-lg:hidden max-sm:block max-md:block max-xs:mt-0">
                 Today, I design and build web interfaces that feeds my learning,
                 spark my creativity, and challenge me to grow. My world? A mix
                 of creativity, curiosity and a constant desire to improve.
@@ -57,7 +57,7 @@ const Home = ({ className }) => {
             <div className="flex w-full justify-end">
               <button
                 onClick={() => navigate("/about")}
-                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
+                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
               >
                 Learn more
               </button>
@@ -71,7 +71,7 @@ const Home = ({ className }) => {
           <div className="bg-amber-200 grid row-span-2 rounded-lg p-12 max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64">
             <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
 
-            <div className="flex flex-col justify-between h-90  max-xs:h-auto">
+            <div className="flex flex-col justify-between h-90 max-xs:h-60">
               <p className="text-xl">
                 Most of my projects are full-stack applications that I keep
                 improving over time. I enjoy revisiting them to add new
@@ -86,7 +86,7 @@ const Home = ({ className }) => {
               <div className="flex justify-end">
                 <button
                   onClick={() => navigate("/projects")}
-                  className="rounded-lg w-30 pt-2 pb-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
+                  className="rounded-lg w-30 pt-2 pb-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
                 >
                   See projects
                 </button>
@@ -98,7 +98,7 @@ const Home = ({ className }) => {
             <h3 className="text-2xl text-white font-bold">CONTACT</h3>
             <section className="flex w-full justify-between max-md:justify-between max-sm:justify-around max-xs:flex max-xs:flex-col max-xs:gap-3 max-xs:justify-between">
               <div
-                className="flex flex-col justify-center items-center w-50 max-sm:w-20 max-xs:w-full max-xs:h-20"
+                className="flex flex-col justify-center items-center w-50 max-sm:w-40 max-xs:w-full max-xs:h-20"
                 role="link"
               >
                 <a
@@ -123,14 +123,14 @@ const Home = ({ className }) => {
                     <rect width="4" height="12" x="2" y="9" />
                     <circle cx="4" cy="4" r="2" />
                   </svg>
-                  <p className="text-center w-full pt-2 max-sm:hidden max-xs:block">
+                  <p className="text-center w-full pt-2 max-sm:text-sm max-xs:block">
                     Find me on LinkedIn.
                   </p>
                 </a>
               </div>
 
               <div
-                className="flex flex-col justify-center items-center w-50 max-sm:w-20 max-xs:w-full max-xs:h-20"
+                className="flex flex-col justify-center items-center w-50 max-sm:w-40 max-xs:w-full max-xs:h-20"
                 role="link"
               >
                 <a
@@ -153,13 +153,13 @@ const Home = ({ className }) => {
                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                     <rect x="2" y="4" width="20" height="16" rx="2" />
                   </svg>
-                  <p className="text-center w-full pt-2 max-sm:hidden max-xs:block">
+                  <p className="text-center w-full pt-2 max-sm:text-sm max-xs:block">
                     Feel free to reach out.
                   </p>
                 </a>
               </div>
 
-              <div className="flex flex-col justify-center items-center w-50 max-sm:w-20 max-xs:w-full max-xs:h-20">
+              <div className="flex flex-col justify-center items-center w-50 max-sm:w-40 max-xs:w-full max-xs:h-20">
                 <a
                   href="https://github.com/vickyfrosties?tab=repositories"
                   target="_blank"
@@ -182,7 +182,7 @@ const Home = ({ className }) => {
                     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
                     <path d="M9 18c-4.51 2-5-2-7-2" />
                   </svg>
-                  <p className="text-center w-full max-sm:hidden max-xs:block">
+                  <p className="text-center w-full max-sm:text-sm max-xs:block">
                     Check out my GitHub profile.
                   </p>
                 </a>
