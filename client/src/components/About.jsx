@@ -10,7 +10,7 @@ const About = () => {
         <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5 max-md:flex max-md:flex-col max-md:h-auto">
           <div className="grid gap-y-4 max-lg:flex">
             <div className="bg-emerald-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
-              <div className="flex items-start max-md:items-center">
+              <div className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="60"
@@ -21,7 +21,7 @@ const About = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="lucide lucide-signpost-big-icon lucide-signpost-big max-lg:hidden max-md:block"
+                  className="lucide lucide-signpost-big-icon lucide-signpost-big max-lg:hidden max-md:block max-xs:size-10"
                 >
                   <path d="M10 9H4L2 7l2-2h6" />
                   <path d="M14 5h6l2 2-2 2h-6" />
@@ -39,8 +39,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-amber-200 p-5 rounded-lg flex max-lg:justify-between max-md:justify-around">
-            <p className="flex flex-col justify-between items-center font-medium text-lg h-full max-lg:text-base max-lg:h-auto max-lg:justify-start max-md:w-3/4">
+          <div className="bg-amber-200 p-5 rounded-lg flex max-lg:justify-between max-md:justify-around max-lg:overflow-scroll">
+            <p className="flex flex-col justify-between items-center font-medium text-lg h-full max-lg:justify-start max-md:w-3/4 max-lg:text-base max-xl:overflow-scroll">
               <span className="text-2xl font-bold w-full">Motivation</span>
               What excites me is being part of the entire process — from the
               initial idea to the final product. Seeing a project come to life
@@ -58,7 +58,7 @@ const About = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-medal-icon lucide-medal max-lg:hidden max-md:block"
+                className="lucide lucide-medal-icon lucide-medal max-lg:hidden max-md:block max-xs:size-10"
               >
                 <path d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15" />
                 <path d="M11 12 5.12 2.2" />
@@ -70,33 +70,30 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-emerald-200 p-5 rounded-lg flex flex-col row-span-2 max-lg:row-span-1">
+          <div className="bg-emerald-200 p-5 rounded-lg flex flex-col row-span-2 max-lg:row-span-1 max-lg:justify-between">
             <h3 className="text-2xl font-bold">Technologies stack</h3>
 
-            <section
-              className="h-full flex flex-col justify-evenly bg-white rounded-lg max-lg:justify-center max-md:h-25 
-"
-            >
-              <div className="lg:hidden max-lg:flex max-lg:flex-wrap max-lg:justify-evenly">
+            <section className="h-full flex flex-col justify-evenly bg-white rounded-lg max-lg:justify-center max-lg:h-30 max-md:h-25 border-1 max-xs:p-3">
+              <div className="lg:hidden max-lg:flex max-lg:flex-wrap max-lg:justify-evenly max-xs:w-auto max-xs:items-center max-xs:h-full max-xs:flex-wrap  max-xs:gap-2">
                 <img
                   src="/assets/svg/react.svg"
                   alt="React logo"
-                  className="lg:hidden w-15 h-15"
+                  className="lg:hidden w-15 h-15 max-xs:size-10 max-lg:size-12"
                 />
                 <img
                   src="/assets/svg/javascript.svg"
                   alt="Javascript logo"
-                  className="lg:hidden w-15 h-15"
+                  className="lg:hidden w-15 h-15 max-xs:size-10 max-lg:size-12"
                 />
                 <img
                   src="/assets/svg/sass.svg"
                   alt="SASS/SCSS logo"
-                  className="lg:hidden w-15 h-15"
+                  className="lg:hidden w-15 h-15 max-xs:size-10 max-lg:size-12"
                 />
                 <img
                   src="/assets/svg/tailwindcss.svg"
                   alt="Tailwind CSS logo"
-                  className="lg:hidden w-15 h-15"
+                  className="lg:hidden w-15 h-15  max-xs:size-10 max-lg:size-12"
                 />
               </div>
 
@@ -174,7 +171,7 @@ text-transparent text-lg"
           </div>
 
           <div className="bg-amber-200 p-5 rounded-lg flex max-md:justify-around">
-            <p className="font-medium text-lg flex flex-col justify-evenly max-lg:text-base max-lg:w-3/4">
+            <p className="font-medium text-lg flex flex-col justify-evenly max-lg:text-base max-xs:overflow-auto max-xl:overflow-scroll">
               <span className="text-2xl font-bold w-full">Goal</span>
               My goal is to contribute to meaningful projects that are
               functional and useful for real users. I know I’m still at a junior
@@ -192,7 +189,7 @@ text-transparent text-lg"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-target-icon lucide-target max-lg:hidden max-md:block"
+                className="lucide lucide-target-icon lucide-target max-lg:hidden max-md:block max-xs:size-10"
               >
                 <circle cx="12" cy="12" r="10" />
                 <circle cx="12" cy="12" r="6" />
@@ -202,7 +199,7 @@ text-transparent text-lg"
           </div>
 
           <div className="bg-slate-700 col-start-2 row-span-2 p-5 rounded-lg grid grid-rows-3 grid-cols-2 gap-3 max-lg:row-start-3 max-lg:col-span-3 max-lg:flex max-md:flex max-md:flex-col">
-            <p className="font-medium text-lg col-span-3 text-white max-lg:hidden max-md:block">
+            <p className="font-medium text-lg col-span-3 text-white max-lg:hidden max-md:block ">
               Here's a glimpse of what I do when I'm not glued to the screen.
               Stepping away from coding helps me recharge, stay creative, and
               keep a balanced mindset.
@@ -219,7 +216,7 @@ text-transparent text-lg"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-gamepad2-icon lucide-gamepad-2"
+                className="lucide lucide-gamepad2-icon lucide-gamepad-2 max-xs:size-10"
               >
                 <line x1="6" x2="10" y1="11" y2="11" />
                 <line x1="8" x2="8" y1="9" y2="13" />
@@ -227,7 +224,7 @@ text-transparent text-lg"
                 <line x1="18" x2="18.01" y1="10" y2="10" />
                 <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
               </svg>
-              <p className="text-center text-sm">
+              <p className="text-center text-sm max-md:text-base">
                 Playing video games keeps me challenged and entertained.
               </p>
             </div>
@@ -242,17 +239,18 @@ text-transparent text-lg"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-footprints-icon lucide-footprints"
+                className="lucide lucide-footprints-icon lucide-footprints max-xs:size-10"
               >
                 <path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" />
                 <path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z" />
                 <path d="M16 17h4" />
                 <path d="M4 13h4" />
               </svg>
-              <p className="text-center text-sm">
+              <p className="text-center text-sm max-md:text-base">
                 Going for a walk helps me disconnect and recharge.
               </p>
             </div>
+
             <div className="bg-slate-100 rounded-lg col-start-1 flex flex-col justify-center items-center max-md:h-40">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -264,16 +262,17 @@ text-transparent text-lg"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-library-big-icon lucide-library-big"
+                className="lucide lucide-library-big-icon lucide-library-big max-xs:size-10"
               >
                 <rect width="8" height="18" x="3" y="3" rx="1" />
                 <path d="M7 3v18" />
                 <path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
               </svg>
-              <p className="text-center text-sm">
+              <p className="text-center text-sm max-md:text-base">
                 I love discovering new topics or trying new skills.
               </p>
             </div>
+
             <div className="bg-slate-100 rounded-lg col-start-2 flex flex-col justify-center items-center max-md:h-40">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -285,12 +284,12 @@ text-transparent text-lg"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-pen-line-icon lucide-pen-line"
+                className="lucide lucide-pen-line-icon lucide-pen-line max-xs:size-10"
               >
                 <path d="M13 21h8" />
                 <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
               </svg>
-              <p className="text-center text-sm">
+              <p className="text-center text-sm max-md:text-base">
                 Writing helps me sharpen my expression and creativity.
               </p>
             </div>
@@ -308,9 +307,9 @@ text-transparent text-lg"
               solutions with a team.
             </p>
 
-            <div className="flex self-end">
+            <div className="flex self-end max-xs:w-full">
               <button
-                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
+                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
                 onClick={() => navigate("/contact")}
               >
                 Let's connect
@@ -325,10 +324,10 @@ text-transparent text-lg"
               projects. My latest work: MemoCode - a web application to store
               personal notes.
             </p>
-            <div className="flex justify-end">
+            <div className="flex justify-end max-xs:w-full">
               <button
                 onClick={() => navigate("/projects")}
-                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold"
+                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
               >
                 See projects
               </button>
