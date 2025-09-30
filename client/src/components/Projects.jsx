@@ -224,7 +224,7 @@ border-red-500 rounded-full pl-3 pr-3"
           )}
         </section>
       </section>
-      <Footer className="max-lg:-bottom-82 max-md:hidden" />
+      <Footer className="max-lg:-bottom-82 max-md:hidden 2xl:-bottom-60" />
     </>
   );
 };
