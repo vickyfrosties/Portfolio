@@ -36,7 +36,7 @@ ${
       >
         <ul className="w-3/4 flex justify-between items-center pt-2 pb-2 max-sm:w-full">
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-sm:w-full max-xs:h-full"
             to="/"
           >
             <svg
@@ -49,16 +49,16 @@ ${
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-house-icon lucide-house md:hidden"
+              className="lucide lucide-house-icon lucide-house md:hidden max-xs:size-10"
             >
               <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
               <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
             </svg>
-            Home
+            <p className="max-xs:hidden">Home</p>
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-xs:border-x max-sm:w-full max-xs:h-full"
             to="/about"
           >
             <svg
@@ -71,17 +71,17 @@ ${
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-info-icon lucide-info md:hidden"
+              className="lucide lucide-info-icon lucide-info md:hidden max-xs:size-10"
             >
               <circle cx="12" cy="12" r="10" />
               <path d="M12 16v-4" />
               <path d="M12 8h.01" />
             </svg>
-            About
+            <p className="max-xs:hidden">About</p>
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-sm:w-full max-xs:h-full"
             to="/projects"
           >
             <svg
@@ -94,17 +94,17 @@ ${
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-folder-code-icon lucide-folder-code md:hidden"
+              className="lucide lucide-folder-code-icon lucide-folder-code md:hidden max-xs:size-10"
             >
               <path d="M10 10.5 8 13l2 2.5" />
               <path d="m14 10.5 2 2.5-2 2.5" />
               <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2z" />
             </svg>
-            Projects
+            <p className="max-xs:hidden">Projects</p>
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg"
+            className="cursor-pointer text-xl font-medium text-white max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-xs:h-full max-xs:border-l max-sm:w-full "
             to="/contact"
           >
             <svg
@@ -117,7 +117,7 @@ ${
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-share2-icon lucide-share-2 md:hidden"
+              className="lucide lucide-share2-icon lucide-share-2 md:hidden max-xs:size-10"
             >
               <circle cx="18" cy="5" r="3" />
               <circle cx="6" cy="12" r="3" />
@@ -125,7 +125,7 @@ ${
               <line x1="8.59" x2="15.42" y1="13.51" y2="17.49" />
               <line x1="15.41" x2="8.59" y1="6.51" y2="10.49" />
             </svg>
-            Contact
+            <p className="max-xs:hidden">Contact</p>
           </NavLink>
         </ul>
       </nav>
