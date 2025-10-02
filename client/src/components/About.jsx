@@ -9,7 +9,7 @@ const About = () => {
       <section className="max-md:h-auto h-full">
         <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5 max-md:flex max-md:flex-col max-md:h-auto">
           <div className="grid gap-y-4 max-lg:flex">
-            <div className="bg-emerald-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
+            <div className="bg-slate-100 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
               <div className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-amber-200 p-5 rounded-lg flex max-lg:justify-around max-md:justify-around max-lg:overflow-scroll">
+          <div className="bg-slate-100 p-5 rounded-lg flex max-lg:justify-around max-md:justify-around max-lg:overflow-scroll">
             <p className="flex flex-col items-center font-medium text-lg h-full max-md:w-3/4 max-lg:text-base max-xl:overflow-scroll lg:size-full">
               <span className="text-2xl font-bold w-full">Motivation</span>
               What excites me is being part of the entire process — from the
@@ -70,7 +70,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-emerald-200 p-5 rounded-lg flex flex-col row-span-2 max-lg:row-span-1 max-lg:justify-between">
+          <div className="bg-yellow-200 p-5 rounded-lg flex flex-col row-span-2 max-lg:row-span-1 max-lg:justify-between">
             <h3 className="text-2xl font-bold">Technologies stack</h3>
 
             <section className="h-full flex flex-col justify-evenly bg-white rounded-lg max-lg:justify-center max-lg:size-full max-md:h-25 border-1 max-xs:p-3">
@@ -170,7 +170,7 @@ text-transparent text-lg"
             </section>
           </div>
 
-          <div className="bg-amber-200 p-5 rounded-lg flex max-md:justify-around">
+          <div className="bg-slate-100 p-5 rounded-lg flex max-md:justify-around">
             <p className="font-medium text-lg flex flex-col items-center max-lg:text-base max-xs:overflow-auto max-xl:overflow-scroll">
               <span className="text-2xl font-bold w-full">Goal</span>
               My goal is to contribute to meaningful projects that are
@@ -295,7 +295,7 @@ text-transparent text-lg"
             </div>
           </div>
 
-          <div className="bg-teal-50 rounded-lg p-5 flex flex-col max-lg:justify-between">
+          <div className="bg-yellow-200 rounded-lg p-5 flex flex-col max-lg:justify-between">
             <div className="flex">
               <h3 className="text-2xl text-black font-bold">Current status</h3>
               <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
@@ -309,7 +309,7 @@ text-transparent text-lg"
 
             <div className="flex self-end max-xs:w-full">
               <button
-                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
+                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-600 font-semibold max-xs:w-full"
                 onClick={() => navigate("/contact")}
               >
                 Let's connect
@@ -317,7 +317,7 @@ text-transparent text-lg"
             </div>
           </div>
 
-          <div className="flex flex-col justify-between bg-red-100 rounded-lg p-5">
+          <div className="flex flex-col justify-between bg-slate-100 rounded-lg p-5">
             <p className="flex flex-col font-medium text-lg font-medium max-lg:text-base">
               <span className="text-2xl font-bold w-full">Projects</span>I
               strive to stay consistent by updating and improving my personal
@@ -327,7 +327,7 @@ text-transparent text-lg"
             <div className="flex justify-end max-xs:w-full">
               <button
                 onClick={() => navigate("/projects")}
-                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
+                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-600 font-semibold max-xs:w-full"
               >
                 See projects
               </button>

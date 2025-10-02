@@ -36,7 +36,7 @@ const Contact = () => {
       <section className="h-full">
         <section className="w-full h-full flex justify-center max-md:justify-normal">
           <section className="w-3/4 min-h-3/4 m-auto bg-slate-700 rounded-l-2xl rounded-r-3xl flex max-md:flex-col ">
-            <section className="w-90 bg-slate-200 rounded-r-3xl rounded-l-xl max-md:h-auto max-md:w-full max-md:flex max-sm:h-full max-xs:flex-col">
+            <section className="w-90 bg-slate-100 rounded-r-3xl rounded-l-xl max-md:h-auto max-md:w-full max-md:flex max-sm:h-full max-xs:flex-col">
               <div>
                 <img
                   src="/assets/png/Portrait.png"
@@ -51,7 +51,7 @@ const Contact = () => {
               <section className="p-3 grid grid-col-3 grid-row-2 gap-x-3 gap-y-7 h-auto max-sm:flex max-sm:flex-col max-xs:flex-row max-xs:flex-wrap max-xs:gap-2 max-xs:w-full">
                 <div className="max-xs:w-full">
                   <a
-                    className="flex flex-col justify-center items-center  cursor-pointer bg-zinc-100 p-3 rounded-lg h-30 max-sm:h-auto"
+                    className="flex flex-col justify-center items-center cursor-pointer bg-slate-200 p-3 rounded-lg h-30 max-sm:h-auto"
                     href="https://github.com/vickyfrosties?tab=repositories"
                     target="_blank"
                   >
@@ -80,7 +80,7 @@ const Contact = () => {
                   <a
                     href="https://www.linkedin.com/in/mhalla-sounia/"
                     target="_blank"
-                    className="flex flex-col justify-center items-center cursor-pointer bg-zinc-100 p-3 rounded-lg h-30 max-sm:h-auto"
+                    className="flex flex-col justify-center items-center cursor-pointer bg-slate-200 p-3 rounded-lg h-30 max-sm:h-auto"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const Contact = () => {
                 <div className="col-span-2 max-xs:w-full">
                   <a
                     href="mailto:sounia.mhalla@hotmail.com"
-                    className="cursor-pointer bg-zinc-100 flex flex-col justify-center items-center p-3 rounded-lg h-30 max-sm:h-auto"
+                    className="cursor-pointer bg-slate-200 flex flex-col justify-center items-center p-3 rounded-lg h-30 max-sm:h-auto"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@ const Contact = () => {
 
             <section className="w-2/4 h-90 flex flex-col justify-around items-center m-auto max-md:w-full max-md:h-full max-sm:flex-col max-sm:h-full">
               <div className="max-lg:w-60 max-md:w-full max-sm:w-full max-sm:p-3">
-                <h3 className="text-2xl font-semibold bg-linear-65 from-purple-500 to-pink-500 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] bg-clip-text text-transparent max-lg:text-lg max-lg:w-full">
+                <h3 className="text-2xl font-semibold text-slate-100 text-center  max-lg:text-lg max-lg:w-full">
                   Feel free to reach out - I’d be happy to chat about web
                   development, an opportunity, or simply to connect.
                 </h3>
@@ -155,7 +155,7 @@ const Contact = () => {
                   <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
                 </svg>
                 {quotation && quotation.quote ? (
-                  <div className="max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center">
+                  <div className="max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center bg-slate-100">
                     <h3 className="text-center text-xl font-semibold max-lg:text-base max-sm:text-white max-sm:text-center max-md:text-white max-md:text-center">
                       {quotation.quote}
                       <span className="text-lg font-md italic max-lg:text-base max-sm:text-white">
@@ -164,7 +164,7 @@ const Contact = () => {
                     </h3>
                   </div>
                 ) : (
-                  <div className="w-full text-center text-xl font-semibold max-lg:text-lg max-sm:text-white">
+                  <div className="w-full h-full flex justify-center items-center text-center text-xl font-semibold  max-lg:text-lg max-sm:text-white">
                     <p>Loading...</p>
                   </div>
                 )}

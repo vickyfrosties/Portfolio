@@ -2,13 +2,13 @@ import { useNavigate } from "react-router";
 import Slider from "./Slider";
 import Footer from "./Footer";
 
-const Home = ({ className }) => {
+const Home = () => {
   const navigate = useNavigate();
 
   return (
     <>
       <section className="grid grid-cols-3 grid-rows-3 flex-col min-h-lvh p-5 gap-10 w-full max-lg:gap-5 max-md:grid-cols-2 max-sm:flex max-sm:border-0 max-md:border-0 2xl:grid-rows-2 2xl:h-full max-lg:grid-rows-2">
-        <div className="bg-amber-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:row-span-1 max-lg:row-span-1 min-h-[250px]">
+        <div className="bg-slate-100 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:row-span-1 max-lg:row-span-1 min-h-[250px]">
           <div className="rounded-lg h-full relative">
             <div className="absolute z-1  2xl:top-10 bottom-25 ml-5 mr-5 max-md:-bottom-5 max-md:p-3 max-md:m-auto max-2xl:left-80 max-2xl:static max-2xl:pt-5">
               <h1 className="text-4xl font-bold max-md:text-2xl max-lg:text-2xl max-sm:text-2xl">
@@ -16,9 +16,8 @@ const Home = ({ className }) => {
               </h1>
 
               <h2 className="text-2xl font-bold max-md:text-xl max-lg:text-xl">
-                a
-                <span className="bg-gradient-to-r from-pink-400 via-rose-500 to-fuchsia-600 ml-2 bg-clip-text text-transparent mr-2 max-lg:text-xl">
-                  Junior Front-End Developer
+                <span className="mr-2 max-lg:text-xl">
+                  a Junior Front-End Developer
                 </span>
                 nice to meet you!
               </h2>
@@ -34,7 +33,7 @@ const Home = ({ className }) => {
           </div>
         </div>
 
-        <div className="bg-emerald-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1 max-md:min-h-64">
+        <div className="bg-yellow-200 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1 max-md:min-h-64">
           <div>
             <h3 className="text-2xl font-bold h-10">ABOUT</h3>
             <p className="text-xl max-xs:hidden">
@@ -51,7 +50,7 @@ const Home = ({ className }) => {
           <div className="flex w-full justify-end">
             <button
               onClick={() => navigate("/about")}
-              className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
+              className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-600 font-semibold max-xs:w-full"
             >
               Learn more
             </button>
@@ -62,7 +61,7 @@ const Home = ({ className }) => {
           <Slider />
         </div>
 
-        <div className="bg-amber-200 grid row-span-2 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-lg:row-span-1 max-lg:bg-green-300 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64 2xl:row-span-1">
+        <div className="bg-slate-100 grid row-span-2 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-lg:row-span-1 max-lg:bg-green-300 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64 2xl:row-span-1">
           <div>
             <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
             <p className="text-xl">
@@ -80,14 +79,14 @@ const Home = ({ className }) => {
           <div className="flex w-full justify-end items-end">
             <button
               onClick={() => navigate("/projects")}
-              className="rounded-lg w-30 h-10 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
+              className="rounded-lg w-30 h-10 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-600 font-semibold max-xs:w-full"
             >
               See projects
             </button>
           </div>
         </div>
 
-        <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-lg:h-auto">
+        <div className="bg-slate-700 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-lg:h-auto">
           <h3 className="text-2xl text-white font-bold">CONTACT</h3>
           <section className="flex w-full justify-between max-md:justify-between max-sm:justify-around max-xs:flex max-xs:flex-col max-xs:gap-3 max-xs:justify-between 2xl:size-full max-lg:h-full max-lg:flex-col">
             <div

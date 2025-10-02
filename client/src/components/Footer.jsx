@@ -1,8 +1,8 @@
-export default function Footer({ className = "" }) {
+export default function Footer() {
   return (
     <>
       <footer
-        className={`absolute bg-white w-full px-4 text-xs text-black ${className} `}
+        className={"absolute bg-transparent w-full px-4 text-xs text-black"}
       >
         <div className="w-90 flex justify-between items-center max-sm:w-full max-sm:h-7">
           <p className="text-sm max-xs:text-xs">2025 - © Sounia Mhalla</p>
