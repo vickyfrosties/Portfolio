@@ -7,7 +7,7 @@ const Home = ({ className }) => {
 
   return (
     <>
-      <section className="grid grid-cols-3 grid-rows-3 flex-col min-h-lvh p-5 gap-10 w-full max-lg:gap-5 border-b-1 max-md:grid-cols-2 max-sm:flex max-sm:border-0 max-md:border-0 2xl:grid-rows-2 2xl:h-full">
+      <section className="grid grid-cols-3 grid-rows-3 flex-col min-h-lvh p-5 gap-10 w-full max-lg:gap-5 max-md:grid-cols-2 max-sm:flex max-sm:border-0 max-md:border-0 2xl:grid-rows-2 2xl:h-full">
         <div className="bg-amber-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:row-span-1 max-lg:row-span-1 min-h-[250px]">
           <div className="rounded-lg h-full relative">
             <div className="absolute z-1  2xl:top-10 bottom-25 ml-5 mr-5 max-md:-bottom-5 max-md:p-3 max-md:m-auto max-2xl:left-80 max-2xl:static max-2xl:pt-5">
@@ -184,7 +184,7 @@ const Home = ({ className }) => {
           </section>
         </div>
       </section>
-      <Footer className="max-lg:-bottom-37 max-md:left-2/3 max-md:hidden max-sm:fixed max-sm:w-full max-sm:left-1/2 " />
+      <Footer />
     </>
   );
 };

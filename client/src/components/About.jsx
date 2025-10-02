@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <>
-      <section className="max-md:h-auto border-b-1 border-b-slate-500 h-full">
+      <section className="max-md:h-auto h-full">
         <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5 max-md:flex max-md:flex-col max-md:h-auto">
           <div className="grid gap-y-4 max-lg:flex">
             <div className="bg-emerald-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">

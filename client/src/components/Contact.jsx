@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="max-md:border-b-0 border-b-1 border-b-slate-500 h-full">
+      <section className="h-full">
         <section className="w-full h-full flex justify-center max-md:justify-normal">
           <section className="w-3/4 min-h-3/4 m-auto bg-slate-700 rounded-l-2xl rounded-r-3xl flex max-md:flex-col ">
             <section className="w-90 bg-slate-200 rounded-r-3xl rounded-l-xl max-md:h-auto max-md:w-full max-md:flex max-sm:h-full max-xs:flex-col">
@@ -151,7 +151,7 @@ const Contact = () => {
                 </svg>
                 {quotation && quotation.quote ? (
                   <div className="max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center">
-                    <h3 className="text-xl font-semibold max-lg:text-base max-sm:text-white max-sm:text-center max-md:text-white max-md:text-center">
+                    <h3 className="text-center text-xl font-semibold max-lg:text-base max-sm:text-white max-sm:text-center max-md:text-white max-md:text-center">
                       {quotation.quote}
                       <span className="text-lg font-md italic max-lg:text-base max-sm:text-white">
                         - {quotation.author ? quotation.author : "Unknown"}

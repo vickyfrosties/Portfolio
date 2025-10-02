@@ -32,7 +32,7 @@ const Projects = ({ className }) => {
 
   return (
     <>
-      <section className="max-md:border-b-0 border-b-1 border-b-slate-500">
+      <section>
         <section className="w-full p-10 grid grid-cols-3 auto-rows-auto gap-x-8 gap-y-10 max-lg:grid-cols-2 max-sm:flex max-sm:flex-col">
           {memocode && (
             <div className="rounded-lg bg-[#c1d1fd] flex flex-col p-5">
@@ -224,7 +224,7 @@ border-red-500 rounded-full pl-3 pr-3"
           )}
         </section>
       </section>
-      <Footer className="max-lg:-bottom-82 max-md:hidden 2xl:-bottom-60" />
+      <Footer />
     </>
   );
 };
