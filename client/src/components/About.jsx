@@ -39,8 +39,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-amber-200 p-5 rounded-lg flex max-lg:justify-between max-md:justify-around max-lg:overflow-scroll">
-            <p className="flex flex-col justify-between items-center font-medium text-lg h-full max-lg:justify-start max-md:w-3/4 max-lg:text-base max-xl:overflow-scroll">
+          <div className="bg-amber-200 p-5 rounded-lg flex max-lg:justify-around max-md:justify-around max-lg:overflow-scroll">
+            <p className="flex flex-col items-center font-medium text-lg h-full max-md:w-3/4 max-lg:text-base max-xl:overflow-scroll lg:size-full">
               <span className="text-2xl font-bold w-full">Motivation</span>
               What excites me is being part of the entire process — from the
               initial idea to the final product. Seeing a project come to life
@@ -73,8 +73,8 @@ const About = () => {
           <div className="bg-emerald-200 p-5 rounded-lg flex flex-col row-span-2 max-lg:row-span-1 max-lg:justify-between">
             <h3 className="text-2xl font-bold">Technologies stack</h3>
 
-            <section className="h-full flex flex-col justify-evenly bg-white rounded-lg max-lg:justify-center max-lg:h-30 max-md:h-25 border-1 max-xs:p-3">
-              <div className="lg:hidden max-lg:flex max-lg:flex-wrap max-lg:justify-evenly max-xs:w-auto max-xs:items-center max-xs:h-full max-xs:flex-wrap  max-xs:gap-2">
+            <section className="h-full flex flex-col justify-evenly bg-white rounded-lg max-lg:justify-center max-lg:size-full max-md:h-25 border-1 max-xs:p-3">
+              <div className="lg:hidden max-lg:flex max-lg:flex-wrap max-lg:justify-evenly max-xs:w-auto max-xs:items-center max-xs:h-full max-xs:flex-wrap max-xs:gap-2">
                 <img
                   src="/assets/svg/react.svg"
                   alt="React logo"
@@ -171,7 +171,7 @@ text-transparent text-lg"
           </div>
 
           <div className="bg-amber-200 p-5 rounded-lg flex max-md:justify-around">
-            <p className="font-medium text-lg flex flex-col justify-evenly max-lg:text-base max-xs:overflow-auto max-xl:overflow-scroll">
+            <p className="font-medium text-lg flex flex-col items-center max-lg:text-base max-xs:overflow-auto max-xl:overflow-scroll">
               <span className="text-2xl font-bold w-full">Goal</span>
               My goal is to contribute to meaningful projects that are
               functional and useful for real users. I know I’m still at a junior
@@ -301,7 +301,7 @@ text-transparent text-lg"
               <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
             </div>
 
-            <p className="text-black text-lg font-medium max-lg:text-base">
+            <p className="text-black text-lg font-medium max-lg:text-base max-md:h-auto max-lg:h-40">
               I’m currently looking for a junior front-end developer role where
               I can grow, contribute to real projects, and build user-friendly
               solutions with a team.
@@ -335,7 +335,7 @@ text-transparent text-lg"
           </div>
         </section>
       </section>
-      <Footer className="max-md:hidden" />
+      <Footer />
     </>
   );
 };
