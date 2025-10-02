@@ -7,7 +7,7 @@ const Home = ({ className }) => {
 
   return (
     <>
-      <section className="grid grid-cols-3 grid-rows-3 flex-col min-h-lvh p-5 gap-10 w-full max-lg:gap-5 max-md:grid-cols-2 max-sm:flex max-sm:border-0 max-md:border-0 2xl:grid-rows-2 2xl:h-full">
+      <section className="grid grid-cols-3 grid-rows-3 flex-col min-h-lvh p-5 gap-10 w-full max-lg:gap-5 max-md:grid-cols-2 max-sm:flex max-sm:border-0 max-md:border-0 2xl:grid-rows-2 2xl:h-full max-lg:grid-rows-2">
         <div className="bg-amber-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:row-span-1 max-lg:row-span-1 min-h-[250px]">
           <div className="rounded-lg h-full relative">
             <div className="absolute z-1  2xl:top-10 bottom-25 ml-5 mr-5 max-md:-bottom-5 max-md:p-3 max-md:m-auto max-2xl:left-80 max-2xl:static max-2xl:pt-5">
@@ -41,7 +41,7 @@ const Home = ({ className }) => {
               I'm passionate about creating web interfaces. I discovered
               front-end development about a year ago - and I instantly loved it.
             </p>
-            <p className="text-xl mt-5 max-lg:hidden max-sm:block max-md:block max-xs:mt-0">
+            <p className="text-xl mt-5 max-sm:block max-md:block max-xs:mt-0">
               Today, I design and build web interfaces that feeds my learning,
               spark my creativity, and challenge me to grow. My world? A mix of
               creativity, curiosity and a constant desire to improve.
@@ -62,29 +62,28 @@ const Home = ({ className }) => {
           <Slider />
         </div>
 
-        <div className="bg-amber-200 grid row-span-2 rounded-lg p-12 max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64 2xl:row-span-1">
-          <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
-
-          <div className="flex flex-col justify-between h-90 max-xs:h-60 2xl:h-auto">
+        <div className="bg-amber-200 grid row-span-2 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-lg:row-span-1 max-lg:bg-green-300 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64 2xl:row-span-1">
+          <div>
+            <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
             <p className="text-xl">
               Most of my projects are full-stack applications that I keep
               improving over time. I enjoy revisiting them to add new features,
               refine the code, and apply what I learn along the way.
             </p>
 
-            <p className="text-xl h-30 max-lg:hidden max-md:block max-sm:block max-xs:hidden">
+            <p className="text-xl mt-5 max-md:block max-sm:block max-xs:hidden">
               This helps me build more complete and long-lasting projects while
               I keep strengthening my skills.
             </p>
+          </div>
 
-            <div className="flex justify-end">
-              <button
-                onClick={() => navigate("/projects")}
-                className="rounded-lg w-30 pt-2 pb-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
-              >
-                See projects
-              </button>
-            </div>
+          <div className="flex w-full justify-end items-end">
+            <button
+              onClick={() => navigate("/projects")}
+              className="rounded-lg w-30 h-10 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-500 font-semibold max-xs:w-full"
+            >
+              See projects
+            </button>
           </div>
         </div>
 
@@ -92,7 +91,7 @@ const Home = ({ className }) => {
           <h3 className="text-2xl text-white font-bold">CONTACT</h3>
           <section className="flex w-full justify-between max-md:justify-between max-sm:justify-around max-xs:flex max-xs:flex-col max-xs:gap-3 max-xs:justify-between 2xl:size-full max-lg:h-full max-lg:flex-col">
             <div
-              className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:w-full"
+              className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:size-full"
               role="link"
             >
               <a
@@ -124,7 +123,7 @@ const Home = ({ className }) => {
             </div>
 
             <div
-              className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:w-full"
+              className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20  max-lg:size-full"
               role="link"
             >
               <a
@@ -153,7 +152,7 @@ const Home = ({ className }) => {
               </a>
             </div>
 
-            <div className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:w-full">
+            <div className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:size-full">
               <a
                 href="https://github.com/vickyfrosties?tab=repositories"
                 target="_blank"
