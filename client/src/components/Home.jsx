@@ -88,17 +88,17 @@ const Home = ({ className }) => {
           </div>
         </div>
 
-        <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-lg:border-1 max-lg:h-auto">
+        <div className="bg-orange-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-lg:h-auto">
           <h3 className="text-2xl text-white font-bold">CONTACT</h3>
-          <section className="flex w-full justify-between max-md:justify-between max-sm:justify-around max-xs:flex max-xs:flex-col max-xs:gap-3 max-xs:justify-between 2xl:h-full max-lg:h-full">
+          <section className="flex w-full justify-between max-md:justify-between max-sm:justify-around max-xs:flex max-xs:flex-col max-xs:gap-3 max-xs:justify-between 2xl:size-full max-lg:h-full max-lg:flex-col">
             <div
-              className="flex flex-col justify-center items-center w-50 max-sm:w-40 max-xs:w-full max-xs:h-20"
+              className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:w-full"
               role="link"
             >
               <a
                 href="https://linkedin.com/in/mhalla-sounia"
                 target="_blank"
-                className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30 max-md:w-full max-xs:flex-row 2xl:h-full 2xl:w-full max-lg:h-full"
+                className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30 max-md:w-full max-xs:flex-row  max-lg:size-full max-lg:rounded-none max-xl:size-full max-2xl:size-full 2xl:size-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,12 +124,12 @@ const Home = ({ className }) => {
             </div>
 
             <div
-              className="flex flex-col justify-center items-center w-50 max-sm:w-40 max-xs:w-full max-xs:h-20"
+              className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:w-full"
               role="link"
             >
               <a
                 href="mailto:sounia.mhalla@hotmail.com"
-                className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30 max-sm:w-full max-xs:flex-row 2xl:h-full 2xl:w-full max-lg:h-full"
+                className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30 max-md:w-full max-sm:w-full max-xs:flex-row max-lg:size-full max-lg:rounded-none max-xl:size-full max-2xl:size-full 2xl:size-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -153,11 +153,11 @@ const Home = ({ className }) => {
               </a>
             </div>
 
-            <div className="flex flex-col justify-center items-center w-50 max-sm:w-40 max-xs:w-full max-xs:h-20">
+            <div className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:w-full">
               <a
                 href="https://github.com/vickyfrosties?tab=repositories"
                 target="_blank"
-                className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30 max-sm:w-full max-xs:flex-row 2xl:h-full 2xl:w-full max-lg:h-full"
+                className="bg-slate-200 rounded-lg p-2 flex flex-col justify-center items-center max-md:h-30 max-md:w-full max-sm:w-full max-xs:flex-row max-lg:size-full max-lg:rounded-none max-xl:size-full max-2xl:size-full 2xl:size-full "
                 role="link"
               >
                 <svg
