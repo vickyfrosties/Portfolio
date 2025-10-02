@@ -37,11 +37,16 @@ const Contact = () => {
         <section className="w-full h-full flex justify-center max-md:justify-normal">
           <section className="w-3/4 min-h-3/4 m-auto bg-slate-700 rounded-l-2xl rounded-r-3xl flex max-md:flex-col ">
             <section className="w-90 bg-slate-200 rounded-r-3xl rounded-l-xl max-md:h-auto max-md:w-full max-md:flex max-sm:h-full max-xs:flex-col">
-              <img
-                src="/assets/png/Portrait.png"
-                alt=""
-                className="w-full h-60 object-cover object-center"
-              />
+              <div>
+                <img
+                  src="/assets/png/Portrait.png"
+                  alt=""
+                  className="w-full h-60 object-cover object-center"
+                />
+                <p className="max-sm:hidden sm:block sm:text-center sm:text-xl sm:font-semibold">
+                  Sounia Mhalla Dit Aounallah
+                </p>
+              </div>
 
               <section className="p-3 grid grid-col-3 grid-row-2 gap-x-3 gap-y-7 h-auto max-sm:flex max-sm:flex-col max-xs:flex-row max-xs:flex-wrap max-xs:gap-2 max-xs:w-full">
                 <div className="max-xs:w-full">
@@ -186,7 +191,7 @@ const Contact = () => {
           </section>
         </section>
       </section>
-      <Footer className="max-md:hidden" />
+      <Footer />
     </>
   );
 };
