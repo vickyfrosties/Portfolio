@@ -45,7 +45,7 @@ ${
               height="30"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="#f1f5f9"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -60,7 +60,7 @@ ${
           </NavLink>
 
           <NavLink
-            className="cursor-pointer text-xl font-medium max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-xs:border-x max-sm:w-full max-xs:h-full"
+            className="cursor-pointer text-xl font-medium max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-xs:border-x max-xs:border-slate-100 max-sm:w-full  max-xs:h-full"
             to="/about"
           >
             <svg
@@ -69,7 +69,7 @@ ${
               height="30"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="#f1f5f9"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -94,7 +94,7 @@ ${
               height="30"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="#f1f5f9"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -110,7 +110,7 @@ ${
           </NavLink>
 
           <NavLink
-            className="cursor-pointer max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-xs:h-full max-xs:border-l max-sm:w-full "
+            className="cursor-pointer max-sm:text-base max-md:w-20 max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:text-lg max-xs:h-full max-xs:border-l max-xs:border-slate-100 max-sm:w-full "
             to="/contact"
           >
             <svg
@@ -119,7 +119,7 @@ ${
               height="30"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="currentColor"
+              stroke="#f1f5f9"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"

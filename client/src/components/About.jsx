@@ -9,7 +9,7 @@ const About = () => {
       <section className="max-md:h-auto h-full">
         <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5 max-md:flex max-md:flex-col max-md:h-auto">
           <div className="grid gap-y-4 max-lg:flex">
-            <div className="bg-slate-100 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
+            <div className="bg-slate-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
               <div className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const About = () => {
               </div>
               <div className="h-full flex flex-col justify-between max-md:w-3/4">
                 <p className="flex flex-col items-center font-medium text-lg pl-4 h-full max-lg:pl-0 max-lg:text-base">
-                  <span className="text-2xl font-bold w-full">Path</span>I
+                  <span className="text-2xl font-bold w-full mb-3">Path</span>I
                   transitioned into front-end development after choosing a new
                   career path and finally found what drives me most: creating.
                 </p>
@@ -39,9 +39,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-slate-100 p-5 rounded-lg flex max-lg:justify-around max-md:justify-around max-lg:overflow-scroll">
+          <div className="bg-red-300 p-5 rounded-lg flex max-lg:justify-around max-md:justify-around max-lg:overflow-scroll">
             <p className="flex flex-col items-center font-medium text-lg h-full max-md:w-3/4 max-lg:text-base max-xl:overflow-scroll lg:size-full">
-              <span className="text-2xl font-bold w-full">Motivation</span>
+              <span className="text-2xl font-bold w-full mb-3">Motivation</span>
               What excites me is being part of the entire process — from the
               initial idea to the final product. Seeing a project come to life
               step by step is what keeps me motivated and I truly believe that
@@ -170,9 +170,9 @@ text-transparent text-lg"
             </section>
           </div>
 
-          <div className="bg-slate-100 p-5 rounded-lg flex max-md:justify-around">
+          <div className="bg-slate-200 p-5 rounded-lg flex max-md:justify-around">
             <p className="font-medium text-lg flex flex-col items-center max-lg:text-base max-xs:overflow-auto max-xl:overflow-scroll">
-              <span className="text-2xl font-bold w-full">Goal</span>
+              <span className="text-2xl font-bold w-full mb-3">Goal</span>
               My goal is to contribute to meaningful projects that are
               functional and useful for real users. I know I’m still at a junior
               level, but I’m committed to giving my best and growing until this
@@ -297,31 +297,35 @@ text-transparent text-lg"
 
           <div className="bg-yellow-200 rounded-lg p-5 flex flex-col max-lg:justify-between">
             <div className="flex">
-              <h3 className="text-2xl text-black font-bold">Current status</h3>
-              <div className="animate-pulse w-2 h-2 rounded-lg bg-lime-600"></div>
+              <h3 className="text-2xl text-black font-bold mb-3">
+                Current status
+              </h3>
+              <div className="animate-pulse w-2 h-2 rounded-lg bg-green-600"></div>
             </div>
 
-            <p className="text-black text-lg font-medium max-lg:text-base max-md:h-auto max-lg:h-40">
-              I’m currently looking for a junior front-end developer role where
-              I can grow, contribute to real projects, and build user-friendly
-              solutions with a team.
-            </p>
+            <div className="h-full flex flex-col justify-between">
+              <p className="text-black text-lg font-medium max-lg:text-base max-md:h-auto max-lg:h-40">
+                I’m currently looking for a junior front-end developer role
+                where I can grow, contribute to real projects, and build
+                user-friendly solutions with a team.
+              </p>
 
-            <div className="flex self-end max-xs:w-full">
-              <button
-                className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-600 font-semibold max-xs:w-full"
-                onClick={() => navigate("/contact")}
-              >
-                Let's connect
-              </button>
+              <div className="flex justify-end max-xs:w-full ">
+                <button
+                  className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 text-white cursor-pointer hover:bg-slate-600 font-semibold  max-xs:w-full"
+                  onClick={() => navigate("/contact")}
+                >
+                  Let's connect
+                </button>
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col justify-between bg-slate-100 rounded-lg p-5">
-            <p className="flex flex-col font-medium text-lg font-medium max-lg:text-base">
-              <span className="text-2xl font-bold w-full">Projects</span>I
-              strive to stay consistent by updating and improving my personal
-              projects. My latest work: MemoCode - a web application to store
+          <div className="flex flex-col justify-between bg-red-300 rounded-lg p-5">
+            <p className="flex flex-col font-medium text-lg font-medium max-lg:text-base ">
+              <span className="text-2xl font-bold w-full mb-3">Projects</span>I
+              aim to remain consistent by updating and improving my personal
+              projects. My latest work: MemoCode, a web application for storing
               personal notes.
             </p>
             <div className="flex justify-end max-xs:w-full">

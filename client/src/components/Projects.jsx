@@ -34,7 +34,7 @@ const Projects = () => {
     <>
       <section className="w-full p-10 grid grid-cols-3 auto-rows-auto gap-x-8 gap-y-10 max-lg:grid-cols-2 max-sm:flex max-sm:flex-col min-h-lvh">
         {memocode && (
-          <div className="rounded-lg bg-slate-100 flex flex-col p-5">
+          <div className="rounded-lg bg-[#C0D1FF] flex flex-col p-5">
             <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-indigo-500">
               {memocode.name}
             </h3>
@@ -52,7 +52,7 @@ const Projects = () => {
         </div>
 
         {memocode && (
-          <div className="rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center max-xs:w-full bg-slate-100 max-xs:h-auto">
+          <div className="rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center max-xs:w-full bg-[#C0D1FF] max-xs:h-auto max-xl:size-full 2xl:size-full">
             <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center max-xs:h-auto max-xs:gap-2">
               <p className="rounded-full bg-linear-65 from-purple-500 to-pink-500 pl-3 pr-3 text-center bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%]">
                 {memocode.technologies[0]}
@@ -102,7 +102,7 @@ border-red-500 rounded-full pl-3 pr-3"
         )}
 
         {statmind && (
-          <div className="rounded-lg p-5 bg-slate-100">
+          <div className="rounded-lg p-5 bg-slate-200">
             <h3 className="text-2xl text-white font-bold rounded-xl w-40 text-center bg-[#1d2c32]">
               {statmind.name}
             </h3>
@@ -120,7 +120,7 @@ border-red-500 rounded-full pl-3 pr-3"
         </div>
 
         {statmind && (
-          <div className="bg-teal-50 bg-slate-100 rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center max-xs:w-full max-xs:h-auto">
+          <div className="bg-slate-200 rounded-lg p-5 flex flex-col h-70 justify-between items-center self-center max-xs:w-full max-xs:h-auto max-xl:size-full 2xl:size-full">
             <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center max-xs:h-auto max-xs:gap-2">
               <p className="rounded-full bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] from-purple-500 to-pink-500 pl-3 pr-3 text-center">
                 {statmind.technologies[0]}
@@ -167,7 +167,7 @@ border-red-500 rounded-full pl-3 pr-3"
         )}
 
         {greenier && (
-          <div className="rounded-lg bg-slate-100 p-5">
+          <div className="rounded-lg bg-[#f8fcd7] p-5">
             <h3 className="text-2xl text-white font-bold rounded-xl w-50 text-center bg-[#193b2c]">
               {greenier.name}
             </h3>
@@ -185,8 +185,8 @@ border-red-500 rounded-full pl-3 pr-3"
         </div>
 
         {greenier && (
-          <div className="rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center max-sm:w-full max-xs:w-full bg-slate-100 max-xs:h-auto">
-            <div className="rounded-lg p-5 w-full flex flex-wrap justify-between max-xs:h-auto max-xs:gap-2">
+          <div className="rounded-lg p-5 flex flex-col h-70 justify-evenly items-center self-center max-xs:w-full bg-[#f8fcd7] max-xs:h-auto  max-xl:size-full 2xl:size-full">
+            <div className="rounded-lg p-5 w-full h-50 flex flex-wrap justify-between items-center max-xs:h-auto max-xs:gap-2">
               <p className="rounded-full bg-linear-[45deg,#61DAFB_55%,#d7f6fe_100%] from-purple-500 to-pink-500 pl-3 pr-3 text-center">
                 {greenier.technologies[0]}
               </p>

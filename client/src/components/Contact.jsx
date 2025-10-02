@@ -133,8 +133,8 @@ const Contact = () => {
             <section className="w-2/4 h-90 flex flex-col justify-around items-center m-auto max-md:w-full max-md:h-full max-sm:flex-col max-sm:h-full">
               <div className="max-lg:w-60 max-md:w-full max-sm:w-full max-sm:p-3">
                 <h3 className="text-2xl font-semibold text-slate-100 text-center  max-lg:text-lg max-lg:w-full">
-                  Feel free to reach out - I’d be happy to chat about web
-                  development, an opportunity, or simply to connect.
+                  Feel free to reach out - I’d be happy to chat about topics, an
+                  opportunity, or simply to connect !
                 </h3>
               </div>
 
@@ -155,7 +155,7 @@ const Contact = () => {
                   <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z" />
                 </svg>
                 {quotation && quotation.quote ? (
-                  <div className="max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center bg-slate-100">
+                  <div className="max-lg:flex max-lg:flex-col max-lg:items-center max-lg:justify-center">
                     <h3 className="text-center text-xl font-semibold max-lg:text-base max-sm:text-white max-sm:text-center max-md:text-white max-md:text-center">
                       {quotation.quote}
                       <span className="text-lg font-md italic max-lg:text-base max-sm:text-white">
