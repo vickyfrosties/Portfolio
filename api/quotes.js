@@ -1,11 +1,10 @@
-export async function getQuote(request, response) {
+export default async function handler(request, response) {
   const apiKey = process.env.API_KEY;
   try {
     const apiResponse = await fetch(
       "https://api.dailyquotes.dev/api/quotes/motivational",
       {
         method: "GET",
-        mode: "cors",
         headers: {
           Authorization: `Bearer ${apiKey}`,
           "Content-Type": "application/json",
