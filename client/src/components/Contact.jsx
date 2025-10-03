@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="w-full h-full max-xs:h-auto max-xs:my-8 max-xs:bg-red-200 flex justify-center max-md:justify-normal">
+      <section className="w-full h-full max-xs:h-auto max-xs:my-8 flex justify-center max-md:justify-normal">
         <section className="w-3/4 min-h-3/4 m-auto bg-slate-700 rounded-l-2xl rounded-r-3xl flex max-md:flex-col ">
           <section className="w-90 bg-slate-100 rounded-r-3xl rounded-l-xl max-md:h-auto max-md:w-full max-md:flex max-sm:h-full max-xs:flex-col">
             <div>
