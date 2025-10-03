@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <section className="grid grid-cols-3 grid-rows-3 flex-col min-h-lvh p-5 gap-10 w-full max-lg:gap-5 max-md:grid-cols-2 max-sm:flex max-sm:border-0 max-md:border-0 2xl:grid-rows-2 2xl:h-full max-lg:grid-rows-2">
-        <div className="bg-yellow-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:row-span-1 max-lg:row-span-1 min-h-[250px]">
+        <div className="bg-indigo-200 row-span-2 rounded-lg max-2xl:row-start-1 max-2xl:row-end-3 2xl:row-span-1 max-lg:row-span-1 min-h-[250px]">
           <div className="rounded-lg h-full relative">
             <div className="absolute z-1  2xl:top-10 bottom-25 ml-5 mr-5 max-md:-bottom-5 max-md:p-3 max-md:m-auto max-2xl:left-80 max-2xl:static max-2xl:pt-5">
               <h1 className="text-4xl font-bold max-md:text-2xl max-lg:text-2xl max-sm:text-2xl">
@@ -33,14 +33,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-slate-700 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1 max-md:min-h-64">
+        <div className="bg-yellow-200  rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-2 max-2xl:row-start-1 max-2xl:row-end-3 max-2xl:p-7 max-lg:row-span-1 max-md:min-h-64">
           <div>
-            <h3 className="text-2xl text-white font-bold h-10">ABOUT</h3>
-            <p className="text-xl max-xs:hidden text-white">
+            <h3 className="text-2xl text-black font-bold h-10">ABOUT</h3>
+            <p className="text-xl max-xs:hidden text-black">
               I'm passionate about creating web interfaces. I discovered
               front-end development about a year ago - and I instantly loved it.
             </p>
-            <p className="text-xl mt-5 max-sm:block max-md:block max-xs:mt-0 text-white">
+            <p className="text-xl mt-5 max-sm:block max-md:block max-xs:mt-0 text-black">
               Today, I design and build web interfaces that feeds my learning,
               spark my creativity, and challenge me to grow. My world? A mix of
               creativity, curiosity and a constant desire to improve.
@@ -50,7 +50,7 @@ const Home = () => {
           <div className="flex w-full justify-end">
             <button
               onClick={() => navigate("/about")}
-              className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800  text-white cursor-pointer hover:bg-slate-600 font-semibold max-xs:w-full"
+              className="rounded-lg w-30 pt-2 pb-2 mt-2 bg-slate-800 cursor-pointer hover:bg-slate-600 text-white font-semibold max-xs:w-full"
             >
               Learn more
             </button>
@@ -61,7 +61,7 @@ const Home = () => {
           <Slider />
         </div>
 
-        <div className="bg-slate-200 grid row-span-2 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-lg:row-span-1 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64 2xl:row-span-1">
+        <div className="bg-emerald-200 grid row-span-2 rounded-lg p-12 flex flex-col justify-between max-2xl:col-start-3 max-2xl:p-7 max-lg:col-start-1 max-lg:row-span-1 max-md:col-start-2 max-md:row-span-1 max-md:min-h-64 2xl:row-span-1">
           <div>
             <h3 className="text-2xl font-bold h-10">PROJECTS</h3>
             <p className="text-xl">
@@ -86,8 +86,8 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="bg-yellow-200 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-lg:h-auto">
-          <h3 className="text-2xl font-bold">CONTACT</h3>
+        <div className="bg-slate-800 grid col-span-2 rounded-lg p-12 max-2xl:p-7 max-lg:h-1/2 max-lg:flex max-lg:flex-col max-lg:justify-between max-md:min-h-64 max-lg:h-auto">
+          <h3 className="text-2xl text-white font-bold">CONTACT</h3>
           <section className="flex w-full justify-between max-md:justify-between max-sm:justify-around max-xs:flex max-xs:flex-col max-xs:gap-3 max-xs:justify-between 2xl:size-full max-lg:h-full max-lg:flex-col">
             <div
               className="flex flex-col justify-center items-center w-50 max-xs:w-full max-xs:h-20 max-lg:size-full"

@@ -9,7 +9,7 @@ const About = () => {
       <section className="max-md:h-auto h-full">
         <section className="h-full grid grid-cols-3 grid-rows-3 p-5 gap-5 max-md:flex max-md:flex-col max-md:h-auto">
           <div className="grid gap-y-4 max-lg:flex">
-            <div className="bg-slate-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
+            <div className="bg-indigo-200 p-5 rounded-lg flex max-md:w-full max-md:justify-around">
               <div className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-red-300 p-5 rounded-lg flex max-lg:justify-around max-md:justify-around max-lg:overflow-scroll">
+          <div className="bg-emerald-200 p-5 rounded-lg flex max-lg:justify-around max-md:justify-around max-lg:overflow-scroll">
             <p className="flex flex-col items-center font-medium text-lg h-full max-md:w-3/4 max-lg:text-base max-xl:overflow-scroll lg:size-full">
               <span className="text-2xl font-bold w-full mb-3">Motivation</span>
               What excites me is being part of the entire process — from the
@@ -321,7 +321,7 @@ text-transparent text-lg"
             </div>
           </div>
 
-          <div className="flex flex-col justify-between bg-red-300 rounded-lg p-5">
+          <div className="flex flex-col justify-between bg-emerald-200 rounded-lg p-5">
             <p className="flex flex-col font-medium text-lg font-medium max-lg:text-base ">
               <span className="text-2xl font-bold w-full mb-3">Projects</span>I
               aim to remain consistent by updating and improving my personal

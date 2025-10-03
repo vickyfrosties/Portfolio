@@ -6,7 +6,6 @@ const Slider = () => {
   const stack = [
     { name: "React", src: "/assets/svg/react.svg" },
     { name: "JavaScript", src: "/assets/svg/javascript.svg" },
-    { name: "TypeScript", src: "/assets/svg/typescript.svg" },
     { name: "TailwindCSS", src: "/assets/svg/tailwindcss.svg" },
     { name: "SASS", src: "/assets/svg/sass.svg" },
   ];
