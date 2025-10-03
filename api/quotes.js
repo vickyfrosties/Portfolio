@@ -1,5 +1,9 @@
 export default async function handler(request, response) {
   const apiKey = process.env.API_KEY;
+
+  if (req.method !== "GET") {
+    return res.status(405).json({ error: "Method Not Allowed" });
+  }
   try {
     const apiResponse = await fetch(
       "https://api.dailyquotes.dev/api/quotes/motivational",
