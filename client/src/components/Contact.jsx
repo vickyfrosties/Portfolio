@@ -6,19 +6,13 @@ const Contact = () => {
 
   useEffect(() => {
     const getQuote = async () => {
-      const serverPort = import.meta.env.SERVER_PORT || 8000;
-
       try {
-        const response = await fetch(
-          `http://localhost:${serverPort}/api/quotes`,
-          {
-            method: "GET",
-            mode: "cors",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
+        const response = await fetch("/api/quotes", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
 
         const data = await response.json();
 
