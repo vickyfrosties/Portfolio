@@ -207,7 +207,7 @@ border-red-500 rounded-full pl-3 pr-3"
                 target="_blank"
                 className="rounded-lg p-5 w-full flex justify-between items-center cursor-pointer bg-slate-800 hover:bg-slate-600 max-xs:p-2"
               >
-                Check GitHub repository
+                Check demo
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="42"

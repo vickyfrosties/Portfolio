@@ -39,6 +39,6 @@
     "description": "Greenier is the result of an intensive hackathon challenge. Our goal was to raise awareness about the importance of sustainable development through an engaging and playful experience. Working in a team of 9 people (UX/UI designers, game developer, and both front-end and back-end developers) we collaborated intensively to design and build a serious game around sustainability.",
     "technologies": ["React", "JavaScript", "CSS", "Phaser"],
     "date": "23th october - 25th october",
-    "link": "https://github.com/vickyfrosties/Greenier-please"
+    "link": "https://greenier-please.vercel.app/"
   }
 ]
